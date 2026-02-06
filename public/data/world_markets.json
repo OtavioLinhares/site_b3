@@ -1,0 +1,4596 @@
+{
+  "generated_at": "2026-02-06T16:22:53.139633+00:00",
+  "schema_version": "1.0",
+  "markets": [
+    {
+      "slug": "b3",
+      "name": "B3",
+      "country": "Brasil",
+      "flag": "🇧🇷",
+      "generated_at": "2026-02-06T16:22:53.139633+00:00",
+      "top_n": 46,
+      "metrics": {
+        "market_cap_total": 6737438400000.0,
+        "earnings_total": 587000175754.2107,
+        "weighted_pe": 10.951426703987467,
+        "weighted_net_margin": 0.1200017825693436
+      },
+      "companies": [
+        {
+          "ticker": "PETR3",
+          "market_cap": 444017000000.0,
+          "p_l": 5.73,
+          "net_margin": 0.1577426614521229,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "BPAC3",
+          "market_cap": 441720000000.0,
+          "p_l": 30.09,
+          "net_margin": 0.1821291647735166,
+          "margin_source": "planilha_ibx50"
+        },
+        {
+          "ticker": "ITUB4",
+          "market_cap": 440193000000.0,
+          "p_l": 10.19,
+          "net_margin": 0.1821291647735166,
+          "margin_source": "planilha_ibx50"
+        },
+        {
+          "ticker": "PETR4",
+          "market_cap": 416177000000.0,
+          "p_l": 5.37,
+          "net_margin": 0.1577426614521229,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "ITUB3",
+          "market_cap": 405237000000.0,
+          "p_l": 9.38,
+          "net_margin": 0.1821291647735166,
+          "margin_source": "planilha_ibx50"
+        },
+        {
+          "ticker": "VALE3",
+          "market_cap": 363484000000.0,
+          "p_l": 12.04,
+          "net_margin": 0.1415010313144571,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "AMBV3",
+          "market_cap": 272509000000.0,
+          "p_l": 26.65,
+          "net_margin": 0.1754089862445599,
+          "margin_source": "planilha_ibx50"
+        },
+        {
+          "ticker": "AMBV4",
+          "market_cap": 271883000000.0,
+          "p_l": 26.59,
+          "net_margin": 0.1754089862445599,
+          "margin_source": "planilha_ibx50"
+        },
+        {
+          "ticker": "ABEV3",
+          "market_cap": 221766000000.0,
+          "p_l": 13.83,
+          "net_margin": 0.1772648040296097,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "BBDC4",
+          "market_cap": 203049000000.0,
+          "p_l": 8.83,
+          "net_margin": 0.0866134285514057,
+          "margin_source": "planilha_ibx50"
+        },
+        {
+          "ticker": "WEGE3",
+          "market_cap": 194881000000.0,
+          "p_l": 30.06,
+          "net_margin": 0.1566653616758016,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "BBDC3",
+          "market_cap": 174239000000.0,
+          "p_l": 7.57,
+          "net_margin": 0.0866134285514057,
+          "margin_source": "planilha_ibx50"
+        },
+        {
+          "ticker": "AXIA6",
+          "market_cap": 159387000000.0,
+          "p_l": -26.51,
+          "net_margin": -0.3729275099218803,
+          "margin_source": "planilha_ibx50"
+        },
+        {
+          "ticker": "VALE5",
+          "market_cap": 151421000000.0,
+          "p_l": 5.02,
+          "net_margin": 0.1415010313144571,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "AXIA3",
+          "market_cap": 149562000000.0,
+          "p_l": -24.88,
+          "net_margin": -0.0331011744120257,
+          "margin_source": "planilha_ibx50"
+        },
+        {
+          "ticker": "VIVT4",
+          "market_cap": 146292000000.0,
+          "p_l": 24.16,
+          "net_margin": 0.1033721045388264,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "ITSA3",
+          "market_cap": 137031000000.0,
+          "p_l": 8.61,
+          "net_margin": null,
+          "margin_source": "filtered_outlier"
+        },
+        {
+          "ticker": "ITSA4",
+          "market_cap": 135798000000.0,
+          "p_l": 8.54,
+          "net_margin": null,
+          "margin_source": "filtered_outlier"
+        },
+        {
+          "ticker": "SANB4",
+          "market_cap": 130324000000.0,
+          "p_l": 8.79,
+          "net_margin": 0.0866134285514057,
+          "margin_source": "planilha_ibx50"
+        },
+        {
+          "ticker": "BPAC5",
+          "market_cap": 124496000000.0,
+          "p_l": 8.48,
+          "net_margin": 0.1821291647735166,
+          "margin_source": "planilha_ibx50"
+        },
+        {
+          "ticker": "BBAS3",
+          "market_cap": 123442000000.0,
+          "p_l": 5.71,
+          "net_margin": 0.0905328676059201,
+          "margin_source": "planilha_ibx50"
+        },
+        {
+          "ticker": "PRGA4",
+          "market_cap": 119414000000.0,
+          "p_l": 35.47,
+          "net_margin": 0.05192948192851,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "VIVT3",
+          "market_cap": 109864000000.0,
+          "p_l": 18.15,
+          "net_margin": 0.1033721045388264,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "RDOR3",
+          "market_cap": 91892200000.0,
+          "p_l": 20.69,
+          "net_margin": 0.0819396882564798,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "SBSP3",
+          "market_cap": 89970500000.0,
+          "p_l": 12.48,
+          "net_margin": 0.2080982267815146,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "JBSS3",
+          "market_cap": 86573100000.0,
+          "p_l": 7.51,
+          "net_margin": 0.0243862880391456,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "B3SA3",
+          "market_cap": 77259600000.0,
+          "p_l": 15.91,
+          "net_margin": 0.4480964420166826,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "GUAR4",
+          "market_cap": 75508800000.0,
+          "p_l": 171.56,
+          "net_margin": 0.0426536545655418,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "EMBJ3",
+          "market_cap": 73017300000.0,
+          "p_l": 41.27,
+          "net_margin": 0.0428573504691685,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "BBSE3",
+          "market_cap": 71180000000.0,
+          "p_l": 7.91,
+          "net_margin": null,
+          "margin_source": "filtered_outlier"
+        },
+        {
+          "ticker": "WEGE4",
+          "market_cap": 67576800000.0,
+          "p_l": 10.42,
+          "net_margin": 0.1566653616758016,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "SUZB3",
+          "market_cap": 64912500000.0,
+          "p_l": 9.91,
+          "net_margin": 0.1279952714980753,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "ELCA3",
+          "market_cap": 63434600000.0,
+          "p_l": 44.8,
+          "net_margin": 0.0728007527495411,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "LCAM3",
+          "market_cap": 60827900000.0,
+          "p_l": 41.56,
+          "net_margin": 0.183973049582985,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "CPFE3",
+          "market_cap": 59721300000.0,
+          "p_l": 10.96,
+          "net_margin": 0.1225321777448037,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "TIMS3",
+          "market_cap": 58009100000.0,
+          "p_l": 23.57,
+          "net_margin": 0.1808575207583217,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "ELCA4",
+          "market_cap": 51877700000.0,
+          "p_l": 36.64,
+          "net_margin": 0.0728007527495411,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "CXSE3",
+          "market_cap": 49170000000.0,
+          "p_l": 11.21,
+          "net_margin": null,
+          "margin_source": "filtered_outlier"
+        },
+        {
+          "ticker": "EQTL3",
+          "market_cap": 47792400000.0,
+          "p_l": 14.21,
+          "net_margin": 0.0655843066576161,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "PRBC4",
+          "market_cap": 47367900000.0,
+          "p_l": 126.79,
+          "net_margin": null,
+          "margin_source": "filtered_outlier"
+        },
+        {
+          "ticker": "MLFT4",
+          "market_cap": 46506200000.0,
+          "p_l": 80.38,
+          "net_margin": 0.4057012039069128,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "RENT3",
+          "market_cap": 45791100000.0,
+          "p_l": 25.82,
+          "net_margin": 0.0436590595237802,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "GGBR4",
+          "market_cap": 44419500000.0,
+          "p_l": 14.8,
+          "net_margin": 0.0430546230783797,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "RADL3",
+          "market_cap": 43739100000.0,
+          "p_l": 32.58,
+          "net_margin": 0.0317778403804771,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "CPLE6",
+          "market_cap": 42534900000.0,
+          "p_l": 19.26,
+          "net_margin": 0.0885207394699289,
+          "margin_source": "fundamentus_calc"
+        },
+        {
+          "ticker": "CRUZ3",
+          "market_cap": 42169900000.0,
+          "p_l": 25.31,
+          "net_margin": 0.261348432684239,
+          "margin_source": "fundamentus_calc"
+        }
+      ],
+      "excluded_companies": [],
+      "notes": {
+        "margin_source": {
+          "fundamentus_calc": 29,
+          "planilha_ibx50": 12,
+          "filtered_outlier": 5
+        }
+      }
+    },
+    {
+      "slug": "sp500",
+      "name": "S&P 500",
+      "country": "Estados Unidos",
+      "flag": "🇺🇸",
+      "generated_at": "2026-02-06T16:22:53.139633+00:00",
+      "top_n": 48,
+      "metrics": {
+        "market_cap_total": 37858300000000.0,
+        "earnings_total": 1254312830234.3594,
+        "revenue_total": 7091190000000.0,
+        "weighted_pe": 30.182502392905004,
+        "weighted_net_margin": 0.21238297956659694
+      },
+      "companies": [
+        {
+          "name": "Apple",
+          "market_cap": 4050000000000.0,
+          "revenue": 435620000000.0,
+          "pe": 35.03,
+          "earnings": 115615186982.58635,
+          "margin": 0.26540376241354013
+        },
+        {
+          "name": "Alphabet C",
+          "market_cap": 4010000000000.0,
+          "revenue": 402840000000.0,
+          "pe": 30.81,
+          "earnings": 130152547874.06686,
+          "margin": 0.32308744879869644
+        },
+        {
+          "name": "Alphabet A",
+          "market_cap": 4010000000000.0,
+          "revenue": 402840000000.0,
+          "pe": 30.81,
+          "earnings": 130152547874.06686,
+          "margin": 0.32308744879869644
+        },
+        {
+          "name": "Microsoft",
+          "market_cap": 2920000000000.0,
+          "revenue": 305450000000.0,
+          "pe": 24.56,
+          "earnings": 118892508143.32248,
+          "margin": 0.3892372176897118
+        },
+        {
+          "name": "Amazon.com",
+          "market_cap": 2380000000000.0,
+          "revenue": 691330000000.0,
+          "pe": 31.47,
+          "earnings": 75627581823.95934,
+          "margin": 0.10939432951551262
+        },
+        {
+          "name": "Meta Platforms",
+          "market_cap": 1700000000000.0,
+          "revenue": 200970000000.0,
+          "pe": 28.81,
+          "earnings": 59007289135.71677,
+          "margin": 0.2936124254153195
+        },
+        {
+          "name": "Tesla",
+          "market_cap": 1490000000000.0,
+          "revenue": 94830000000.0,
+          "pe": 335.37,
+          "earnings": 4442854161.075827,
+          "margin": 0.04685072404382397
+        },
+        {
+          "name": "Broadcom",
+          "market_cap": 1470000000000.0,
+          "revenue": 63890000000.0,
+          "pe": 65.21,
+          "earnings": 22542554822.87993,
+          "margin": 0.35283385229112424
+        },
+        {
+          "name": "Berkshire Hathaway B",
+          "market_cap": 1090000000000.0001,
+          "revenue": 372130000000.0,
+          "pe": 16.13,
+          "earnings": 67575945443.273415,
+          "margin": 0.18159230764322526
+        },
+        {
+          "name": "Walmart",
+          "market_cap": 1010000000000.0,
+          "revenue": 703060000000.0,
+          "pe": 44.56,
+          "earnings": 22666068222.621185,
+          "margin": 0.032239166248429985
+        },
+        {
+          "name": "Eli Lilly",
+          "market_cap": 914040000000.0,
+          "revenue": 65180000000.00001,
+          "pe": 48.24,
+          "earnings": 18947761194.02985,
+          "margin": 0.29069900573841434
+        },
+        {
+          "name": "JPMorgan",
+          "market_cap": 836250000000.0,
+          "revenue": 193340000000.0,
+          "pe": 15.48,
+          "earnings": 54021317829.45736,
+          "margin": 0.2794109746015173
+        },
+        {
+          "name": "Visa A",
+          "market_cap": 627320000000.0,
+          "revenue": 41390000000.0,
+          "pe": 30.9,
+          "earnings": 20301618122.97735,
+          "margin": 0.4904957265759205
+        },
+        {
+          "name": "Exxon Mobil",
+          "market_cap": 610470000000.0,
+          "revenue": 323900000000.0,
+          "pe": 21.84,
+          "earnings": 27951923076.923077,
+          "margin": 0.08629800270738831
+        },
+        {
+          "name": "J&J",
+          "market_cap": 572910000000.0,
+          "revenue": 94190000000.0,
+          "pe": 21.57,
+          "earnings": 26560500695.410294,
+          "margin": 0.2819885411976886
+        },
+        {
+          "name": "Mastercard",
+          "market_cap": 493240000000.0,
+          "revenue": 32790000000.0,
+          "pe": 33.41,
+          "earnings": 14763244537.563604,
+          "margin": 0.4502361859580239
+        },
+        {
+          "name": "Costco",
+          "market_cap": 439120000000.0,
+          "revenue": 280390000000.0,
+          "pe": 53.21,
+          "earnings": 8252584100.7329445,
+          "margin": 0.029432519350664946
+        },
+        {
+          "name": "Micron",
+          "market_cap": 430950000000.0,
+          "revenue": 42310000000.0,
+          "pe": 36.0,
+          "earnings": 11970833333.333334,
+          "margin": 0.2829315370676751
+        },
+        {
+          "name": "Bank of America",
+          "market_cap": 396250000000.0,
+          "revenue": 138570000000.0,
+          "pe": 14.44,
+          "earnings": 27441135734.07202,
+          "margin": 0.19803085613099533
+        },
+        {
+          "name": "Oracle",
+          "market_cap": 392260000000.0,
+          "revenue": 61020000000.0,
+          "pe": 25.78,
+          "earnings": 15215671062.839409,
+          "margin": 0.24935547464502472
+        },
+        {
+          "name": "AbbVie",
+          "market_cap": 387090000000.0,
+          "revenue": 61160000000.0,
+          "pe": 95.62,
+          "earnings": 4048211671.198494,
+          "margin": 0.06619051130147963
+        },
+        {
+          "name": "Home Depot",
+          "market_cap": 380650000000.0,
+          "revenue": 166190000000.0,
+          "pe": 26.22,
+          "earnings": 14517543859.649124,
+          "margin": 0.08735509874029199
+        },
+        {
+          "name": "P&G",
+          "market_cap": 368610000000.0,
+          "revenue": 85260000000.0,
+          "pe": 23.07,
+          "earnings": 15977893368.010403,
+          "margin": 0.18740198648851047
+        },
+        {
+          "name": "Chevron",
+          "market_cap": 354880000000.0,
+          "revenue": 186030000000.0,
+          "pe": 26.85,
+          "earnings": 13217132216.014896,
+          "margin": 0.07104839120579959
+        },
+        {
+          "name": "Netflix",
+          "market_cap": 341450000000.0,
+          "revenue": 45180000000.0,
+          "pe": 32.06,
+          "earnings": 10650343106.674984,
+          "margin": 0.23573136579625906
+        },
+        {
+          "name": "Coca-Cola",
+          "market_cap": 337720000000.0,
+          "revenue": 47660000000.0,
+          "pe": 26.08,
+          "earnings": 12949386503.067486,
+          "margin": 0.2717034515960446
+        },
+        {
+          "name": "Cisco",
+          "market_cap": 325410000000.0,
+          "revenue": 57700000000.0,
+          "pe": 32.04,
+          "earnings": 10156367041.198502,
+          "margin": 0.17602022601730505
+        },
+        {
+          "name": "GE Aerospace",
+          "market_cap": 321330000000.0,
+          "revenue": 45860000000.0,
+          "pe": 37.38,
+          "earnings": 8596308186.195826,
+          "margin": 0.18744675504133942
+        },
+        {
+          "name": "Caterpillar",
+          "market_cap": 317440000000.0,
+          "revenue": 67590000000.0,
+          "pe": 36.06,
+          "earnings": 8803105934.553522,
+          "margin": 0.13024272724594646
+        },
+        {
+          "name": "AMD",
+          "market_cap": 313850000000.0,
+          "revenue": 34640000000.0,
+          "pe": 76.7,
+          "earnings": 4091916558.018253,
+          "margin": 0.11812692142085025
+        },
+        {
+          "name": "Palantir",
+          "market_cap": 309870000000.0,
+          "revenue": 4480000000.0,
+          "pe": 189.43,
+          "earnings": 1635802143.271921,
+          "margin": 0.3651344069803395
+        },
+        {
+          "name": "Merck&Co",
+          "market_cap": 297220000000.0,
+          "revenue": 65010000000.00001,
+          "pe": 16.25,
+          "earnings": 18290461538.46154,
+          "margin": 0.2813484316022387
+        },
+        {
+          "name": "Wells Fargo&Co",
+          "market_cap": 284550000000.0,
+          "revenue": 87310000000.0,
+          "pe": 14.69,
+          "earnings": 19370319945.541183,
+          "margin": 0.2218568313542685
+        },
+        {
+          "name": "Philip Morris",
+          "market_cap": 283310000000.0,
+          "revenue": 39990000000.0,
+          "pe": 32.87,
+          "earnings": 8619105567.386675,
+          "margin": 0.21553152206518317
+        },
+        {
+          "name": "Goldman Sachs",
+          "market_cap": 279340000000.0,
+          "revenue": 59400000000.0,
+          "pe": 17.42,
+          "earnings": 16035591274.397243,
+          "margin": 0.26995944906392666
+        },
+        {
+          "name": "Morgan Stanley",
+          "market_cap": 278350000000.0,
+          "revenue": 70300000000.0,
+          "pe": 17.25,
+          "earnings": 16136231884.057972,
+          "margin": 0.22953388170779476
+        },
+        {
+          "name": "IBM",
+          "market_cap": 270970000000.00003,
+          "revenue": 67540000000.00001,
+          "pe": 25.99,
+          "earnings": 10425933051.17353,
+          "margin": 0.1543667908080179
+        },
+        {
+          "name": "Lam Research",
+          "market_cap": 266380000000.0,
+          "revenue": 20560000000.0,
+          "pe": 43.76,
+          "earnings": 6087294332.723949,
+          "margin": 0.29607462707801313
+        },
+        {
+          "name": "Rtx Corp",
+          "market_cap": 262750000000.0,
+          "revenue": 88600000000.0,
+          "pe": 39.6,
+          "earnings": 6635101010.10101,
+          "margin": 0.0748882732517044
+        },
+        {
+          "name": "American Express",
+          "market_cap": 243270000000.0,
+          "revenue": 66970000000.0,
+          "pe": 23.14,
+          "earnings": 10512964563.526361,
+          "margin": 0.1569802085042013
+        },
+        {
+          "name": "UnitedHealth",
+          "market_cap": 243260000000.0,
+          "revenue": 447570000000.0,
+          "pe": 20.2,
+          "earnings": 12042574257.425743,
+          "margin": 0.026906571614330146
+        },
+        {
+          "name": "Applied Materials",
+          "market_cap": 241280000000.0,
+          "revenue": 28370000000.0,
+          "pe": 34.93,
+          "earnings": 6907529344.403092,
+          "margin": 0.2434800614875958
+        },
+        {
+          "name": "McDonald’s",
+          "market_cap": 230370000000.0,
+          "revenue": 26260000000.0,
+          "pe": 27.64,
+          "earnings": 8334659913.16932,
+          "margin": 0.3173899433804006
+        },
+        {
+          "name": "PepsiCo",
+          "market_cap": 228950000000.0,
+          "revenue": 93930000000.0,
+          "pe": 27.7,
+          "earnings": 8265342960.288809,
+          "margin": 0.08799470840294697
+        },
+        {
+          "name": "T-Mobile US",
+          "market_cap": 225780000000.0,
+          "revenue": 85850000000.0,
+          "pe": 19.45,
+          "earnings": 11608226221.079693,
+          "margin": 0.13521521515526724
+        },
+        {
+          "name": "Linde PLC",
+          "market_cap": 214490000000.0,
+          "revenue": 33500000000.0,
+          "pe": 30.74,
+          "earnings": 6977553675.992193,
+          "margin": 0.2082851843579759
+        },
+        {
+          "name": "Thermo Fisher Scientific",
+          "market_cap": 203770000000.0,
+          "revenue": 44560000000.0,
+          "pe": 31.86,
+          "earnings": 6395794099.183929,
+          "margin": 0.14353218355439698
+        },
+        {
+          "name": "Texas Instruments",
+          "market_cap": 203150000000.0,
+          "revenue": 17680000000.0,
+          "pe": 41.27,
+          "earnings": 4922461836.685244,
+          "margin": 0.2784197871428305
+        }
+      ],
+      "excluded_companies": [
+        {
+          "name": "NVIDIA",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Intel",
+          "reason": "non_positive_pe"
+        }
+      ]
+    },
+    {
+      "slug": "nasdaq100",
+      "name": "Nasdaq 100",
+      "country": "Estados Unidos",
+      "flag": "🇺🇸",
+      "generated_at": "2026-02-06T16:22:53.139633+00:00",
+      "top_n": 47,
+      "metrics": {
+        "market_cap_total": 30273070000000.0,
+        "earnings_total": 893699576304.9595,
+        "revenue_total": 5060090000000.0,
+        "weighted_pe": 33.873877534065024,
+        "weighted_net_margin": 0.21525449432732005
+      },
+      "companies": [
+        {
+          "name": "Apple",
+          "market_cap": 4050000000000.0,
+          "revenue": 435620000000.0,
+          "pe": 35.03,
+          "earnings": 115615186982.58635,
+          "margin": 0.26540376241354013
+        },
+        {
+          "name": "Alphabet A",
+          "market_cap": 4010000000000.0,
+          "revenue": 402840000000.0,
+          "pe": 30.81,
+          "earnings": 130152547874.06686,
+          "margin": 0.32308744879869644
+        },
+        {
+          "name": "Alphabet C",
+          "market_cap": 4010000000000.0,
+          "revenue": 402840000000.0,
+          "pe": 30.81,
+          "earnings": 130152547874.06686,
+          "margin": 0.32308744879869644
+        },
+        {
+          "name": "Microsoft",
+          "market_cap": 2920000000000.0,
+          "revenue": 305450000000.0,
+          "pe": 24.56,
+          "earnings": 118892508143.32248,
+          "margin": 0.3892372176897118
+        },
+        {
+          "name": "Amazon.com",
+          "market_cap": 2380000000000.0,
+          "revenue": 691330000000.0,
+          "pe": 31.47,
+          "earnings": 75627581823.95934,
+          "margin": 0.10939432951551262
+        },
+        {
+          "name": "Meta Platforms",
+          "market_cap": 1700000000000.0,
+          "revenue": 200970000000.0,
+          "pe": 28.81,
+          "earnings": 59007289135.71677,
+          "margin": 0.2936124254153195
+        },
+        {
+          "name": "Tesla",
+          "market_cap": 1490000000000.0,
+          "revenue": 94830000000.0,
+          "pe": 335.37,
+          "earnings": 4442854161.075827,
+          "margin": 0.04685072404382397
+        },
+        {
+          "name": "Broadcom",
+          "market_cap": 1470000000000.0,
+          "revenue": 63890000000.0,
+          "pe": 65.21,
+          "earnings": 22542554822.87993,
+          "margin": 0.35283385229112424
+        },
+        {
+          "name": "Walmart",
+          "market_cap": 1010000000000.0,
+          "revenue": 703060000000.0,
+          "pe": 44.56,
+          "earnings": 22666068222.621185,
+          "margin": 0.032239166248429985
+        },
+        {
+          "name": "ASML  ADR",
+          "market_cap": 530090000000.00006,
+          "revenue": 32670000000.0,
+          "pe": 47.1,
+          "earnings": 11254564755.838642,
+          "margin": 0.3444923402460558
+        },
+        {
+          "name": "Costco",
+          "market_cap": 439120000000.0,
+          "revenue": 280390000000.0,
+          "pe": 53.21,
+          "earnings": 8252584100.7329445,
+          "margin": 0.029432519350664946
+        },
+        {
+          "name": "Micron",
+          "market_cap": 430950000000.0,
+          "revenue": 42310000000.0,
+          "pe": 36.0,
+          "earnings": 11970833333.333334,
+          "margin": 0.2829315370676751
+        },
+        {
+          "name": "Netflix",
+          "market_cap": 341450000000.0,
+          "revenue": 45180000000.0,
+          "pe": 32.06,
+          "earnings": 10650343106.674984,
+          "margin": 0.23573136579625906
+        },
+        {
+          "name": "Cisco",
+          "market_cap": 325410000000.0,
+          "revenue": 57700000000.0,
+          "pe": 32.04,
+          "earnings": 10156367041.198502,
+          "margin": 0.17602022601730505
+        },
+        {
+          "name": "AMD",
+          "market_cap": 313850000000.0,
+          "revenue": 34640000000.0,
+          "pe": 76.7,
+          "earnings": 4091916558.018253,
+          "margin": 0.11812692142085025
+        },
+        {
+          "name": "Palantir",
+          "market_cap": 309870000000.0,
+          "revenue": 4480000000.0,
+          "pe": 189.43,
+          "earnings": 1635802143.271921,
+          "margin": 0.3651344069803395
+        },
+        {
+          "name": "Lam Research",
+          "market_cap": 266380000000.0,
+          "revenue": 20560000000.0,
+          "pe": 43.76,
+          "earnings": 6087294332.723949,
+          "margin": 0.29607462707801313
+        },
+        {
+          "name": "Applied Materials",
+          "market_cap": 241280000000.0,
+          "revenue": 28370000000.0,
+          "pe": 34.93,
+          "earnings": 6907529344.403092,
+          "margin": 0.2434800614875958
+        },
+        {
+          "name": "PepsiCo",
+          "market_cap": 228950000000.0,
+          "revenue": 93930000000.0,
+          "pe": 27.7,
+          "earnings": 8265342960.288809,
+          "margin": 0.08799470840294697
+        },
+        {
+          "name": "T-Mobile US",
+          "market_cap": 225780000000.0,
+          "revenue": 85850000000.0,
+          "pe": 19.45,
+          "earnings": 11608226221.079693,
+          "margin": 0.13521521515526724
+        },
+        {
+          "name": "Linde PLC",
+          "market_cap": 214450000000.0,
+          "revenue": 33500000000.0,
+          "pe": 30.74,
+          "earnings": 6976252439.817827,
+          "margin": 0.2082463414870993
+        },
+        {
+          "name": "Texas Instruments",
+          "market_cap": 203150000000.0,
+          "revenue": 17680000000.0,
+          "pe": 41.27,
+          "earnings": 4922461836.685244,
+          "margin": 0.2784197871428305
+        },
+        {
+          "name": "Amgen",
+          "market_cap": 198050000000.0,
+          "revenue": 36750000000.0,
+          "pe": 23.79,
+          "earnings": 8324926439.680538,
+          "margin": 0.22652861060355206
+        },
+        {
+          "name": "Gilead",
+          "market_cap": 185320000000.0,
+          "revenue": 29090000000.0,
+          "pe": 23.28,
+          "earnings": 7960481099.656357,
+          "margin": 0.27365008936597995
+        },
+        {
+          "name": "KLA Corp",
+          "market_cap": 174470000000.0,
+          "revenue": 12740000000.0,
+          "pe": 38.82,
+          "earnings": 4494332818.134982,
+          "margin": 0.3527733766197003
+        },
+        {
+          "name": "Intuitive Surgical",
+          "market_cap": 169160000000.0,
+          "revenue": 10060000000.0,
+          "pe": 60.8,
+          "earnings": 2782236842.105263,
+          "margin": 0.2765642984200063
+        },
+        {
+          "name": "Analog Devices",
+          "market_cap": 157400000000.0,
+          "revenue": 11020000000.0,
+          "pe": 71.16,
+          "earnings": 2211916807.1950536,
+          "margin": 0.20071840355671994
+        },
+        {
+          "name": "Honeywell",
+          "market_cap": 148470000000.0,
+          "revenue": 37440000000.0,
+          "pe": 31.1,
+          "earnings": 4773954983.92283,
+          "margin": 0.12750948140819524
+        },
+        {
+          "name": "Qualcomm",
+          "market_cap": 145430000000.0,
+          "revenue": 44870000000.0,
+          "pe": 30.39,
+          "earnings": 4785455742.020401,
+          "margin": 0.10665156545621576
+        },
+        {
+          "name": "Shopify Inc",
+          "market_cap": 144820000000.0,
+          "revenue": 10700000000.0,
+          "pe": 82.5,
+          "earnings": 1755393939.3939395,
+          "margin": 0.16405550835457378
+        },
+        {
+          "name": "PDD Holdings DRC",
+          "market_cap": 144120000000.0,
+          "revenue": 418540000000.0,
+          "pe": 13.31,
+          "earnings": 10827948910.593538,
+          "margin": 0.025870762437505468
+        },
+        {
+          "name": "Booking",
+          "market_cap": 143230000000.0,
+          "revenue": 26040000000.0,
+          "pe": 29.2,
+          "earnings": 4905136986.30137,
+          "margin": 0.18836931591019085
+        },
+        {
+          "name": "Applovin",
+          "market_cap": 126810000000.0,
+          "revenue": 6310000000.0,
+          "pe": 45.56,
+          "earnings": 2783362598.7708516,
+          "margin": 0.4411034229430827
+        },
+        {
+          "name": "Intuit",
+          "market_cap": 121020000000.0,
+          "revenue": 19430000000.0,
+          "pe": 29.94,
+          "earnings": 4042084168.3366733,
+          "margin": 0.20803315328546954
+        },
+        {
+          "name": "Arm",
+          "market_cap": 117750000000.0,
+          "revenue": 4670000000.0,
+          "pe": 139.88,
+          "earnings": 841792965.3989134,
+          "margin": 0.1802554529762127
+        },
+        {
+          "name": "Vertex",
+          "market_cap": 116410000000.0,
+          "revenue": 11720000000.0,
+          "pe": 32.28,
+          "earnings": 3606257744.733581,
+          "margin": 0.30770117275883796
+        },
+        {
+          "name": "Comcast",
+          "market_cap": 110990000000.0,
+          "revenue": 123710000000.0,
+          "pe": 5.66,
+          "earnings": 19609540636.042404,
+          "margin": 0.15851217068985857
+        },
+        {
+          "name": "Adobe",
+          "market_cap": 110580000000.0,
+          "revenue": 23770000000.0,
+          "pe": 16.2,
+          "earnings": 6825925925.925926,
+          "margin": 0.28716558375792706
+        },
+        {
+          "name": "Starbucks",
+          "market_cap": 109450000000.0,
+          "revenue": 37700000000.0,
+          "pe": 80.43,
+          "earnings": 1360810642.794977,
+          "margin": 0.036095773018434404
+        },
+        {
+          "name": "Palo Alto Networks",
+          "market_cap": 107870000000.0,
+          "revenue": 9560000000.0,
+          "pe": 99.15,
+          "earnings": 1087947554.2107916,
+          "margin": 0.11380204541953887
+        },
+        {
+          "name": "MercadoLibre",
+          "market_cap": 103160000000.0,
+          "revenue": 26190000000.0,
+          "pe": 49.7,
+          "earnings": 2075653923.5412474,
+          "margin": 0.07925368169306023
+        },
+        {
+          "name": "ADP",
+          "market_cap": 94210000000.0,
+          "revenue": 21210000000.0,
+          "pe": 22.44,
+          "earnings": 4198306595.3654184,
+          "margin": 0.1979399620634332
+        },
+        {
+          "name": "Constellation Energy",
+          "market_cap": 89520000000.0,
+          "revenue": 24840000000.0,
+          "pe": 32.91,
+          "earnings": 2720145852.3245215,
+          "margin": 0.10950667682465867
+        },
+        {
+          "name": "Seagate",
+          "market_cap": 88420000000.0,
+          "revenue": 10060000000.0,
+          "pe": 45.45,
+          "earnings": 1945434543.4543452,
+          "margin": 0.19338315541295678
+        },
+        {
+          "name": "Western Digital",
+          "market_cap": 88210000000.0,
+          "revenue": 10730000000.0,
+          "pe": 24.18,
+          "earnings": 3648056244.8304386,
+          "margin": 0.3399866025005069
+        },
+        {
+          "name": "Marriott Int",
+          "market_cap": 87600000000.0,
+          "revenue": 6870000000.0,
+          "pe": 34.49,
+          "earnings": 2539866628.008118,
+          "margin": 0.369704021544122
+        },
+        {
+          "name": "Monster Beverage",
+          "market_cap": 79870000000.0,
+          "revenue": 7980000000.0,
+          "pe": 46.6,
+          "earnings": 1713948497.854077,
+          "margin": 0.2147805135155485
+        }
+      ],
+      "excluded_companies": [
+        {
+          "name": "NVIDIA",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Intel",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "CrowdStrike Holdings",
+          "reason": "non_positive_pe"
+        }
+      ]
+    },
+    {
+      "slug": "ftse100",
+      "name": "FTSE 100",
+      "country": "Reino Unido",
+      "flag": "🇬🇧",
+      "generated_at": "2026-02-06T16:22:53.139633+00:00",
+      "top_n": 43,
+      "metrics": {
+        "market_cap_total": 2191670000000.0,
+        "earnings_total": 111511947341.98901,
+        "revenue_total": 1390040000000.0,
+        "weighted_pe": 19.654127223502826,
+        "weighted_net_margin": 0.10416240652035957
+      },
+      "companies": [
+        {
+          "name": "HSBC",
+          "market_cap": 221290000000.0,
+          "revenue": 99370000000.0,
+          "pe": 18.84,
+          "earnings": 11745753715.498938,
+          "margin": 0.11820221108482376
+        },
+        {
+          "name": "AstraZeneca",
+          "market_cap": 217660000000.0,
+          "revenue": 58130000000.0,
+          "pe": 31.42,
+          "earnings": 6927434754.933164,
+          "margin": 0.1191714218980417
+        },
+        {
+          "name": "Shell",
+          "market_cap": 157780000000.0,
+          "revenue": 273730000000.00003,
+          "pe": 12.27,
+          "earnings": 12859005704.971476,
+          "margin": 0.046976968929132626
+        },
+        {
+          "name": "Unilever",
+          "market_cap": 115740000000.0,
+          "revenue": 59770000000.0,
+          "pe": 21.52,
+          "earnings": 5378252788.10409,
+          "margin": 0.08998247930574016
+        },
+        {
+          "name": "Rio Tinto PLC",
+          "market_cap": 111250000000.0,
+          "revenue": 53730000000.0,
+          "pe": 14.66,
+          "earnings": 7588676671.214189,
+          "margin": 0.1412372356451552
+        },
+        {
+          "name": "Rolls-Royce Holdings",
+          "market_cap": 101300000000.0,
+          "revenue": 19540000000.0,
+          "pe": 17.7,
+          "earnings": 5723163841.80791,
+          "margin": 0.2928947718427794
+        },
+        {
+          "name": "British American Tobacco",
+          "market_cap": 99310000000.0,
+          "revenue": 25600000000.0,
+          "pe": 33.1,
+          "earnings": 3000302114.803625,
+          "margin": 0.1171993013595166
+        },
+        {
+          "name": "GSK plc",
+          "market_cap": 87640000000.0,
+          "revenue": 32670000000.0,
+          "pe": 15.48,
+          "earnings": 5661498708.010336,
+          "margin": 0.17329350192869103
+        },
+        {
+          "name": "BP",
+          "market_cap": 72950000000.0,
+          "revenue": 185930000000.0,
+          "pe": 67.97,
+          "earnings": 1073267618.0667942,
+          "margin": 0.0057724284304135655
+        },
+        {
+          "name": "Barclays",
+          "market_cap": 65700000000.0,
+          "revenue": 26020000000.0,
+          "pe": 11.41,
+          "earnings": 5758106923.751096,
+          "margin": 0.22129542366453098
+        },
+        {
+          "name": "National Grid",
+          "market_cap": 64060000000.0,
+          "revenue": 17480000000.0,
+          "pe": 22.1,
+          "earnings": 2898642533.936651,
+          "margin": 0.16582623191857274
+        },
+        {
+          "name": "Lloyds Banking",
+          "market_cap": 62060000000.0,
+          "revenue": 18620000000.0,
+          "pe": 15.28,
+          "earnings": 4061518324.60733,
+          "margin": 0.21812665545689205
+        },
+        {
+          "name": "BAE Systems",
+          "market_cap": 55470000000.0,
+          "revenue": 27410000000.0,
+          "pe": 26.29,
+          "earnings": 2109927729.174591,
+          "margin": 0.07697656801074758
+        },
+        {
+          "name": "NatWest Group",
+          "market_cap": 52560000000.0,
+          "revenue": 25610000000.0,
+          "pe": 10.25,
+          "earnings": 5127804878.04878,
+          "margin": 0.20022666450795706
+        },
+        {
+          "name": "Standard Chartered",
+          "market_cap": 42110000000.0,
+          "revenue": 25300000000.0,
+          "pe": 13.5,
+          "earnings": 3119259259.259259,
+          "margin": 0.12329087981261894
+        },
+        {
+          "name": "Reckitt Benckiser",
+          "market_cap": 41120000000.0,
+          "revenue": 13980000000.0,
+          "pe": 33.91,
+          "earnings": 1212621645.5322914,
+          "margin": 0.08673974574622971
+        },
+        {
+          "name": "Diageo",
+          "market_cap": 39280000000.0,
+          "revenue": 20250000000.0,
+          "pe": 22.69,
+          "earnings": 1731159100.9255178,
+          "margin": 0.08548933831730952
+        },
+        {
+          "name": "Relx",
+          "market_cap": 38820000000.0,
+          "revenue": 9530000000.0,
+          "pe": 20.82,
+          "earnings": 1864553314.1210375,
+          "margin": 0.19565092488153593
+        },
+        {
+          "name": "London Stock Exchange",
+          "market_cap": 38260000000.0,
+          "revenue": 9140000000.0,
+          "pe": 41.22,
+          "earnings": 928190198.932557,
+          "margin": 0.10155253817642855
+        },
+        {
+          "name": "Compass",
+          "market_cap": 36660000000.0,
+          "revenue": 46070000000.0,
+          "pe": 26.65,
+          "earnings": 1375609756.0975611,
+          "margin": 0.029859122120632974
+        },
+        {
+          "name": "HALEON",
+          "market_cap": 35560000000.0,
+          "revenue": 11020000000.0,
+          "pe": 19.8,
+          "earnings": 1795959595.959596,
+          "margin": 0.1629727401052265
+        },
+        {
+          "name": "Antofagasta",
+          "market_cap": 35180000000.0,
+          "revenue": 7460000000.0,
+          "pe": 43.66,
+          "earnings": 805771873.5684838,
+          "margin": 0.10801231549175387
+        },
+        {
+          "name": "SSE",
+          "market_cap": 30530000000.0,
+          "revenue": 10310000000.0,
+          "pe": 28.98,
+          "earnings": 1053485162.1808144,
+          "margin": 0.10218090806797424
+        },
+        {
+          "name": "Prudential",
+          "market_cap": 29690000000.0,
+          "revenue": 13340000000.0,
+          "pe": 12.3,
+          "earnings": 2413821138.211382,
+          "margin": 0.1809461123096988
+        },
+        {
+          "name": "Tesco",
+          "market_cap": 28740000000.0,
+          "revenue": 71180000000.0,
+          "pe": 19.98,
+          "earnings": 1438438438.4384384,
+          "margin": 0.020208463591436337
+        },
+        {
+          "name": "Fresnillo",
+          "market_cap": 26870000000.0,
+          "revenue": 3940000000.0,
+          "pe": 79.83,
+          "earnings": 336590254.29036707,
+          "margin": 0.08542899855085459
+        },
+        {
+          "name": "Imperial Brands",
+          "market_cap": 26000000000.0,
+          "revenue": 18980000000.0,
+          "pe": 13.25,
+          "earnings": 1962264150.9433963,
+          "margin": 0.10338588782631171
+        },
+        {
+          "name": "Experian",
+          "market_cap": 23250000000.0,
+          "revenue": 7970000000.0,
+          "pe": 23.36,
+          "earnings": 995291095.890411,
+          "margin": 0.12487968580808169
+        },
+        {
+          "name": "InterContinental",
+          "market_cap": 21280000000.0,
+          "revenue": 5120000000.0,
+          "pe": 29.95,
+          "earnings": 710517529.215359,
+          "margin": 0.1387729549248748
+        },
+        {
+          "name": "BT Group",
+          "market_cap": 20250000000.0,
+          "revenue": 20050000000.0,
+          "pe": 21.53,
+          "earnings": 940548072.4570366,
+          "margin": 0.046910128302096586
+        },
+        {
+          "name": "Ashtead Group",
+          "market_cap": 20160000000.0,
+          "revenue": 10860000000.0,
+          "pe": 20.03,
+          "earnings": 1006490264.6030953,
+          "margin": 0.09267866156566255
+        },
+        {
+          "name": "Aviva",
+          "market_cap": 19720000000.0,
+          "revenue": 24260000000.0,
+          "pe": 29.41,
+          "earnings": 670520231.2138728,
+          "margin": 0.027638921319615532
+        },
+        {
+          "name": "IAG",
+          "market_cap": 19600000000.0,
+          "revenue": 33280000000.0,
+          "pe": 7.71,
+          "earnings": 2542153047.989624,
+          "margin": 0.07638681033622668
+        },
+        {
+          "name": "Smurfit Westrock",
+          "market_cap": 16600000000.000002,
+          "revenue": 31140000000.0,
+          "pe": 30.59,
+          "earnings": 542661000.3269043,
+          "margin": 0.01742649326675993
+        },
+        {
+          "name": "Coca Cola HBC AG",
+          "market_cap": 15520000000.0,
+          "revenue": 11200000000.0,
+          "pe": 19.62,
+          "earnings": 791029561.6717634,
+          "margin": 0.07062763943497888
+        },
+        {
+          "name": "Legal & General",
+          "market_cap": 15070000000.0,
+          "revenue": 12450000000.0,
+          "pe": 60.16,
+          "earnings": 250498670.21276596,
+          "margin": 0.020120375117491242
+        },
+        {
+          "name": "Next",
+          "market_cap": 15010000000.0,
+          "revenue": 6400000000.0,
+          "pe": 19.53,
+          "earnings": 768561187.9160266,
+          "margin": 0.12008768561187916
+        },
+        {
+          "name": "Associated British Foods",
+          "market_cap": 13570000000.0,
+          "revenue": 19460000000.0,
+          "pe": 13.54,
+          "earnings": 1002215657.3116692,
+          "margin": 0.05150131846411456
+        },
+        {
+          "name": "Halma",
+          "market_cap": 13300000000.0,
+          "revenue": 2410000000.0,
+          "pe": 38.47,
+          "earnings": 345723940.7330387,
+          "margin": 0.14345391731661358
+        },
+        {
+          "name": "Rentokil",
+          "market_cap": 11680000000.0,
+          "revenue": 5490000000.0,
+          "pe": 61.87,
+          "earnings": 188782931.9540973,
+          "margin": 0.03438669070202137
+        },
+        {
+          "name": "Airtel Africa",
+          "market_cap": 11680000000.0,
+          "revenue": 6010000000.0,
+          "pe": 30.28,
+          "earnings": 385733157.1994716,
+          "margin": 0.06418188971705018
+        },
+        {
+          "name": "Informa",
+          "market_cap": 10710000000.0,
+          "revenue": 3890000000.0,
+          "pe": 150.83,
+          "earnings": 71007094.07942717,
+          "margin": 0.018253751691369453
+        },
+        {
+          "name": "Smith & Nephew",
+          "market_cap": 10680000000.0,
+          "revenue": 5940000000.0,
+          "pe": 30.59,
+          "earnings": 349133703.82477933,
+          "margin": 0.05877671781561942
+        }
+      ],
+      "excluded_companies": [
+        {
+          "name": "3I Group",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Scottish Mortgage",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Segro",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Glencore",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Anglo American",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Vodafone Group PLC",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Flutter Entertainment",
+          "reason": "non_positive_pe"
+        }
+      ]
+    },
+    {
+      "slug": "dax",
+      "name": "DAX 40",
+      "country": "Alemanha",
+      "flag": "🇩🇪",
+      "generated_at": "2026-02-06T16:22:53.139633+00:00",
+      "top_n": 35,
+      "metrics": {
+        "market_cap_total": 1974560000000.0,
+        "earnings_total": 105815495782.0161,
+        "revenue_total": 1625951100000.0,
+        "weighted_pe": 18.66040493792769,
+        "weighted_net_margin": 0.09670234386237457
+      },
+      "companies": [
+        {
+          "name": "SAP",
+          "market_cap": 198460000000.0,
+          "revenue": 36800000000.0,
+          "pe": 27.4,
+          "earnings": 7243065693.430657,
+          "margin": 0.19682243732148524
+        },
+        {
+          "name": "Siemens",
+          "market_cap": 192930000000.0,
+          "revenue": 78910000000.0,
+          "pe": 26.1,
+          "earnings": 7391954022.988505,
+          "margin": 0.09367575748306305
+        },
+        {
+          "name": "Airbus Group",
+          "market_cap": 150280000000.0,
+          "revenue": 72150000000.0,
+          "pe": 29.84,
+          "earnings": 5036193029.490617,
+          "margin": 0.06980170519044514
+        },
+        {
+          "name": "Allianz",
+          "market_cap": 147060000000.0,
+          "revenue": 105020000000.0,
+          "pe": 14.29,
+          "earnings": 10291112666.20014,
+          "margin": 0.09799193169110779
+        },
+        {
+          "name": "Deutsche Tel.",
+          "market_cap": 144710000000.0,
+          "revenue": 121020000000.0,
+          "pe": 12.32,
+          "earnings": 11745941558.441559,
+          "margin": 0.0970578545566151
+        },
+        {
+          "name": "Siemens Energy AG",
+          "market_cap": 124750000000.0,
+          "revenue": 39080000000.0,
+          "pe": 74.75,
+          "earnings": 1668896321.070234,
+          "margin": 0.04270461415225778
+        },
+        {
+          "name": "Rheinmetall",
+          "market_cap": 74260000000.0,
+          "revenue": 11000000000.0,
+          "pe": 86.54,
+          "earnings": 858100300.4391032,
+          "margin": 0.07800911822173666
+        },
+        {
+          "name": "Munchener Ruck",
+          "market_cap": 67629999999.99999,
+          "revenue": 62100000000.0,
+          "pe": 11.1,
+          "earnings": 6092792792.792792,
+          "margin": 0.09811260535898217
+        },
+        {
+          "name": "Deutsche Bank",
+          "market_cap": 59110000000.0,
+          "revenue": 44460000000.0,
+          "pe": 10.09,
+          "earnings": 5858275520.317145,
+          "margin": 0.13176508142863574
+        },
+        {
+          "name": "Mercedes Benz Group",
+          "market_cap": 55490000000.0,
+          "revenue": 136970000000.0,
+          "pe": 8.96,
+          "earnings": 6193080357.142857,
+          "margin": 0.04521486717633684
+        },
+        {
+          "name": "Infineon",
+          "market_cap": 53720000000.0,
+          "revenue": 14900000000.0,
+          "pe": 53.56,
+          "earnings": 1002987303.9581777,
+          "margin": 0.06731458415826695
+        },
+        {
+          "name": "Deutsche Post",
+          "market_cap": 52970000000.0,
+          "revenue": 84050000000.0,
+          "pe": 16.12,
+          "earnings": 3285980148.8833747,
+          "margin": 0.03909554014138459
+        },
+        {
+          "name": "Merck",
+          "market_cap": 52880000000.0,
+          "revenue": 21270000000.0,
+          "pe": 17.82,
+          "earnings": 2967452300.785634,
+          "margin": 0.1395135073241953
+        },
+        {
+          "name": "Volkswagen VZO",
+          "market_cap": 51360000000.0,
+          "revenue": 326050000000.0,
+          "pe": 7.61,
+          "earnings": 6749014454.664914,
+          "margin": 0.02069932358431196
+        },
+        {
+          "name": "E.ON",
+          "market_cap": 46490000000.0,
+          "revenue": 83000000000.0,
+          "pe": 15.44,
+          "earnings": 3011010362.6943007,
+          "margin": 0.036277233285473505
+        },
+        {
+          "name": "Siemens Healthineers",
+          "market_cap": 45770000000.0,
+          "revenue": 23380000000.0,
+          "pe": 26.39,
+          "earnings": 1734369079.1966653,
+          "margin": 0.07418173991431418
+        },
+        {
+          "name": "BASF",
+          "market_cap": 42690000000.0,
+          "revenue": 64300000000.0,
+          "pe": 139.99,
+          "earnings": 304950353.59668547,
+          "margin": 0.004742618251892465
+        },
+        {
+          "name": "Deutsche Borse",
+          "market_cap": 39030000000.0,
+          "revenue": 7300000000.0,
+          "pe": 19.58,
+          "earnings": 1993360572.0122576,
+          "margin": 0.27306309205647367
+        },
+        {
+          "name": "RWE",
+          "market_cap": 37850000000.0,
+          "revenue": 21540000000.0,
+          "pe": 18.4,
+          "earnings": 2057065217.3913045,
+          "margin": 0.09549977796617012
+        },
+        {
+          "name": "Heidelberg Materials",
+          "market_cap": 37400000000.0,
+          "revenue": 21650000000.0,
+          "pe": 22.8,
+          "earnings": 1640350877.1929824,
+          "margin": 0.07576678416595761
+        },
+        {
+          "name": "Commerzbank",
+          "market_cap": 37010000000.0,
+          "revenue": 19730000000.0,
+          "pe": 16.34,
+          "earnings": 2264993880.0489597,
+          "margin": 0.114799487078001
+        },
+        {
+          "name": "Daimler Truck Holding",
+          "market_cap": 33820000000.0,
+          "revenue": 50840000000.0,
+          "pe": 12.57,
+          "earnings": 2690533015.115354,
+          "margin": 0.05292157779534528
+        },
+        {
+          "name": "Henkel",
+          "market_cap": 29980000000.0,
+          "revenue": 21180000000.0,
+          "pe": 14.79,
+          "earnings": 2027045300.8789723,
+          "margin": 0.09570563271383249
+        },
+        {
+          "name": "Hannover Rueckversicherung AG",
+          "market_cap": 29840000000.0,
+          "revenue": 28340000000.0,
+          "pe": 12.09,
+          "earnings": 2468155500.413565,
+          "margin": 0.08709087863138903
+        },
+        {
+          "name": "Fresenius SE",
+          "market_cap": 27730000000.0,
+          "revenue": 22450000000.0,
+          "pe": 25.52,
+          "earnings": 1086598746.0815048,
+          "margin": 0.048400835014766365
+        },
+        {
+          "name": "Adidas",
+          "market_cap": 26980000000.0,
+          "revenue": 24700000000.0,
+          "pe": 22.32,
+          "earnings": 1208781362.0071685,
+          "margin": 0.04893851668045217
+        },
+        {
+          "name": "Beiersdorf",
+          "market_cap": 22500000000.0,
+          "revenue": 9860000000.0,
+          "pe": 26.13,
+          "earnings": 861079219.2881745,
+          "margin": 0.08733054962354711
+        },
+        {
+          "name": "Vonovia",
+          "market_cap": 20960000000.0,
+          "revenue": 7510000000.0,
+          "pe": 7.66,
+          "earnings": 2736292428.1984334,
+          "margin": 0.36435318617822016
+        },
+        {
+          "name": "Mtu Aero Engines Holding AG",
+          "market_cap": 20320000000.0,
+          "revenue": 8449999999.999999,
+          "pe": 23.31,
+          "earnings": 871728871.7288718,
+          "margin": 0.10316318008625704
+        },
+        {
+          "name": "Fresenius Medical Care",
+          "market_cap": 11290000000.0,
+          "revenue": 19640000000.0,
+          "pe": 16.72,
+          "earnings": 675239234.4497608,
+          "margin": 0.03438081641801226
+        },
+        {
+          "name": "Symrise AG",
+          "market_cap": 10270000000.0,
+          "revenue": 4990000000.0,
+          "pe": 20.25,
+          "earnings": 507160493.8271605,
+          "margin": 0.10163536950444098
+        },
+        {
+          "name": "GEA Group AG",
+          "market_cap": 10170000000.0,
+          "revenue": 5440000000.0,
+          "pe": 24.72,
+          "earnings": 411407766.9902913,
+          "margin": 0.07562642775556826
+        },
+        {
+          "name": "Brenntag AG",
+          "market_cap": 8060000000.000001,
+          "revenue": 15650000000.0,
+          "pe": 19.24,
+          "earnings": 418918918.918919,
+          "margin": 0.02676798203954754
+        },
+        {
+          "name": "Zalando SE",
+          "market_cap": 5480000000.0,
+          "revenue": 11570000000.0,
+          "pe": 23.17,
+          "earnings": 236512731.9810099,
+          "margin": 0.02044189559040708
+        },
+        {
+          "name": "Scout24 AG",
+          "market_cap": 5310000000.0,
+          "revenue": 651100000.0,
+          "pe": 23.59,
+          "earnings": 225095379.39805,
+          "margin": 0.3457155266442175
+        }
+      ],
+      "excluded_companies": [
+        {
+          "name": "BMW",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Bayer",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Continental",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Porsche Automobil Holding SE",
+          "reason": "non_positive_pe"
+        }
+      ]
+    },
+    {
+      "slug": "cac40",
+      "name": "CAC 40",
+      "country": "França",
+      "flag": "🇫🇷",
+      "generated_at": "2026-02-06T16:22:53.139633+00:00",
+      "top_n": 37,
+      "metrics": {
+        "market_cap_total": 2475240000000.0,
+        "earnings_total": 116454030165.28703,
+        "revenue_total": 1438920000000.0,
+        "weighted_pe": 21.255082340102877,
+        "weighted_net_margin": 0.10347854647275227
+      },
+      "companies": [
+        {
+          "name": "Louis Vuitton",
+          "market_cap": 265370000000.0,
+          "revenue": 80810000000.0,
+          "pe": 24.42,
+          "earnings": 10866912366.912367,
+          "margin": 0.13447484676292992
+        },
+        {
+          "name": "Hermes International",
+          "market_cap": 213760000000.0,
+          "revenue": 15700000000.0,
+          "pe": 47.75,
+          "earnings": 4476649214.659686,
+          "margin": 0.2851368926534832
+        },
+        {
+          "name": "L'Oreal",
+          "market_cap": 209800000000.0,
+          "revenue": 43840000000.0,
+          "pe": 34.32,
+          "earnings": 6113053613.053613,
+          "margin": 0.13944009153863168
+        },
+        {
+          "name": "Airbus Group",
+          "market_cap": 150310000000.0,
+          "revenue": 72150000000.0,
+          "pe": 29.67,
+          "earnings": 5066059993.259184,
+          "margin": 0.07021566172223401
+        },
+        {
+          "name": "Schneider Electric",
+          "market_cap": 141910000000.0,
+          "revenue": 39320000000.0,
+          "pe": 33.2,
+          "earnings": 4274397590.3614454,
+          "margin": 0.10870797533981295
+        },
+        {
+          "name": "TotalEnergies SE",
+          "market_cap": 133590000000.0,
+          "revenue": 183530000000.0,
+          "pe": 11.86,
+          "earnings": 11263912310.286678,
+          "margin": 0.06137368446731694
+        },
+        {
+          "name": "Safran",
+          "market_cap": 125610000000.0,
+          "revenue": 29380000000.0,
+          "pe": 29.15,
+          "earnings": 4309090909.090909,
+          "margin": 0.14666749180023517
+        },
+        {
+          "name": "EssilorLuxottica",
+          "market_cap": 118300000000.0,
+          "revenue": 27240000000.0,
+          "pe": 49.47,
+          "earnings": 2391348291.8940773,
+          "margin": 0.08778811644251384
+        },
+        {
+          "name": "BNP Paribas",
+          "market_cap": 101890000000.0,
+          "revenue": 47820000000.0,
+          "pe": 9.0,
+          "earnings": 11321111111.11111,
+          "margin": 0.2367442725033691
+        },
+        {
+          "name": "Sanofi",
+          "market_cap": 97090000000.0,
+          "revenue": 46720000000.0,
+          "pe": 19.84,
+          "earnings": 4893649193.548388,
+          "margin": 0.10474420362903226
+        },
+        {
+          "name": "Air Liquide",
+          "market_cap": 97010000000.0,
+          "revenue": 27400000000.0,
+          "pe": 28.28,
+          "earnings": 3430339462.51768,
+          "margin": 0.12519487089480585
+        },
+        {
+          "name": "Axa",
+          "market_cap": 79880000000.0,
+          "revenue": 93210000000.0,
+          "pe": 12.12,
+          "earnings": 6590759075.907591,
+          "margin": 0.07070871232601213
+        },
+        {
+          "name": "Vinci",
+          "market_cap": 73870000000.0,
+          "revenue": 73720000000.0,
+          "pe": 16.06,
+          "earnings": 4599626400.996264,
+          "margin": 0.06239319588980283
+        },
+        {
+          "name": "Engie",
+          "market_cap": 62780000000.0,
+          "revenue": 74350000000.0,
+          "pe": 12.76,
+          "earnings": 4920062695.924765,
+          "margin": 0.06617434695258594
+        },
+        {
+          "name": "Credit Agricole",
+          "market_cap": 54040000000.0,
+          "revenue": 26560000000.0,
+          "pe": 8.14,
+          "earnings": 6638820638.820639,
+          "margin": 0.2499555963411385
+        },
+        {
+          "name": "Thales",
+          "market_cap": 51080000000.0,
+          "revenue": 21350000000.0,
+          "pe": 48.87,
+          "earnings": 1045222017.5977082,
+          "margin": 0.04895653478209406
+        },
+        {
+          "name": "Danone",
+          "market_cap": 44500000000.0,
+          "revenue": 27360000000.0,
+          "pe": 27.04,
+          "earnings": 1645710059.1715977,
+          "margin": 0.06015022146095021
+        },
+        {
+          "name": "Orange",
+          "market_cap": 44030000000.0,
+          "revenue": 40270000000.0,
+          "pe": 40.57,
+          "earnings": 1085284693.1229973,
+          "margin": 0.026950203454755333
+        },
+        {
+          "name": "Saint Gobain",
+          "market_cap": 43130000000.0,
+          "revenue": 46960000000.0,
+          "pe": 15.5,
+          "earnings": 2782580645.16129,
+          "margin": 0.05925427268231027
+        },
+        {
+          "name": "ArcelorMittal",
+          "market_cap": 38740000000.0,
+          "revenue": 61350000000.0,
+          "pe": 14.61,
+          "earnings": 2651608487.33744,
+          "margin": 0.04322100223858908
+        },
+        {
+          "name": "Legrand",
+          "market_cap": 36790000000.0,
+          "revenue": 9390000000.0,
+          "pe": 30.14,
+          "earnings": 1220637027.2063704,
+          "margin": 0.12999329363220133
+        },
+        {
+          "name": "Kering",
+          "market_cap": 30820000000.0,
+          "revenue": 15760000000.0,
+          "pe": 42.3,
+          "earnings": 728605200.9456265,
+          "margin": 0.046231294476245334
+        },
+        {
+          "name": "Dassault Systemes",
+          "market_cap": 29060000000.0,
+          "revenue": 6310000000.0,
+          "pe": 25.29,
+          "earnings": 1149070778.9640174,
+          "margin": 0.1821031345426335
+        },
+        {
+          "name": "Veolia Environnement",
+          "market_cap": 23520000000.0,
+          "revenue": 44600000000.0,
+          "pe": 19.92,
+          "earnings": 1180722891.5662649,
+          "margin": 0.026473607434221186
+        },
+        {
+          "name": "Michelin",
+          "market_cap": 22720000000.0,
+          "revenue": 26740000000.0,
+          "pe": 15.1,
+          "earnings": 1504635761.589404,
+          "margin": 0.0562691010317653
+        },
+        {
+          "name": "STMicro",
+          "market_cap": 21650000000.0,
+          "revenue": 11800000000.0,
+          "pe": 159.74,
+          "earnings": 135532740.7036434,
+          "margin": 0.011485825483359611
+        },
+        {
+          "name": "Pernod Ricard",
+          "market_cap": 20340000000.0,
+          "revenue": 10960000000.0,
+          "pe": 12.46,
+          "earnings": 1632423756.0192616,
+          "margin": 0.1489437733594217
+        },
+        {
+          "name": "Publicis",
+          "market_cap": 19890000000.0,
+          "revenue": 16860000000.0,
+          "pe": 11.72,
+          "earnings": 1697098976.109215,
+          "margin": 0.10065830226033304
+        },
+        {
+          "name": "Capgemini",
+          "market_cap": 19520000000.0,
+          "revenue": 22070000000.0,
+          "pe": 12.99,
+          "earnings": 1502694380.2925327,
+          "margin": 0.0680876474985289
+        },
+        {
+          "name": "Bouygues",
+          "market_cap": 18370000000.0,
+          "revenue": 57160000000.0,
+          "pe": 17.43,
+          "earnings": 1053930005.7372347,
+          "margin": 0.018438243627313413
+        },
+        {
+          "name": "Unibail-Rodamco",
+          "market_cap": 13900000000.0,
+          "revenue": 3610000000.0,
+          "pe": 17.96,
+          "earnings": 773942093.5412027,
+          "margin": 0.21438839156266
+        },
+        {
+          "name": "Eurofins Scientific SE",
+          "market_cap": 13170000000.0,
+          "revenue": 7300000000.0,
+          "pe": 33.26,
+          "earnings": 395971136.5003007,
+          "margin": 0.05424262143839736
+        },
+        {
+          "name": "Eiffage",
+          "market_cap": 12840000000.0,
+          "revenue": 24930000000.0,
+          "pe": 13.06,
+          "earnings": 983154670.7503828,
+          "margin": 0.03943660933615655
+        },
+        {
+          "name": "Bureau Verita",
+          "market_cap": 12380000000.0,
+          "revenue": 6620000000.0,
+          "pe": 19.24,
+          "earnings": 643451143.4511435,
+          "margin": 0.09719805792313346
+        },
+        {
+          "name": "Euronext",
+          "market_cap": 11670000000.0,
+          "revenue": 1780000000.0,
+          "pe": 18.61,
+          "earnings": 627082213.8635143,
+          "margin": 0.35229337857500803
+        },
+        {
+          "name": "Accor",
+          "market_cap": 11400000000.0,
+          "revenue": 5670000000.0,
+          "pe": 22.27,
+          "earnings": 511899416.2550517,
+          "margin": 0.09028208399559995
+        },
+        {
+          "name": "Carrefour",
+          "market_cap": 10510000000.0,
+          "revenue": 88320000000.0,
+          "pe": 30.29,
+          "earnings": 346979201.0564543,
+          "margin": 0.00392865943225152
+        }
+      ],
+      "excluded_companies": [
+        {
+          "name": "SocGen",
+          "reason": "missing_revenue"
+        },
+        {
+          "name": "Stellantis NV",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Renault",
+          "reason": "non_positive_pe"
+        }
+      ]
+    },
+    {
+      "slug": "ibex35",
+      "name": "IBEX 35",
+      "country": "Espanha",
+      "flag": "🇪🇸",
+      "generated_at": "2026-02-06T16:22:53.139633+00:00",
+      "top_n": 25,
+      "metrics": {
+        "market_cap_total": 926570000000.0,
+        "earnings_total": 59099292002.86473,
+        "revenue_total": 550404200000.0,
+        "weighted_pe": 15.678191203290323,
+        "weighted_net_margin": 0.13006832093018714
+      },
+      "companies": [
+        {
+          "name": "Inditex",
+          "market_cap": 177170000000.0,
+          "revenue": 39380000000.0,
+          "pe": 29.32,
+          "earnings": 6042633015.006822,
+          "margin": 0.15344421064009198
+        },
+        {
+          "name": "Santander",
+          "market_cap": 155840000000.0,
+          "revenue": 49980000000.0,
+          "pe": 11.17,
+          "earnings": 13951656222.023277,
+          "margin": 0.2791447823534069
+        },
+        {
+          "name": "Iberdrola",
+          "market_cap": 129419999999.99998,
+          "revenue": 45490000000.0,
+          "pe": 25.03,
+          "earnings": 5170595285.65721,
+          "margin": 0.11366443802280084
+        },
+        {
+          "name": "BBVA",
+          "market_cap": 115290000000.0,
+          "revenue": 59860000000.0,
+          "pe": 11.7,
+          "earnings": 9853846153.846155,
+          "margin": 0.16461487059549207
+        },
+        {
+          "name": "Ferrovial",
+          "market_cap": 42790000000.0,
+          "revenue": 9350000000.0,
+          "pe": 11.99,
+          "earnings": 3568807339.449541,
+          "margin": 0.38169062454005787
+        },
+        {
+          "name": "Aena",
+          "market_cap": 41560000000.0,
+          "revenue": 6170000000.0,
+          "pe": 20.15,
+          "earnings": 2062531017.3697271,
+          "margin": 0.33428379535976127
+        },
+        {
+          "name": "ArcelorMittal",
+          "market_cap": 38790000000.0,
+          "revenue": 61350000000.0,
+          "pe": 14.61,
+          "earnings": 2655030800.8213553,
+          "margin": 0.04327678566945974
+        },
+        {
+          "name": "Endesa",
+          "market_cap": 33220000000.0,
+          "revenue": 21120000000.0,
+          "pe": 15.39,
+          "earnings": 2158544509.4217024,
+          "margin": 0.10220381199913364
+        },
+        {
+          "name": "Naturgy Energy",
+          "market_cap": 25370000000.0,
+          "revenue": 19930000000.0,
+          "pe": 12.75,
+          "earnings": 1989803921.5686274,
+          "margin": 0.09983963480023218
+        },
+        {
+          "name": "ACS",
+          "market_cap": 24590000000.0,
+          "revenue": 48690000000.0,
+          "pe": 28.11,
+          "earnings": 874777659.1960157,
+          "margin": 0.01796626944333571
+        },
+        {
+          "name": "IAG",
+          "market_cap": 22730000000.0,
+          "revenue": 33280000000.0,
+          "pe": 7.71,
+          "earnings": 2948119325.5512323,
+          "margin": 0.08858531627257309
+        },
+        {
+          "name": "Amadeus",
+          "market_cap": 22720000000.0,
+          "revenue": 6440000000.0,
+          "pe": 17.27,
+          "earnings": 1315576143.6016214,
+          "margin": 0.20428200987602815
+        },
+        {
+          "name": "Repsol",
+          "market_cap": 18190000000.0,
+          "revenue": 48910000000.0,
+          "pe": 17.65,
+          "earnings": 1030594900.8498584,
+          "margin": 0.021071251295233254
+        },
+        {
+          "name": "Mapfre",
+          "market_cap": 12150000000.0,
+          "revenue": 30380000000.0,
+          "pe": 10.63,
+          "earnings": 1142991533.3960488,
+          "margin": 0.037623157781305094
+        },
+        {
+          "name": "Acciona",
+          "market_cap": 9970000000.0,
+          "revenue": 21690000000.0,
+          "pe": 11.89,
+          "earnings": 838519764.5079899,
+          "margin": 0.03865927913821991
+        },
+        {
+          "name": "Indra",
+          "market_cap": 8590000000.0,
+          "revenue": 5180000000.0,
+          "pe": 22.39,
+          "earnings": 383653416.7038857,
+          "margin": 0.07406436615905129
+        },
+        {
+          "name": "Redeia Corporacion",
+          "market_cap": 8199999999.999999,
+          "revenue": 1690000000.0,
+          "pe": 22.64,
+          "earnings": 362190812.720848,
+          "margin": 0.2143140903673657
+        },
+        {
+          "name": "Unicaja Banco",
+          "market_cap": 7020000000.0,
+          "revenue": 2420000000.0,
+          "pe": 7.89,
+          "earnings": 889733840.3041825,
+          "margin": 0.3676586116959432
+        },
+        {
+          "name": "Corporacion Acciona Energias Renovables",
+          "market_cap": 6870000000.0,
+          "revenue": 4530000000.0,
+          "pe": 9.33,
+          "earnings": 736334405.1446946,
+          "margin": 0.1625462263012571
+        },
+        {
+          "name": "Grifols",
+          "market_cap": 6600000000.0,
+          "revenue": 7520000000.0,
+          "pe": 19.56,
+          "earnings": 337423312.8834356,
+          "margin": 0.044870121394073884
+        },
+        {
+          "name": "Fluidra SA",
+          "market_cap": 4760000000.0,
+          "revenue": 2250000000.0,
+          "pe": 26.75,
+          "earnings": 177943925.23364487,
+          "margin": 0.07908618899273105
+        },
+        {
+          "name": "Logista",
+          "market_cap": 4420000000.0,
+          "revenue": 13540000000.0,
+          "pe": 15.73,
+          "earnings": 280991735.5371901,
+          "margin": 0.020752713112052443
+        },
+        {
+          "name": "Laboratorios Farmaceuticos ROVI SA",
+          "market_cap": 3720000000.0,
+          "revenue": 724200000.0,
+          "pe": 30.71,
+          "earnings": 121133181.37414522,
+          "margin": 0.16726481824654132
+        },
+        {
+          "name": "Sacyr Valle",
+          "market_cap": 3300000000.0,
+          "revenue": 4730000000.0,
+          "pe": 24.25,
+          "earnings": 136082474.22680414,
+          "margin": 0.028770079117717576
+        },
+        {
+          "name": "Acerinox",
+          "market_cap": 3290000000.0,
+          "revenue": 5800000000.0,
+          "pe": 47.15,
+          "earnings": 69777306.46871686,
+          "margin": 0.012030570080813251
+        }
+      ],
+      "excluded_companies": [
+        {
+          "name": "Merlin Properties SA",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Inmob colonial",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Solaria Energia y Medio Ambiente",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Caixabank",
+          "reason": "missing_revenue"
+        },
+        {
+          "name": "Telefonica",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Cellnex Telecom",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Banco de Sabadell",
+          "reason": "missing_revenue"
+        },
+        {
+          "name": "Bankinter",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Puig Brands",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Enagas",
+          "reason": "non_positive_pe"
+        }
+      ]
+    },
+    {
+      "slug": "ftsemib",
+      "name": "FTSE MIB",
+      "country": "Itália",
+      "flag": "🇮🇹",
+      "generated_at": "2026-02-06T16:22:53.139633+00:00",
+      "top_n": 31,
+      "metrics": {
+        "market_cap_total": 681770000000.0,
+        "earnings_total": 41302699477.99688,
+        "revenue_total": 445380000000.0,
+        "weighted_pe": 16.506669264153018,
+        "weighted_net_margin": 0.15243102171831535
+      },
+      "companies": [
+        {
+          "name": "Intesa",
+          "market_cap": 103260000000.0,
+          "revenue": 25530000000.0,
+          "pe": 11.61,
+          "earnings": 8894056847.54522,
+          "margin": 0.3483766881137963
+        },
+        {
+          "name": "Enel",
+          "market_cap": 95660000000.0,
+          "revenue": 77780000000.0,
+          "pe": 15.99,
+          "earnings": 5982489055.659787,
+          "margin": 0.07691551884365887
+        },
+        {
+          "name": "Assicurazioni Generali",
+          "market_cap": 53650000000.0,
+          "revenue": 56790000000.0,
+          "pe": 14.1,
+          "earnings": 3804964539.0070925,
+          "margin": 0.06700060818818616
+        },
+        {
+          "name": "Eni SpA",
+          "market_cap": 53320000000.0,
+          "revenue": 86560000000.0,
+          "pe": 21.78,
+          "earnings": 2448117539.02663,
+          "margin": 0.028282319073782692
+        },
+        {
+          "name": "Ferrari NV",
+          "market_cap": 49960000000.0,
+          "revenue": 7080000000.0,
+          "pe": 31.22,
+          "earnings": 1600256245.9961565,
+          "margin": 0.226024893502282
+        },
+        {
+          "name": "Leonardo",
+          "market_cap": 30530000000.0,
+          "revenue": 19130000000.0,
+          "pe": 27.89,
+          "earnings": 1094657583.3632126,
+          "margin": 0.057222037813027316
+        },
+        {
+          "name": "Poste Italiane",
+          "market_cap": 29670000000.0,
+          "revenue": 13870000000.0,
+          "pe": 13.71,
+          "earnings": 2164113785.5579867,
+          "margin": 0.15602839117216918
+        },
+        {
+          "name": "Prysmian",
+          "market_cap": 29130000000.0,
+          "revenue": 19490000000.0,
+          "pe": 25.27,
+          "earnings": 1152750296.7946181,
+          "margin": 0.0591457309797136
+        },
+        {
+          "name": "Bper Banca",
+          "market_cap": 24840000000.0,
+          "revenue": 5940000000.0,
+          "pe": 13.65,
+          "earnings": 1819780219.7802198,
+          "margin": 0.30636030636030637
+        },
+        {
+          "name": "STMicro",
+          "market_cap": 21610000000.0,
+          "revenue": 11800000000.0,
+          "pe": 158.58,
+          "earnings": 136271913.2299155,
+          "margin": 0.011548467222874195
+        },
+        {
+          "name": "Snam Rete",
+          "market_cap": 20160000000.0,
+          "revenue": 3760000000.0,
+          "pe": 14.87,
+          "earnings": 1355749831.876261,
+          "margin": 0.36057176379687794
+        },
+        {
+          "name": "Tenaris",
+          "market_cap": 19660000000.0,
+          "revenue": 11830000000.0,
+          "pe": 12.35,
+          "earnings": 1591902834.0080972,
+          "margin": 0.13456490566425167
+        },
+        {
+          "name": "Terna",
+          "market_cap": 18980000000.0,
+          "revenue": 3890000000.0,
+          "pe": 16.46,
+          "earnings": 1153098420.4131227,
+          "margin": 0.2964263291550444
+        },
+        {
+          "name": "Unipol Gruppo",
+          "market_cap": 14060000000.0,
+          "revenue": 10540000000.0,
+          "pe": 12.49,
+          "earnings": 1125700560.4483588,
+          "margin": 0.10680270971995814
+        },
+        {
+          "name": "Moncler SpA",
+          "market_cap": 12940000000.0,
+          "revenue": 3100000000.0,
+          "pe": 21.02,
+          "earnings": 615604186.489058,
+          "margin": 0.19858199564163162
+        },
+        {
+          "name": "Italgas",
+          "market_cap": 10560000000.0,
+          "revenue": 3050000000.0,
+          "pe": 16.53,
+          "earnings": 638838475.4990925,
+          "margin": 0.2094552378685549
+        },
+        {
+          "name": "Recordati",
+          "market_cap": 9720000000.0,
+          "revenue": 2550000000.0,
+          "pe": 24.53,
+          "earnings": 396249490.419894,
+          "margin": 0.1553919570274094
+        },
+        {
+          "name": "Buzzi Unicem",
+          "market_cap": 8870000000.0,
+          "revenue": 4470000000.0,
+          "pe": 9.64,
+          "earnings": 920124481.3278008,
+          "margin": 0.2058444029816109
+        },
+        {
+          "name": "Banca Popolare di Sondrio",
+          "market_cap": 8189999999.999999,
+          "revenue": 1660000000.0,
+          "pe": 12.63,
+          "earnings": 648456057.0071257,
+          "margin": 0.3906361789199553
+        },
+        {
+          "name": "A2A",
+          "market_cap": 7980000000.0,
+          "revenue": 13710000000.0,
+          "pe": 10.86,
+          "earnings": 734806629.8342541,
+          "margin": 0.05359639896675814
+        },
+        {
+          "name": "Campari",
+          "market_cap": 7530000000.0,
+          "revenue": 3070000000.0,
+          "pe": 42.46,
+          "earnings": 177343382.00659445,
+          "margin": 0.05776657394351611
+        },
+        {
+          "name": "Inwit",
+          "market_cap": 7220000000.0,
+          "revenue": 1070000000.0000001,
+          "pe": 18.87,
+          "earnings": 382617912.02967674,
+          "margin": 0.35758683367259503
+        },
+        {
+          "name": "Hera SpA",
+          "market_cap": 6230000000.0,
+          "revenue": 13910000000.0,
+          "pe": 12.2,
+          "earnings": 510655737.7049181,
+          "margin": 0.03671141176886543
+        },
+        {
+          "name": "Saipem",
+          "market_cap": 6040000000.0,
+          "revenue": 15400000000.0,
+          "pe": 18.78,
+          "earnings": 321618743.34398293,
+          "margin": 0.020884333983375514
+        },
+        {
+          "name": "Brunello Cucinelli SpA",
+          "market_cap": 5550000000.0,
+          "revenue": 1340000000.0,
+          "pe": 42.04,
+          "earnings": 132017126.54614653,
+          "margin": 0.09852024369115413
+        },
+        {
+          "name": "Interpump Group",
+          "market_cap": 5180000000.0,
+          "revenue": 2069999999.9999998,
+          "pe": 23.64,
+          "earnings": 219120135.36379018,
+          "margin": 0.10585513785690348
+        },
+        {
+          "name": "Azimut",
+          "market_cap": 5110000000.0,
+          "revenue": 1480000000.0,
+          "pe": 9.85,
+          "earnings": 518781725.8883249,
+          "margin": 0.3505281931677871
+        },
+        {
+          "name": "Iveco NV",
+          "market_cap": 5020000000.0,
+          "revenue": 14550000000.0,
+          "pe": 18.64,
+          "earnings": 269313304.72103006,
+          "margin": 0.018509505479108596
+        },
+        {
+          "name": "Nexi",
+          "market_cap": 4170000000.0,
+          "revenue": 6340000000.0,
+          "pe": 21.31,
+          "earnings": 195682778.0384796,
+          "margin": 0.03086479148871918
+        },
+        {
+          "name": "DiaSorin",
+          "market_cap": 4000000000.0,
+          "revenue": 1210000000.0,
+          "pe": 21.69,
+          "earnings": 184416781.92715535,
+          "margin": 0.15241056357616145
+        },
+        {
+          "name": "Amplifon SpA",
+          "market_cap": 2970000000.0,
+          "revenue": 2410000000.0,
+          "pe": 26.25,
+          "earnings": 113142857.14285715,
+          "margin": 0.04694724362774155
+        }
+      ],
+      "excluded_companies": [
+        {
+          "name": "BCA MPS",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Banca Mediolanum",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "UniCredit",
+          "reason": "missing_revenue"
+        },
+        {
+          "name": "Banco Bpm",
+          "reason": "missing_revenue"
+        },
+        {
+          "name": "Stellantis NV",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Mediobanca",
+          "reason": "missing_revenue"
+        },
+        {
+          "name": "FinecoBank",
+          "reason": "missing_revenue"
+        },
+        {
+          "name": "Telecom Italia",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Lottomatica",
+          "reason": "non_positive_pe"
+        }
+      ]
+    },
+    {
+      "slug": "nikkei225",
+      "name": "Nikkei 225",
+      "country": "Japão",
+      "flag": "🇯🇵",
+      "generated_at": "2026-02-06T16:22:53.139633+00:00",
+      "top_n": 49,
+      "metrics": {
+        "market_cap_total": 584080000000000.0,
+        "earnings_total": 30908924261173.746,
+        "revenue_total": 359810640000000.0,
+        "weighted_pe": 18.896807765441785,
+        "weighted_net_margin": 0.1201787296510367
+      },
+      "companies": [
+        {
+          "name": "Toyota Motor",
+          "market_cap": 49250000000000.0,
+          "revenue": 49390000000000.0,
+          "pe": 10.68,
+          "earnings": 4611423220973.783,
+          "margin": 0.0933675485113137
+        },
+        {
+          "name": "Mitsubishi UFJ Financial",
+          "market_cap": 33210000000000.0,
+          "revenue": 5850000000000.0,
+          "pe": 25.52,
+          "earnings": 1301332288401.254,
+          "margin": 0.22244996382927418
+        },
+        {
+          "name": "Hitachi",
+          "market_cap": 24270000000000.0,
+          "revenue": 10270000000000.0,
+          "pe": 29.84,
+          "earnings": 813337801608.5791,
+          "margin": 0.07919550161719369
+        },
+        {
+          "name": "SoftBank Group Corp.",
+          "market_cap": 22740000000000.0,
+          "revenue": 7510000000000.0,
+          "pe": 7.52,
+          "earnings": 3023936170212.766,
+          "margin": 0.4026546165396493
+        },
+        {
+          "name": "Sumitomo Mitsui Financial",
+          "market_cap": 22400000000000.0,
+          "revenue": 3710000000000.0,
+          "pe": 29.47,
+          "earnings": 760095011876.4846,
+          "margin": 0.20487736169177484
+        },
+        {
+          "name": "Sony",
+          "market_cap": 20910000000000.0,
+          "revenue": 13150000000000.0,
+          "pe": 17.59,
+          "earnings": 1188743604320.6367,
+          "margin": 0.09039875318027656
+        },
+        {
+          "name": "Fast Retailing",
+          "market_cap": 19430000000000.0,
+          "revenue": 3530000000000.0,
+          "pe": 43.42,
+          "earnings": 447489636112.39056,
+          "margin": 0.12676760229812764
+        },
+        {
+          "name": "Tokyo Electron",
+          "market_cap": 18750000000000.0,
+          "revenue": 2490000000000.0,
+          "pe": 34.74,
+          "earnings": 539723661485.31946,
+          "margin": 0.2167564905563532
+        },
+        {
+          "name": "Mizuho Financial",
+          "market_cap": 18000000000000.0,
+          "revenue": 4019999999999.9995,
+          "pe": 17.25,
+          "earnings": 1043478260869.5652,
+          "margin": 0.25957170668397145
+        },
+        {
+          "name": "Advantest Corp.",
+          "market_cap": 17820000000000.0,
+          "revenue": 1030000000000.0,
+          "pe": 64.74,
+          "earnings": 275254865616.3114,
+          "margin": 0.2672377336080693
+        },
+        {
+          "name": "Mitsubishi Corp.",
+          "market_cap": 17410000000000.0,
+          "revenue": 18360000000000.0,
+          "pe": 24.59,
+          "earnings": 708011386742.5782,
+          "margin": 0.03856271169621886
+        },
+        {
+          "name": "Mitsubishi Heavy Industries",
+          "market_cap": 16140000000000.0,
+          "revenue": 5310000000000.0,
+          "pe": 51.37,
+          "earnings": 314191162156.90094,
+          "margin": 0.05916971038736364
+        },
+        {
+          "name": "Mitsui",
+          "market_cap": 14770000000000.0,
+          "revenue": 14040000000000.0,
+          "pe": 17.34,
+          "earnings": 851787773933.1027,
+          "margin": 0.0606686448670301
+        },
+        {
+          "name": "Itochu Corp.",
+          "market_cap": 14400000000000.0,
+          "revenue": 14680000000000.0,
+          "pe": 15.36,
+          "earnings": 937500000000.0,
+          "margin": 0.0638623978201635
+        },
+        {
+          "name": "Chugai Pharmaceutical",
+          "market_cap": 14310000000000.0,
+          "revenue": 1260000000000.0,
+          "pe": 33.0,
+          "earnings": 433636363636.36365,
+          "margin": 0.34415584415584416
+        },
+        {
+          "name": "Keyence",
+          "market_cap": 12930000000000.0,
+          "revenue": 1120000000000.0,
+          "pe": 30.94,
+          "earnings": 417905623787.9767,
+          "margin": 0.3731300212392649
+        },
+        {
+          "name": "NTT Inc",
+          "market_cap": 12470000000000.0,
+          "revenue": 14080000000000.0,
+          "pe": 11.87,
+          "earnings": 1050547598989.0481,
+          "margin": 0.07461275561001762
+        },
+        {
+          "name": "Tokio Marine Holdings, Inc.",
+          "market_cap": 11330000000000.0,
+          "revenue": 8060000000000.001,
+          "pe": 11.01,
+          "earnings": 1029064486830.1544,
+          "margin": 0.12767549464393974
+        },
+        {
+          "name": "Mitsubishi Electric",
+          "market_cap": 11200000000000.0,
+          "revenue": 5680000000000.0,
+          "pe": 29.5,
+          "earnings": 379661016949.1525,
+          "margin": 0.0668417283361184
+        },
+        {
+          "name": "Japan Tobacco",
+          "market_cap": 10690000000000.0,
+          "revenue": 3460000000000.0,
+          "pe": 19.94,
+          "earnings": 536108324974.92474,
+          "margin": 0.15494460259390888
+        },
+        {
+          "name": "KDDI Corp.",
+          "market_cap": 10620000000000.0,
+          "revenue": 6030000000000.0,
+          "pe": 15.44,
+          "earnings": 687823834196.8912,
+          "margin": 0.11406697084525559
+        },
+        {
+          "name": "SoftBank Corp",
+          "market_cap": 10210000000000.0,
+          "revenue": 6790000000000.0,
+          "pe": 19.03,
+          "earnings": 536521282186.02203,
+          "margin": 0.0790163891290165
+        },
+        {
+          "name": "Recruit Holdings",
+          "market_cap": 9790000000000.0,
+          "revenue": 3550000000000.0,
+          "pe": 23.77,
+          "earnings": 411863693731.5945,
+          "margin": 0.1160179418962238
+        },
+        {
+          "name": "Nintendo",
+          "market_cap": 9780000000000.0,
+          "revenue": 2109999999999.9998,
+          "pe": 26.09,
+          "earnings": 374856266768.87695,
+          "margin": 0.1776569984686621
+        },
+        {
+          "name": "Shin-Etsu Chemical",
+          "market_cap": 9570000000000.0,
+          "revenue": 2570000000000.0,
+          "pe": 20.03,
+          "earnings": 477783325012.48126,
+          "margin": 0.1859079085651678
+        },
+        {
+          "name": "Marubeni Corp.",
+          "market_cap": 9270000000000.0,
+          "revenue": 8240000000000.0,
+          "pe": 17.51,
+          "earnings": 529411764705.8823,
+          "margin": 0.06424900057110222
+        },
+        {
+          "name": "Hoya Cor",
+          "market_cap": 8980000000000.0,
+          "revenue": 915210000000.0,
+          "pe": 37.47,
+          "earnings": 239658393381.37177,
+          "margin": 0.2618616420071588
+        },
+        {
+          "name": "Takeda Pharmaceutical",
+          "market_cap": 8710000000000.001,
+          "revenue": 4460000000000.0,
+          "pe": 78.18,
+          "earnings": 111409567664.36429,
+          "margin": 0.0249797236915615
+        },
+        {
+          "name": "Sumitomo Corp.",
+          "market_cap": 7290000000000.0,
+          "revenue": 7360000000000.0,
+          "pe": 13.81,
+          "earnings": 527878349022.4475,
+          "margin": 0.07172260176935429
+        },
+        {
+          "name": "Fujitsu",
+          "market_cap": 6820000000000.0,
+          "revenue": 3590000000000.0,
+          "pe": 21.88,
+          "earnings": 311700182815.3565,
+          "margin": 0.08682456345831657
+        },
+        {
+          "name": "Toyota Tsusho Corp.",
+          "market_cap": 6670000000000.0,
+          "revenue": 11040000000000.0,
+          "pe": 17.28,
+          "earnings": 385995370370.37036,
+          "margin": 0.0349633487654321
+        },
+        {
+          "name": "Honda Motor",
+          "market_cap": 6560000000000.0,
+          "revenue": 21520000000000.0,
+          "pe": 11.13,
+          "earnings": 589398023360.2875,
+          "margin": 0.02738838398514347
+        },
+        {
+          "name": "Komatsu",
+          "market_cap": 6370000000000.0,
+          "revenue": 4059999999999.9995,
+          "pe": 16.87,
+          "earnings": 377593360995.8506,
+          "margin": 0.09300329088567749
+        },
+        {
+          "name": "Aeon",
+          "market_cap": 6230000000000.0,
+          "revenue": 10410000000000.0,
+          "pe": 180.1,
+          "earnings": 34591893392.55969,
+          "margin": 0.0033229484526954554
+        },
+        {
+          "name": "MS&AD Insurance Group Holdings",
+          "market_cap": 6180000000000.0,
+          "revenue": 7200000000000.0,
+          "pe": 8.53,
+          "earnings": 724501758499.414,
+          "margin": 0.10062524423602971
+        },
+        {
+          "name": "Fujikura",
+          "market_cap": 6140000000000.0,
+          "revenue": 1090000000000.0001,
+          "pe": 47.48,
+          "earnings": 129317607413.64786,
+          "margin": 0.11864000680151178
+        },
+        {
+          "name": "Fanuc Corp.",
+          "market_cap": 6120000000000.0,
+          "revenue": 835430000000.0,
+          "pe": 37.82,
+          "earnings": 161819143310.41776,
+          "margin": 0.19369563375796625
+        },
+        {
+          "name": "Sumitomo Electric Industries",
+          "market_cap": 5880000000000.0,
+          "revenue": 4930000000000.0,
+          "pe": 23.74,
+          "earnings": 247683235046.33533,
+          "margin": 0.050240007108790126
+        },
+        {
+          "name": "Murata Mfg Co",
+          "market_cap": 5870000000000.0,
+          "revenue": 1780000000000.0,
+          "pe": 32.25,
+          "earnings": 182015503875.969,
+          "margin": 0.10225590105391516
+        },
+        {
+          "name": "NEC Corp.",
+          "market_cap": 5800000000000.0,
+          "revenue": 3520000000000.0,
+          "pe": 23.54,
+          "earnings": 246389124893.7978,
+          "margin": 0.06999691048119255
+        },
+        {
+          "name": "Denso Corp.",
+          "market_cap": 5780000000000.0,
+          "revenue": 7370000000000.0,
+          "pe": 14.94,
+          "earnings": 386880856760.3748,
+          "margin": 0.0524940104152476
+        },
+        {
+          "name": "Panasonic",
+          "market_cap": 5700000000000.0,
+          "revenue": 7940000000000.0,
+          "pe": 25.22,
+          "earnings": 226011102299.76212,
+          "margin": 0.028464874345058202
+        },
+        {
+          "name": "Japan Post Holdings",
+          "market_cap": 5560000000000.0,
+          "revenue": 11520000000000.0,
+          "pe": 15.86,
+          "earnings": 350567465321.5637,
+          "margin": 0.030431203586941295
+        },
+        {
+          "name": "Orix T",
+          "market_cap": 5440000000000.0,
+          "revenue": 3040000000000.0,
+          "pe": 12.73,
+          "earnings": 427336999214.45404,
+          "margin": 0.1405713813205441
+        },
+        {
+          "name": "Seven & i Holdings",
+          "market_cap": 5400000000000.0,
+          "revenue": 9370000000000.0,
+          "pe": 19.02,
+          "earnings": 283911671924.2902,
+          "margin": 0.030300071710169713
+        },
+        {
+          "name": "Daiichi Sankyo",
+          "market_cap": 5270000000000.0,
+          "revenue": 2049999999999.9998,
+          "pe": 17.42,
+          "earnings": 302525832376.5786,
+          "margin": 0.14757357676906274
+        },
+        {
+          "name": "Daikin Industries",
+          "market_cap": 5270000000000.0,
+          "revenue": 4830000000000.0,
+          "pe": 20.77,
+          "earnings": 253731343283.5821,
+          "margin": 0.05253236920985137
+        },
+        {
+          "name": "Sompo Holdings Inc",
+          "market_cap": 5190000000000.0,
+          "revenue": 5470000000000.0,
+          "pe": 15.91,
+          "earnings": 326209930861.0936,
+          "margin": 0.05963618480093119
+        },
+        {
+          "name": "Dai-ichi Life",
+          "market_cap": 5180000000000.0,
+          "revenue": 9220000000000.0,
+          "pe": 12.94,
+          "earnings": 400309119010.81915,
+          "margin": 0.04341747494694351
+        }
+      ],
+      "excluded_companies": [
+        {
+          "name": "Renesas Electronics Corp",
+          "reason": "non_positive_pe"
+        }
+      ]
+    },
+    {
+      "slug": "nifty50",
+      "name": "Nifty 50",
+      "country": "Índia",
+      "flag": "🇮🇳",
+      "generated_at": "2026-02-06T16:22:53.139633+00:00",
+      "top_n": 46,
+      "metrics": {
+        "market_cap_total": 192060000000000.0,
+        "earnings_total": 8960580460905.346,
+        "revenue_total": 70673220000000.0,
+        "weighted_pe": 21.43387929364064,
+        "weighted_net_margin": 0.15271372454325552
+      },
+      "companies": [
+        {
+          "name": "Reliance Ind",
+          "market_cap": 19650000000000.0,
+          "revenue": 10250000000000.0,
+          "pe": 23.52,
+          "earnings": 835459183673.4694,
+          "margin": 0.08150821304131409
+        },
+        {
+          "name": "HDFC Bank",
+          "market_cap": 14480000000000.0,
+          "revenue": 3480000000000.0,
+          "pe": 19.48,
+          "earnings": 743326488706.3655,
+          "margin": 0.21359956572021996
+        },
+        {
+          "name": "Bharti Airtel",
+          "market_cap": 12400000000000.0,
+          "revenue": 2040000000000.0,
+          "pe": 38.87,
+          "earnings": 319012091587.34247,
+          "margin": 0.15637847626830514
+        },
+        {
+          "name": "Tata Consult",
+          "market_cap": 10650000000000.0,
+          "revenue": 2610000000000.0,
+          "pe": 22.25,
+          "earnings": 478651685393.2584,
+          "margin": 0.1833914503422446
+        },
+        {
+          "name": "ICICI Bank",
+          "market_cap": 10070000000000.0,
+          "revenue": 1940000000000.0,
+          "pe": 19.18,
+          "earnings": 525026068821.6893,
+          "margin": 0.2706319942379842
+        },
+        {
+          "name": "State Bank",
+          "market_cap": 9850000000000.0,
+          "revenue": 5050000000000.0,
+          "pe": 11.79,
+          "earnings": 835453774385.0721,
+          "margin": 0.16543639096734103
+        },
+        {
+          "name": "Hindu Unilever",
+          "market_cap": 6260000000000.0,
+          "revenue": 642430000000.0,
+          "pe": 51.98,
+          "earnings": 120430934974.99039,
+          "margin": 0.18746156775834003
+        },
+        {
+          "name": "Bajaj Finance",
+          "market_cap": 6100000000000.0,
+          "revenue": 412600000000.0,
+          "pe": 33.71,
+          "earnings": 180955206170.27588,
+          "margin": 0.43857296696625275
+        },
+        {
+          "name": "Larsen&Toubro",
+          "market_cap": 5590000000000.0,
+          "revenue": 2830000000000.0,
+          "pe": 32.68,
+          "earnings": 171052631578.94736,
+          "margin": 0.06044262599962804
+        },
+        {
+          "name": "Maruti Suzuki",
+          "market_cap": 4710000000000.0,
+          "revenue": 1720000000000.0,
+          "pe": 31.55,
+          "earnings": 149286846275.75278,
+          "margin": 0.08679467806729813
+        },
+        {
+          "name": "Kotak Mahindra",
+          "market_cap": 4200000000000.0,
+          "revenue": 765440000000.0,
+          "pe": 22.26,
+          "earnings": 188679245283.01886,
+          "margin": 0.24649775982835867
+        },
+        {
+          "name": "Axis Bank",
+          "market_cap": 4170000000000.0,
+          "revenue": 1310000000000.0,
+          "pe": 15.89,
+          "earnings": 262429200755.19193,
+          "margin": 0.20032763416426866
+        },
+        {
+          "name": "ITC",
+          "market_cap": 4090000000000.0,
+          "revenue": 798090000000.0,
+          "pe": 19.97,
+          "earnings": 204807210816.22433,
+          "margin": 0.2566216978238348
+        },
+        {
+          "name": "Sun Pharma AR",
+          "market_cap": 4059999999999.9995,
+          "revenue": 568090000000.0,
+          "pe": 37.28,
+          "earnings": 108905579399.14162,
+          "margin": 0.19170479923804612
+        },
+        {
+          "name": "Mahindra & Mahindra",
+          "market_cap": 4000000000000.0,
+          "revenue": 1780000000000.0,
+          "pe": 28.26,
+          "earnings": 141542816702.05237,
+          "margin": 0.07951843634946762
+        },
+        {
+          "name": "UltraTech",
+          "market_cap": 3740000000000.0,
+          "revenue": 857750000000.0,
+          "pe": 48.75,
+          "earnings": 76717948717.94872,
+          "margin": 0.08944091951961378
+        },
+        {
+          "name": "Titan Company",
+          "market_cap": 3680000000000.0,
+          "revenue": 679040000000.0,
+          "pe": 89.24,
+          "earnings": 41237113402.06186,
+          "margin": 0.06072854824761702
+        },
+        {
+          "name": "Adani Ports & SEZ",
+          "market_cap": 3570000000000.0,
+          "revenue": 364870000000.0,
+          "pe": 26.76,
+          "earnings": 133408071748.87892,
+          "margin": 0.3656317914568995
+        },
+        {
+          "name": "NTPC",
+          "market_cap": 3540000000000.0,
+          "revenue": 1880000000000.0,
+          "pe": 14.6,
+          "earnings": 242465753424.65753,
+          "margin": 0.12897114543864763
+        },
+        {
+          "name": "Oil&Gas Corp",
+          "market_cap": 3380000000000.0,
+          "revenue": 6560000000000.0,
+          "pe": 9.18,
+          "earnings": 368191721132.89764,
+          "margin": 0.056126786758063665
+        },
+        {
+          "name": "Bajaj Finserv Limited",
+          "market_cap": 3230000000000.0,
+          "revenue": 1470000000000.0,
+          "pe": 33.31,
+          "earnings": 96967877514.25998,
+          "margin": 0.06596454252670747
+        },
+        {
+          "name": "Bharat Electronics",
+          "market_cap": 3140000000000.0,
+          "revenue": 265350000000.00003,
+          "pe": 52.59,
+          "earnings": 59707168663.24396,
+          "margin": 0.2250128835999395
+        },
+        {
+          "name": "JSW Steel",
+          "market_cap": 3020000000000.0,
+          "revenue": 1790000000000.0,
+          "pe": 40.52,
+          "earnings": 74531095755.18262,
+          "margin": 0.041637483662113194
+        },
+        {
+          "name": "Adani Enterprises",
+          "market_cap": 2870000000000.0,
+          "revenue": 949950000000.0,
+          "pe": 19.01,
+          "earnings": 150973172014.72906,
+          "margin": 0.15892749304145382
+        },
+        {
+          "name": "Coal India",
+          "market_cap": 2860000000000.0,
+          "revenue": 1310000000000.0,
+          "pe": 8.49,
+          "earnings": 336866902237.92694,
+          "margin": 0.2571503070518526
+        },
+        {
+          "name": "Power Grid",
+          "market_cap": 2720000000000.0,
+          "revenue": 473430000000.0,
+          "pe": 17.54,
+          "earnings": 155074116305.58725,
+          "margin": 0.3275544775480794
+        },
+        {
+          "name": "Bajaj Auto",
+          "market_cap": 2670000000000.0,
+          "revenue": 590240000000.0,
+          "pe": 29.87,
+          "earnings": 89387345162.37027,
+          "margin": 0.15144237117506484
+        },
+        {
+          "name": "Eternal",
+          "market_cap": 2600000000000.0,
+          "revenue": 429050000000.0,
+          "pe": 1158.59,
+          "earnings": 2244107061.16918,
+          "margin": 0.005230409185803938
+        },
+        {
+          "name": "Nestle India Ltd",
+          "market_cap": 2510000000000.0,
+          "revenue": 218580000000.0,
+          "pe": 77.0,
+          "earnings": 32597402597.402596,
+          "margin": 0.14913259491903466
+        },
+        {
+          "name": "Tata Steel Ltd",
+          "market_cap": 2460000000000.0,
+          "revenue": 2220000000000.0,
+          "pe": 36.14,
+          "earnings": 68068622025.45656,
+          "margin": 0.03066154145290836
+        },
+        {
+          "name": "Wipro",
+          "market_cap": 2410000000000.0,
+          "revenue": 908920000000.0,
+          "pe": 18.27,
+          "earnings": 131910235358.51123,
+          "margin": 0.14512854306045772
+        },
+        {
+          "name": "Asian Paints",
+          "market_cap": 2310000000000.0,
+          "revenue": 346500000000.0,
+          "pe": 59.83,
+          "earnings": 38609393280.96273,
+          "margin": 0.11142682043567888
+        },
+        {
+          "name": "Hindalco Ind",
+          "market_cap": 2089999999999.9998,
+          "revenue": 2540000000000.0,
+          "pe": 11.74,
+          "earnings": 178023850085.17886,
+          "margin": 0.07008812995479483
+        },
+        {
+          "name": "SBI Life Insurance",
+          "market_cap": 2000000000000.0,
+          "revenue": 1310000000000.0,
+          "pe": 80.63,
+          "earnings": 24804663276.696022,
+          "margin": 0.018934857463126734
+        },
+        {
+          "name": "Eicher Motors",
+          "market_cap": 1970000000000.0,
+          "revenue": 212910000000.0,
+          "pe": 38.55,
+          "earnings": 51102464332.03632,
+          "margin": 0.24001908943702185
+        },
+        {
+          "name": "Grasim Industries",
+          "market_cap": 1920000000000.0,
+          "revenue": 1600000000000.0,
+          "pe": 44.56,
+          "earnings": 43087971274.685814,
+          "margin": 0.026929982046678635
+        },
+        {
+          "name": "Shriram Finance",
+          "market_cap": 1890000000000.0,
+          "revenue": 199080000000.0,
+          "pe": 20.51,
+          "earnings": 92150170648.46416,
+          "margin": 0.4628801017101877
+        },
+        {
+          "name": "HDFC Life",
+          "market_cap": 1520000000000.0,
+          "revenue": 1040000000000.0,
+          "pe": 80.07,
+          "earnings": 18983389534.15761,
+          "margin": 0.018253259167459242
+        },
+        {
+          "name": "Trent",
+          "market_cap": 1460000000000.0,
+          "revenue": 192060000000.0,
+          "pe": 89.16,
+          "earnings": 16375056078.959175,
+          "margin": 0.08526010662792448
+        },
+        {
+          "name": "Tech Mahindra",
+          "market_cap": 1430000000000.0,
+          "revenue": 551230000000.0,
+          "pe": 31.01,
+          "earnings": 46114156723.637535,
+          "margin": 0.08365683421373571
+        },
+        {
+          "name": "Tata Motors Passenger Vehicles",
+          "market_cap": 1360000000000.0,
+          "revenue": 4019999999999.9995,
+          "pe": 1.45,
+          "earnings": 937931034482.7587,
+          "margin": 0.23331617773202953
+        },
+        {
+          "name": "Tata Consumer Products",
+          "market_cap": 1150000000000.0,
+          "revenue": 194650000000.0,
+          "pe": 77.83,
+          "earnings": 14775793395.862778,
+          "margin": 0.07590954737150156
+        },
+        {
+          "name": "Hero Moto",
+          "market_cap": 1150000000000.0,
+          "revenue": 444810000000.0,
+          "pe": 21.11,
+          "earnings": 54476551397.44197,
+          "margin": 0.12247150782905504
+        },
+        {
+          "name": "Cipla",
+          "market_cap": 1070000000000.0001,
+          "revenue": 279670000000.0,
+          "pe": 23.58,
+          "earnings": 45377438507.20951,
+          "margin": 0.1622535077312887
+        },
+        {
+          "name": "Apollo Hospitals",
+          "market_cap": 1030000000000.0,
+          "revenue": 232650000000.0,
+          "pe": 61.51,
+          "earnings": 16745244675.662495,
+          "margin": 0.07197612153734148
+        },
+        {
+          "name": "Dr Reddy’s Laboratories",
+          "market_cap": 1030000000000.0,
+          "revenue": 345830000000.0,
+          "pe": 18.18,
+          "earnings": 56655665566.556656,
+          "margin": 0.16382519031476928
+        }
+      ],
+      "excluded_companies": [
+        {
+          "name": "Infosys",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "HCL Tech",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Jio Financial Services",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "IndusInd Bank",
+          "reason": "non_positive_pe"
+        }
+      ]
+    },
+    {
+      "slug": "shanghai",
+      "name": "Shanghai Composite",
+      "country": "China",
+      "flag": "🇨🇳",
+      "generated_at": "2026-02-06T16:22:53.139633+00:00",
+      "top_n": 43,
+      "metrics": {
+        "market_cap_total": 24336720000000.0,
+        "earnings_total": 2482630578617.2,
+        "revenue_total": 20411890000000.0,
+        "weighted_pe": 9.802795554687522,
+        "weighted_net_margin": 0.1788602547972712
+      },
+      "companies": [
+        {
+          "name": "ICBC",
+          "market_cap": 2580000000000.0,
+          "revenue": 1360000000000.0,
+          "pe": 7.34,
+          "earnings": 351498637602.1799,
+          "margin": 0.2584548805898381
+        },
+        {
+          "name": "Agricultural Bank China A",
+          "market_cap": 2340000000000.0,
+          "revenue": 1210000000000.0,
+          "pe": 8.53,
+          "earnings": 274325908558.0305,
+          "margin": 0.22671562690746322
+        },
+        {
+          "name": "PetroChina A",
+          "market_cap": 1970000000000.0,
+          "revenue": 2850000000000.0,
+          "pe": 12.53,
+          "earnings": 157222665602.55386,
+          "margin": 0.05516584757984346
+        },
+        {
+          "name": "China Construction Bank Co",
+          "market_cap": 1850000000000.0,
+          "revenue": 1180000000000.0,
+          "pe": 5.42,
+          "earnings": 341328413284.1329,
+          "margin": 0.2892613671899431
+        },
+        {
+          "name": "Bank of China A",
+          "market_cap": 1330000000000.0,
+          "revenue": 1010000000000.0,
+          "pe": 5.49,
+          "earnings": 242258652094.71765,
+          "margin": 0.23986005157892837
+        },
+        {
+          "name": "Ping An Insurance",
+          "market_cap": 1210000000000.0,
+          "revenue": 996470000000.0,
+          "pe": 8.75,
+          "earnings": 138285714285.7143,
+          "margin": 0.13877559212591878
+        },
+        {
+          "name": "Foxconn Industrial Internet",
+          "market_cap": 1080000000000.0001,
+          "revenue": 776690000000.0,
+          "pe": 35.56,
+          "earnings": 30371203599.550056,
+          "margin": 0.03910337921120403
+        },
+        {
+          "name": "Zijin Mining A",
+          "market_cap": 987910000000.0,
+          "revenue": 327440000000.0,
+          "pe": 22.54,
+          "earnings": 43829192546.583855,
+          "margin": 0.13385411845401862
+        },
+        {
+          "name": "China Petrol A",
+          "market_cap": 784810000000.0,
+          "revenue": 2820000000000.0,
+          "pe": 22.07,
+          "earnings": 35560036248.30086,
+          "margin": 0.012609941932021581
+        },
+        {
+          "name": "China Shenhua Energy SH",
+          "market_cap": 753710000000.0,
+          "revenue": 296050000000.0,
+          "pe": 13.47,
+          "earnings": 55954714179.6585,
+          "margin": 0.18900427015591453
+        },
+        {
+          "name": "China Yangtze Power",
+          "market_cap": 648410000000.0,
+          "revenue": 85880000000.0,
+          "pe": 18.98,
+          "earnings": 34162802950.474182,
+          "margin": 0.39779696029895417
+        },
+        {
+          "name": "Postal Savings Bank of China",
+          "market_cap": 612680000000.0,
+          "revenue": 488200000000.0,
+          "pe": 6.41,
+          "earnings": 95581903276.13104,
+          "margin": 0.19578431641976862
+        },
+        {
+          "name": "Bank of Communications Co Ltd",
+          "market_cap": 543240000000.0,
+          "revenue": 428830000000.0,
+          "pe": 5.49,
+          "earnings": 98950819672.13115,
+          "margin": 0.23074602913073047
+        },
+        {
+          "name": "CMOC",
+          "market_cap": 471100000000.0,
+          "revenue": 203760000000.0,
+          "pe": 24.53,
+          "earnings": 19205055034.651447,
+          "margin": 0.09425331289090816
+        },
+        {
+          "name": "China Pacific Insurance",
+          "market_cap": 432430000000.0,
+          "revenue": 335880000000.0,
+          "pe": 8.29,
+          "earnings": 52162846803.37757,
+          "margin": 0.15530203287893762
+        },
+        {
+          "name": "CITIC Securities",
+          "market_cap": 417350000000.0,
+          "revenue": 74830000000.0,
+          "pe": 14.4,
+          "earnings": 28982638888.88889,
+          "margin": 0.3873130948668835
+        },
+        {
+          "name": "China Citic Bank A",
+          "market_cap": 414560000000.0,
+          "revenue": 312000000000.0,
+          "pe": 6.3,
+          "earnings": 65803174603.17461,
+          "margin": 0.21090761090761093
+        },
+        {
+          "name": "Jiangsu Hengrui",
+          "market_cap": 380340000000.0,
+          "revenue": 30980000000.0,
+          "pe": 49.7,
+          "earnings": 7652716297.78672,
+          "margin": 0.24702118456380634
+        },
+        {
+          "name": "People's Insurance",
+          "market_cap": 373810000000.0,
+          "revenue": 627920000000.0,
+          "pe": 5.53,
+          "earnings": 67596745027.12477,
+          "margin": 0.10765184263461074
+        },
+        {
+          "name": "WuXi AppTec",
+          "market_cap": 290270000000.0,
+          "revenue": 43880000000.0,
+          "pe": 19.41,
+          "earnings": 14954662545.079855,
+          "margin": 0.3408081710364598
+        },
+        {
+          "name": "Wanhua Chemical",
+          "market_cap": 272190000000.0,
+          "revenue": 178690000000.0,
+          "pe": 24.59,
+          "earnings": 11069133794.225294,
+          "margin": 0.06194601709231235
+        },
+        {
+          "name": "China CSSC",
+          "market_cap": 255570000000.0,
+          "revenue": 94940000000.0,
+          "pe": 22.57,
+          "earnings": 11323438192.290651,
+          "margin": 0.11926941428576629
+        },
+        {
+          "name": "Beijing-Shanghai High Speed",
+          "market_cap": 244140000000.0,
+          "revenue": 42610000000.0,
+          "pe": 19.48,
+          "earnings": 12532854209.445585,
+          "margin": 0.2941294111580752
+        },
+        {
+          "name": "Advanced Micro Fabrication",
+          "market_cap": 222710000000.0,
+          "revenue": 11620000000.0,
+          "pe": 98.07,
+          "earnings": 2270928928.316509,
+          "margin": 0.19543278212706616
+        },
+        {
+          "name": "COSCO Shipping",
+          "market_cap": 222640000000.0,
+          "revenue": 226720000000.0,
+          "pe": 5.96,
+          "earnings": 37355704697.98658,
+          "margin": 0.16476581112379401
+        },
+        {
+          "name": "Aluminum Corp of China",
+          "market_cap": 221810000000.0,
+          "revenue": 239800000000.0,
+          "pe": 15.62,
+          "earnings": 14200384122.919334,
+          "margin": 0.05921761519149014
+        },
+        {
+          "name": "Foshan Haitian Food",
+          "market_cap": 216430000000.0,
+          "revenue": 28130000000.0,
+          "pe": 30.75,
+          "earnings": 7038373983.739838,
+          "margin": 0.25020881563241515
+        },
+        {
+          "name": "Shaanxi Coal Industry",
+          "market_cap": 214550000000.0,
+          "revenue": 166790000000.0,
+          "pe": 12.23,
+          "earnings": 17542927228.127556,
+          "margin": 0.1051797303682928
+        },
+        {
+          "name": "Shanxi Xinghuacun Fen Wine",
+          "market_cap": 213900000000.0,
+          "revenue": 37580000000.0,
+          "pe": 17.41,
+          "earnings": 12286042504.307869,
+          "margin": 0.3269303487043073
+        },
+        {
+          "name": "Sany Heavy Industry",
+          "market_cap": 210680000000.0,
+          "revenue": 86130000000.0,
+          "pe": 23.69,
+          "earnings": 8893203883.495146,
+          "margin": 0.1032532669626744
+        },
+        {
+          "name": "China State Construction",
+          "market_cap": 209910000000.0,
+          "revenue": 2120000000000.0,
+          "pe": 4.76,
+          "earnings": 44098739495.798325,
+          "margin": 0.02080129221499921
+        },
+        {
+          "name": "Shandong Gold Mining",
+          "market_cap": 207720000000.0,
+          "revenue": 99300000000.0,
+          "pe": 44.92,
+          "earnings": 4624220837.0436325,
+          "margin": 0.046568185670127216
+        },
+        {
+          "name": "NARI Tech",
+          "market_cap": 202440000000.0,
+          "revenue": 63430000000.0,
+          "pe": 25.17,
+          "earnings": 8042908224.076281,
+          "margin": 0.12679975128608356
+        },
+        {
+          "name": "Montage Technology",
+          "market_cap": 202090000000.0,
+          "revenue": 5130000000.0,
+          "pe": 100.65,
+          "earnings": 2007848981.6194732,
+          "margin": 0.3913935636685133
+        },
+        {
+          "name": "Seres",
+          "market_cap": 201700000000.0,
+          "revenue": 149080000000.0,
+          "pe": 23.76,
+          "earnings": 8489057239.057239,
+          "margin": 0.05694296511307512
+        },
+        {
+          "name": "China United Network Comm",
+          "market_cap": 198980000000.0,
+          "revenue": 392450000000.0,
+          "pe": 9.18,
+          "earnings": 21675381263.616558,
+          "margin": 0.05523093709674241
+        },
+        {
+          "name": "Huatai Securities",
+          "market_cap": 197760000000.0,
+          "revenue": 43240000000.0,
+          "pe": 13.52,
+          "earnings": 14627218934.911243,
+          "margin": 0.33827980885548664
+        },
+        {
+          "name": "China Everbright Bank",
+          "market_cap": 195570000000.0,
+          "revenue": 216990000000.0,
+          "pe": 5.7,
+          "earnings": 34310526315.789474,
+          "margin": 0.15812031114700897
+        },
+        {
+          "name": "GigaDevice Semiconductor",
+          "market_cap": 193000000000.0,
+          "revenue": 8539999999.999999,
+          "pe": 136.66,
+          "earnings": 1412264012.8786771,
+          "margin": 0.16537049331132053
+        },
+        {
+          "name": "Bank of Jiangsu",
+          "market_cap": 191400000000.0,
+          "revenue": 138890000000.0,
+          "pe": 5.97,
+          "earnings": 32060301507.53769,
+          "margin": 0.23083232419567778
+        },
+        {
+          "name": "Jiangxi Copper A",
+          "market_cap": 191260000000.0,
+          "revenue": 524760000000.0,
+          "pe": 24.09,
+          "earnings": 7939393939.393939,
+          "margin": 0.015129571498197155
+        },
+        {
+          "name": "China International Travel",
+          "market_cap": 190850000000.0,
+          "revenue": 53320000000.0,
+          "pe": 56.48,
+          "earnings": 3379072237.96034,
+          "margin": 0.0633734478237123
+        },
+        {
+          "name": "China Securities",
+          "market_cap": 188800000000.0,
+          "revenue": 24940000000.0,
+          "pe": 19.34,
+          "earnings": 9762150982.419855,
+          "margin": 0.3914254604017584
+        }
+      ],
+      "excluded_companies": [
+        {
+          "name": "Kweichow Moutai",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "China Life Insurance A",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Guotai Junan Securities",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "New China Life Insurance",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "China Merchants Bank",
+          "reason": "missing_revenue"
+        },
+        {
+          "name": "Industrial Bank",
+          "reason": "missing_revenue"
+        },
+        {
+          "name": "Pudong Development Bank",
+          "reason": "missing_revenue"
+        }
+      ]
+    },
+    {
+      "slug": "tadawul",
+      "name": "Tadawul All Share",
+      "country": "Arábia Saudita",
+      "flag": "🇸🇦",
+      "generated_at": "2026-02-06T16:22:53.139633+00:00",
+      "top_n": 34,
+      "metrics": {
+        "market_cap_total": 7788940000000.0,
+        "earnings_total": 447749744641.88544,
+        "revenue_total": 2135990000000.0,
+        "weighted_pe": 17.395744147726248,
+        "weighted_net_margin": 0.20668021909242862
+      },
+      "companies": [
+        {
+          "name": "Saudi Aramco",
+          "market_cap": 6190000000000.0,
+          "revenue": 1680000000000.0,
+          "pe": 16.97,
+          "earnings": 364761343547.4367,
+          "margin": 0.21711984734966472
+        },
+        {
+          "name": "Ma’aden",
+          "market_cap": 281560000000.0,
+          "revenue": 37910000000.0,
+          "pe": 49.54,
+          "earnings": 5683488090.431974,
+          "margin": 0.14992055105333618
+        },
+        {
+          "name": "Saudi telecom",
+          "market_cap": 220950000000.0,
+          "revenue": 77350000000.0,
+          "pe": 18.75,
+          "earnings": 11784000000.0,
+          "margin": 0.1523464770523594
+        },
+        {
+          "name": "ACWA Power",
+          "market_cap": 143440000000.0,
+          "revenue": 7110000000.0,
+          "pe": 90.17,
+          "earnings": 1590772984.3628702,
+          "margin": 0.22373740989632493
+        },
+        {
+          "name": "Dr Sulaiman",
+          "market_cap": 89250000000.0,
+          "revenue": 13130000000.0,
+          "pe": 39.77,
+          "earnings": 2244153884.837817,
+          "margin": 0.17091804149564488
+        },
+        {
+          "name": "Riyad bank",
+          "market_cap": 85920000000.0,
+          "revenue": 26490000000.0,
+          "pe": 9.04,
+          "earnings": 9504424778.761063,
+          "margin": 0.3587929323805611
+        },
+        {
+          "name": "Saudi Awwal",
+          "market_cap": 73560000000.0,
+          "revenue": 21810000000.0,
+          "pe": 9.11,
+          "earnings": 8074643249.176729,
+          "margin": 0.3702266505812347
+        },
+        {
+          "name": "Alinma",
+          "market_cap": 71350000000.0,
+          "revenue": 17110000000.0,
+          "pe": 12.29,
+          "earnings": 5805532953.620831,
+          "margin": 0.3393064262782484
+        },
+        {
+          "name": "SABIC AgriNutrients",
+          "market_cap": 59690000000.0,
+          "revenue": 12900000000.0,
+          "pe": 13.97,
+          "earnings": 4272727272.7272725,
+          "margin": 0.3312191684284707
+        },
+        {
+          "name": "Al ELM Information Security",
+          "market_cap": 52770000000.0,
+          "revenue": 8790000000.0,
+          "pe": 28.76,
+          "earnings": 1834840055.6328232,
+          "margin": 0.20874175832000263
+        },
+        {
+          "name": "Etihad etisala",
+          "market_cap": 52510000000.0,
+          "revenue": 19150000000.0,
+          "pe": 14.96,
+          "earnings": 3510026737.967914,
+          "margin": 0.18329121347090935
+        },
+        {
+          "name": "Arab bank",
+          "market_cap": 43000000000.0,
+          "revenue": 15220000000.0,
+          "pe": 8.25,
+          "earnings": 5212121212.121212,
+          "margin": 0.3424521164337196
+        },
+        {
+          "name": "Almarai co.",
+          "market_cap": 41740000000.0,
+          "revenue": 22060000000.0,
+          "pe": 16.98,
+          "earnings": 2458186101.295642,
+          "margin": 0.11143182689463473
+        },
+        {
+          "name": "Bank albilad",
+          "market_cap": 39990000000.0,
+          "revenue": 9050000000.0,
+          "pe": 13.21,
+          "earnings": 3027252081.756245,
+          "margin": 0.3345029924592536
+        },
+        {
+          "name": "Nat shipping c",
+          "market_cap": 29160000000.0,
+          "revenue": 9300000000.0,
+          "pe": 15.08,
+          "earnings": 1933687002.65252,
+          "margin": 0.20792333361855053
+        },
+        {
+          "name": "Arabian Internet and Communications",
+          "market_cap": 26390000000.0,
+          "revenue": 12550000000.0,
+          "pe": 17.97,
+          "earnings": 1468558708.9593768,
+          "margin": 0.11701663019596628
+        },
+        {
+          "name": "Bupa arabia",
+          "market_cap": 24130000000.0,
+          "revenue": 19590000000.0,
+          "pe": 22.46,
+          "earnings": 1074354407.836153,
+          "margin": 0.05484198100235595
+        },
+        {
+          "name": "ADES Holding Company SJSC",
+          "market_cap": 20680000000.0,
+          "revenue": 6270000000.0,
+          "pe": 23.95,
+          "earnings": 863465553.2359082,
+          "margin": 0.137713804343845
+        },
+        {
+          "name": "Ncci",
+          "market_cap": 20510000000.0,
+          "revenue": 18570000000.0,
+          "pe": 19.17,
+          "earnings": 1069900886.8022952,
+          "margin": 0.05761447963394158
+        },
+        {
+          "name": "Dar al arkan",
+          "market_cap": 19570000000.0,
+          "revenue": 3820000000.0,
+          "pe": 18.91,
+          "earnings": 1034902168.1649921,
+          "margin": 0.2709167979489508
+        },
+        {
+          "name": "Saudi Tadawul Holding",
+          "market_cap": 18660000000.0,
+          "revenue": 1310000000.0,
+          "pe": 40.66,
+          "earnings": 458927693.06443685,
+          "margin": 0.3503264832552953
+        },
+        {
+          "name": "Saudi inv bank",
+          "market_cap": 17800000000.0,
+          "revenue": 9690000000.0,
+          "pe": 7.33,
+          "earnings": 2428376534.7885404,
+          "margin": 0.25060645353854905
+        },
+        {
+          "name": "Makkah constru",
+          "market_cap": 17460000000.0,
+          "revenue": 1070000000.0000001,
+          "pe": 37.73,
+          "earnings": 462761728.06785053,
+          "margin": 0.4324875963250939
+        },
+        {
+          "name": "Jarir mkting c",
+          "market_cap": 17170000000.000002,
+          "revenue": 11220000000.0,
+          "pe": 16.85,
+          "earnings": 1018991097.9228487,
+          "margin": 0.0908191709378653
+        },
+        {
+          "name": "Al jazira bank",
+          "market_cap": 15940000000.0,
+          "revenue": 8760000000.0,
+          "pe": 13.35,
+          "earnings": 1194007490.6367042,
+          "margin": 0.13630222495852787
+        },
+        {
+          "name": "Electrical Industries",
+          "market_cap": 15050000000.0,
+          "revenue": 2040000000.0,
+          "pe": 28.48,
+          "earnings": 528441011.23595506,
+          "margin": 0.25903971139017407
+        },
+        {
+          "name": "Yansab",
+          "market_cap": 14920000000.0,
+          "revenue": 5710000000.0,
+          "pe": 150.88,
+          "earnings": 98886532.34358431,
+          "margin": 0.017318131758946465
+        },
+        {
+          "name": "SAL Saudi Logistics",
+          "market_cap": 14060000000.0,
+          "revenue": 1610000000.0,
+          "pe": 21.57,
+          "earnings": 651831247.1024572,
+          "margin": 0.40486412863506654
+        },
+        {
+          "name": "Mouwasat med",
+          "market_cap": 13420000000.0,
+          "revenue": 3090000000.0,
+          "pe": 17.75,
+          "earnings": 756056338.028169,
+          "margin": 0.244678426546333
+        },
+        {
+          "name": "Nahdi Medical",
+          "market_cap": 13120000000.0,
+          "revenue": 9990000000.0,
+          "pe": 18.57,
+          "earnings": 706515885.8373721,
+          "margin": 0.07072231089463184
+        },
+        {
+          "name": "Aldrees",
+          "market_cap": 11960000000.0,
+          "revenue": 25760000000.0,
+          "pe": 28.38,
+          "earnings": 421423537.7026075,
+          "margin": 0.0163596093828652
+        },
+        {
+          "name": "Dallah Healthcare",
+          "market_cap": 11810000000.0,
+          "revenue": 3770000000.0,
+          "pe": 22.39,
+          "earnings": 527467619.472979,
+          "margin": 0.1399118354039732
+        },
+        {
+          "name": "Astra industry",
+          "market_cap": 11600000000.0,
+          "revenue": 3000000000.0,
+          "pe": 18.09,
+          "earnings": 641238253.1785517,
+          "margin": 0.21374608439285056
+        },
+        {
+          "name": "ZAIN KSA",
+          "market_cap": 9800000000.0,
+          "revenue": 10790000000.0,
+          "pe": 15.16,
+          "earnings": 646437994.7229551,
+          "margin": 0.059910842884425865
+        }
+      ],
+      "excluded_companies": [
+        {
+          "name": "Al-rajhi bank",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Saudi National Bank",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Banque sa france",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Kingdom Holding",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Jabal omar",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Sa basic industry",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Saudi electric",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Umm Al Qura for Dev Construction",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Riyadh Cables Company CJSC",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Saudi Aramco Base Oil",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Petro rabigh",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Americana Restaurants",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Sahara International Petrochemical",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "flynas",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Rasan Information Tech",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "MBC CJSC",
+          "reason": "non_positive_pe"
+        }
+      ]
+    },
+    {
+      "slug": "jse_top40",
+      "name": "JSE Top 40",
+      "country": "África do Sul",
+      "flag": "🇿🇦",
+      "generated_at": "2026-02-06T16:22:53.139633+00:00",
+      "top_n": 23,
+      "metrics": {
+        "market_cap_total": 4103580000000.0,
+        "earnings_total": 223253432798.03952,
+        "revenue_total": 2679540000000.0,
+        "weighted_pe": 18.38081479227331,
+        "weighted_net_margin": 0.12566350294179823
+      },
+      "companies": [
+        {
+          "name": "FirstRand Ltd",
+          "market_cap": 525429999999.99994,
+          "revenue": 198730000000.0,
+          "pe": 12.58,
+          "earnings": 41767090620.03179,
+          "margin": 0.2101700328084929
+        },
+        {
+          "name": "Capitec Bank",
+          "market_cap": 513530000000.0,
+          "revenue": 32040000000.0,
+          "pe": 33.5,
+          "earnings": 15329253731.343283,
+          "margin": 0.478441127694859
+        },
+        {
+          "name": "Valterra Platinum",
+          "market_cap": 373020000000.0,
+          "revenue": 99110000000.0,
+          "pe": 284.61,
+          "earnings": 1310635606.6195846,
+          "margin": 0.013224050112194376
+        },
+        {
+          "name": "MTN Group",
+          "market_cap": 339330000000.0,
+          "revenue": 206750000000.0,
+          "pe": 44.51,
+          "earnings": 7623680071.893957,
+          "margin": 0.03687390603092603
+        },
+        {
+          "name": "Vodacom Group",
+          "market_cap": 295900000000.0,
+          "revenue": 160270000000.0,
+          "pe": 16.04,
+          "earnings": 18447630922.693268,
+          "margin": 0.11510345618452154
+        },
+        {
+          "name": "Impala Platinum Holdings",
+          "market_cap": 245450000000.0,
+          "revenue": 85460000000.0,
+          "pe": 327.99,
+          "earnings": 748345986.1581146,
+          "margin": 0.00875668132644646
+        },
+        {
+          "name": "Absa",
+          "market_cap": 211410000000.0,
+          "revenue": 164440000000.0,
+          "pe": 9.26,
+          "earnings": 22830453563.714905,
+          "margin": 0.13883759160614756
+        },
+        {
+          "name": "Sanlam Ltd",
+          "market_cap": 210480000000.0,
+          "revenue": 230890000000.0,
+          "pe": 10.8,
+          "earnings": 19488888888.88889,
+          "margin": 0.08440767850010347
+        },
+        {
+          "name": "Discovery Holdings",
+          "market_cap": 156960000000.0,
+          "revenue": 87810000000.0,
+          "pe": 16.89,
+          "earnings": 9293072824.156305,
+          "margin": 0.10583160032065032
+        },
+        {
+          "name": "Bid Corp",
+          "market_cap": 143630000000.0,
+          "revenue": 235590000000.0,
+          "pe": 17.65,
+          "earnings": 8137677053.824364,
+          "margin": 0.03454169130194135
+        },
+        {
+          "name": "Shoprite Holdings",
+          "market_cap": 142700000000.0,
+          "revenue": 252700000000.0,
+          "pe": 19.4,
+          "earnings": 7355670103.092784,
+          "margin": 0.029108310657272592
+        },
+        {
+          "name": "Northam Platinum Holdings",
+          "market_cap": 134180000000.0,
+          "revenue": 32900000000.0,
+          "pe": 95.64,
+          "earnings": 1402969468.8414888,
+          "margin": 0.04264344890095711
+        },
+        {
+          "name": "Nedbank Group",
+          "market_cap": 125640000000.0,
+          "revenue": 125740000000.0,
+          "pe": 7.93,
+          "earnings": 15843631778.058008,
+          "margin": 0.12600311577905207
+        },
+        {
+          "name": "Remgro",
+          "market_cap": 101180000000.0,
+          "revenue": 51510000000.0,
+          "pe": 31.25,
+          "earnings": 3237760000.0,
+          "margin": 0.06285692098621627
+        },
+        {
+          "name": "Mondi",
+          "market_cap": 85530000000.0,
+          "revenue": 7590000000.0,
+          "pe": 23.81,
+          "earnings": 3592188156.2368755,
+          "margin": 0.4732790719679678
+        },
+        {
+          "name": "Bidvest Group Ltd",
+          "market_cap": 82850000000.0,
+          "revenue": 126610000000.0,
+          "pe": 14.09,
+          "earnings": 5880056777.856636,
+          "margin": 0.046442277686254134
+        },
+        {
+          "name": "Clicks",
+          "market_cap": 76280000000.0,
+          "revenue": 47830000000.0,
+          "pe": 23.81,
+          "earnings": 3203695926.0814786,
+          "margin": 0.06698088910895837
+        },
+        {
+          "name": "Sasol Ltd",
+          "market_cap": 70110000000.0,
+          "revenue": 249100000000.0,
+          "pe": 5.88,
+          "earnings": 11923469387.755102,
+          "margin": 0.04786619585610238
+        },
+        {
+          "name": "Old Mutual",
+          "market_cap": 66540000000.00001,
+          "revenue": 107610000000.0,
+          "pe": 10.66,
+          "earnings": 6242026266.416511,
+          "margin": 0.05800600563531745
+        },
+        {
+          "name": "Growthpoint Properties",
+          "market_cap": 63000000000.0,
+          "revenue": 13570000000.0,
+          "pe": 11.55,
+          "earnings": 5454545454.545454,
+          "margin": 0.40195618677564143
+        },
+        {
+          "name": "Woolworths Holdings",
+          "market_cap": 49960000000.0,
+          "revenue": 79540000000.0,
+          "pe": 20.43,
+          "earnings": 2445423396.965247,
+          "margin": 0.030744573761192447
+        },
+        {
+          "name": "Exxaro Resources",
+          "market_cap": 46570000000.0,
+          "revenue": 42320000000.0,
+          "pe": 5.76,
+          "earnings": 8085069444.444445,
+          "margin": 0.19104606437723168
+        },
+        {
+          "name": "Mr Price",
+          "market_cap": 43900000000.0,
+          "revenue": 41430000000.0,
+          "pe": 12.16,
+          "earnings": 3610197368.4210525,
+          "margin": 0.0871396902829122
+        }
+      ],
+      "excluded_companies": [
+        {
+          "name": "BHP Group Ltd",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Anheuser Busch Inbev",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "British American Tobacco",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Prosus",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "AngloGold Ashanti ADR",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Gold Fields",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Naspers",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Investec",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Investec Ltd",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "NEPI Rockcastle",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Reinet Invest",
+          "reason": "outlier_margin"
+        },
+        {
+          "name": "Glencore",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Anglo American",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "Standard Bank Grp",
+          "reason": "missing_revenue"
+        },
+        {
+          "name": "Aspen Pharmacare Holdings",
+          "reason": "non_positive_pe"
+        },
+        {
+          "name": "RMB Holdings",
+          "reason": "non_positive_pe"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+:root {
+  /* --- Palette: Fu Hui (Wisdom/Serenity) --- */
+  /* Neutral Dark Theme foundation */
+  --color-bg-main: #0a0a0a;       /* Almost black, deep void */
+  --color-bg-surface: #141414;    /* Slightly lighter for cards */
+  --color-bg-surface-hover: #1f1f1f;
+  
+  --color-border: #333333;        /* Subtle borders */
+  --color-divider: #222222;
+  
+  /* Typography Colors */
+  --color-text-primary: #e5e5e5;  /* High contrast but not harsh white */
+  --color-text-secondary: #a3a3a3; /* Calmer grey for subtitles */
+  --color-text-tertiary: #525252;  /* Meta info */
+  
+  /* Accents - Restrained */
+  --color-accent-gold: #d4af37;   /* Classic Gold for highlight */
+  --color-accent-blue: #4b6cb7;   /* Deep serene blue */
+  
+  /* Semantic (Financial) - Adjusted for sobriety */
+  --color-positive: #4caf50;      /* Muted Green */
+  --color-negative: #ef5350;      /* Muted Red */
+  --color-warning: #ffb74d;       /* Amber */
+  
+  /* --- Typography --- */
+  /* "Clean, clear, intellectual" */
+  /* We assume Inter/Roboto or system sans-serif for numbers/UI */
+  /* Serif for Headlines if loaded (e.g., Merriweather or Playfair) */
+  --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-serif: "Georgia", serif;
+  
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  
+  /* --- Spacing --- */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  
+  /* --- Borders & Radius --- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  
+  /* --- Shadows (Subtle) --- */
+  --shadow-sm: 0 1px 2px rgba(0,0,0, 0.5);
+  --shadow-md: 0 4px 6px rgba(0,0,0, 0.5);
+}
+
+body {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-sans);
+  margin: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-family-sans); /* Or serif if desired for "Elegant" */
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 0;
+  color: var(--color-text-primary);
+}
+
+.fu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-6);
+}
+
+.fu-card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-6);
+}
+
+/* Scrollbar refinement */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-tertiary);
+}

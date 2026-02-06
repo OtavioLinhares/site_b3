@@ -1,0 +1,1 @@
+{"index": "Nikkei 225", "slug": "nikkei225", "source_file": "data/nikkei225_index.csv", "top_n": 49, "market_cap_total": 584080000000000.0, "earnings_total": 30908924261173.746, "revenue_total": 359810640000000.0, "weighted_pe": 18.896807765441785, "weighted_net_margin": 0.1201787296510367, "excluded_companies": [{"name": "Renesas Electronics Corp", "reason": "non_positive_pe"}]}
