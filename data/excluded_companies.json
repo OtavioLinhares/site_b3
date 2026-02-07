@@ -1,0 +1,486 @@
+{
+  "generated_at": "2026-02-06T21:41:14.169263Z",
+  "schema_version": "1.0",
+  "data": [
+    {
+      "ticker": "ADHM3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "AERI3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "ALPK3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "ASSM3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "ASSM4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "AZEV3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "AZEV4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "AZUL4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BBTG12",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BCAL6",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BIDI11",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BIDI3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BIDI4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BMKS3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BPHA3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BRGE11",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BRGE12",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BRGE3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BRGE5",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BRGE6",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BRGE7",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BRGE8",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "BRPR3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "CAFE3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "CAFE4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "CBMA3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "CORR3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "CORR4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "CSAB3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "CSAB4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "CTNM3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "CTNM4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "CTSA3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "CTSA4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "CTSA8",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "DHBI3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "DHBI4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "DOCA3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "DOCA4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "DUQE3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "DUQE4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "ELEV3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "ENEV3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "EPAR3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "EPAR4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "ESTR3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "ESTR4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "FBMC3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "FBMC4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "FGUI3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "FGUI4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "FICT3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "FIEI3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "FTRX3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "FTRX4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "GAFP3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "GAFP4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "GALO3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "GALO4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "GAZO3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "GAZO4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "GSHP3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "IENG3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "IENG5",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "IGBR3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "IGBR5",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "IGBR6",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "IMBI3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "IMBI4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "INEP3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "INEP4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "ITEC3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "JFEN3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "LIXC3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "LIXC4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "MEND5",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "MEND6",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "MILK33",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "MNPR3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "MNPR4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "MNSA3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "MNSA4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "MTIG3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "MTIG4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "NORD3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "OIBR3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "OIBR4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "ORVR3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "OSXB3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "PDGR3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "PETZ3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "PMAM3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "PMAM4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "PMET5",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "PMET6",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "PRML3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "PRTX3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "RCSL3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "RCSL4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "RHDS4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "RIOS3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "RSID3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "RVEE3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "SEMP3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "SEQL3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "SGPS3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "SJOS3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "SJOS4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "TENE5",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "TENE7",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "TRAD3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "TROR3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "TROR4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "UBBR11",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "UBBR3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "UBBR4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "UCOP4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "VPTA3",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "VPTA4",
+      "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "VTLM3",
+      "reason": "OUTLIER_METRICS"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+[
+    {
+        "exchange": "B3",
+        "country": "Brasil",
+        "flag": "🇧🇷",
+        "p_l": 10.951426703987467,
+        "net_margin": 0.1200017825693436,
+        "market_cap_agg": 6737438400000.0,
+        "top_n": 46
+    },
+    {
+        "exchange": "S&P 500",
+        "country": "Estados Unidos",
+        "flag": "🇺🇸",
+        "p_l": 30.182502392905004,
+        "net_margin": 0.21238297956659694,
+        "market_cap_agg": 37858300000000.0,
+        "top_n": 48
+    },
+    {
+        "exchange": "Nasdaq 100",
+        "country": "Estados Unidos",
+        "flag": "🇺🇸",
+        "p_l": 33.873877534065024,
+        "net_margin": 0.21525449432732005,
+        "market_cap_agg": 30273070000000.0,
+        "top_n": 47
+    },
+    {
+        "exchange": "FTSE 100",
+        "country": "Reino Unido",
+        "flag": "🇬🇧",
+        "p_l": 19.654127223502826,
+        "net_margin": 0.10416240652035957,
+        "market_cap_agg": 2191670000000.0,
+        "top_n": 43
+    },
+    {
+        "exchange": "DAX 40",
+        "country": "Alemanha",
+        "flag": "🇩🇪",
+        "p_l": 18.66040493792769,
+        "net_margin": 0.09670234386237457,
+        "market_cap_agg": 1974560000000.0,
+        "top_n": 35
+    },
+    {
+        "exchange": "CAC 40",
+        "country": "França",
+        "flag": "🇫🇷",
+        "p_l": 21.255082340102877,
+        "net_margin": 0.10347854647275227,
+        "market_cap_agg": 2475240000000.0,
+        "top_n": 37
+    },
+    {
+        "exchange": "IBEX 35",
+        "country": "Espanha",
+        "flag": "🇪🇸",
+        "p_l": 15.678191203290323,
+        "net_margin": 0.13006832093018714,
+        "market_cap_agg": 926570000000.0,
+        "top_n": 25
+    },
+    {
+        "exchange": "FTSE MIB",
+        "country": "Itália",
+        "flag": "🇮🇹",
+        "p_l": 16.506669264153018,
+        "net_margin": 0.15243102171831535,
+        "market_cap_agg": 681770000000.0,
+        "top_n": 31
+    },
+    {
+        "exchange": "Nikkei 225",
+        "country": "Japão",
+        "flag": "🇯🇵",
+        "p_l": 18.896807765441785,
+        "net_margin": 0.1201787296510367,
+        "market_cap_agg": 584080000000000.0,
+        "top_n": 49
+    },
+    {
+        "exchange": "Nifty 50",
+        "country": "Índia",
+        "flag": "🇮🇳",
+        "p_l": 21.43387929364064,
+        "net_margin": 0.15271372454325552,
+        "market_cap_agg": 192060000000000.0,
+        "top_n": 46
+    },
+    {
+        "exchange": "Shanghai Composite",
+        "country": "China",
+        "flag": "🇨🇳",
+        "p_l": 9.802795554687522,
+        "net_margin": 0.1788602547972712,
+        "market_cap_agg": 24336720000000.0,
+        "top_n": 43
+    },
+    {
+        "exchange": "Tadawul All Share",
+        "country": "Arábia Saudita",
+        "flag": "🇸🇦",
+        "p_l": 17.395744147726248,
+        "net_margin": 0.20668021909242862,
+        "market_cap_agg": 7788940000000.0,
+        "top_n": 34
+    },
+    {
+        "exchange": "JSE Top 40",
+        "country": "África do Sul",
+        "flag": "🇿🇦",
+        "p_l": 18.38081479227331,
+        "net_margin": 0.12566350294179823,
+        "market_cap_agg": 4103580000000.0,
+        "top_n": 23
+    }
+]
