@@ -5,9 +5,12 @@ const Footer = () => {
         <footer className="site-footer">
             <div className="fu-container">
                 <div className="footer-content">
-                    <p className="credits">
+                    <div className="credits">
                         Otavio Linhares • 81 9 8863 5515 • otaviobr@gmail.com
-                    </p>
+                    </div>
+                    <div style={{ fontSize: 'var(--font-size-xs)', color: 'var(--color-text-tertiary)', marginTop: 'var(--spacing-2)' }}>
+                        Última atualização: {new Date().toLocaleString('pt-BR')}
+                    </div>
                 </div>
             </div>
 
