@@ -444,7 +444,7 @@ class SelicAnalyzer:
 
         # Explicitly formatted tooltips to remove "Total" and parentheses (User request)
         hovertemplate_ibov = "<b>Ibov</b>: %{y:,.0f}<extra></extra>"
-        hovertemplate_selic = "<b>Selic</b>: %{y:.2f}%<extra></extra>"
+        hovertemplate_selic = "<b>Selic</b>: %{y:.2%}<extra></extra>"
 
         fig.add_trace(go.Scatter(
             x=df_perf.index, 
