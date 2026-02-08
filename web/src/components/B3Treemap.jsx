@@ -571,31 +571,74 @@ const B3Treemap = () => {
 
     return (
         <div className="treemap-section fu-container">
-            <div className="section-header">
-                <div style={{ flex: 1 }}>
-                    <h3 className="section-title">Mapa de Valor da B3</h3>
-                    <p className="section-subtitle">
-                        P/L: Verde (Baixo) → Amarelo (Alto) | Vermelho (Negativo) | Liq. {">"} R$ 1M |
-                        <span style={{ marginLeft: '8px', color: '#4a90e2' }}>Margem Financeiro = ROE</span>
-                    </p>
+            {/* Standardized Header */}
+            <div className="section-header" style={{ display: 'block', textAlign: 'left', marginBottom: 'var(--spacing-12)', maxWidth: '100%' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                    <h2 style={{
+                        fontFamily: 'var(--font-family-serif)',
+                        fontSize: '2.5rem',
+                        lineHeight: '1.2',
+                        marginBottom: 'var(--spacing-6)',
+                        background: 'linear-gradient(to right, var(--color-text-primary), var(--color-text-secondary))',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        display: 'inline-block'
+                    }}>
+                        Mapa de Valor da B3
+                    </h2>
+
+                    <div className="search-container" ref={searchRef} style={{ position: 'relative', marginTop: '10px' }}>
+                        <input type="text" placeholder="Buscar Ação..." className="fu-input" value={searchTerm}
+                            onChange={e => { setSearchTerm(e.target.value); setShowSuggestions(true); }} onFocus={() => setShowSuggestions(true)} />
+                        {showSuggestions && suggestions.length > 0 && (
+                            <div style={{
+                                position: 'absolute', top: '100%', left: 0, right: 0,
+                                background: '#1a202c', border: '1px solid #2d3748',
+                                zIndex: 1000, borderRadius: '4px', overflow: 'hidden'
+                            }}>
+                                {suggestions.map(t => <div key={t} style={{ padding: '8px 12px', cursor: 'pointer', borderBottom: '1px solid #2d3748' }} onClick={() => handleSelectTicker(t)}>{t}</div>)}
+                            </div>
+                        )}
+                    </div>
                 </div>
 
-                <div className="controls-group" style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-                    {/* Sector Multi-filter */}
-                    <div style={{ position: 'relative' }}>
+                <div style={{
+                    marginTop: 'var(--spacing-4)',
+                    borderLeft: '2px solid var(--color-accent-gold)',
+                    paddingLeft: 'var(--spacing-6)',
+                    marginLeft: 'var(--spacing-2)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '12px'
+                }}>
+                    <div style={{
+                        textAlign: 'justify',
+                        color: 'var(--color-text-tertiary)',
+                        fontSize: 'var(--font-size-lg)',
+                        lineHeight: '1.8',
+                        maxWidth: '100%'
+                    }}>
+                        <p style={{ marginBottom: '0' }}>
+                            P/L: Verde (Baixo) → Amarelo (Alto) | Vermelho (Negativo) | Liq. {">"} R$ 1M |
+                            <span style={{ marginLeft: '8px', color: '#4a90e2' }}>Margem Financeiro = ROE</span>
+                        </p>
+                    </div>
+
+                    {/* Sector Multi-filter moved here for flow */}
+                    <div style={{ position: 'relative', alignSelf: 'flex-start' }}>
                         <button
                             className="fu-input"
                             style={{ cursor: 'pointer', minWidth: '160px' }}
                             onClick={() => setShowSectorFilter(!showSectorFilter)}
                         >
-                            {selectedSectors.length === 0 ? 'Todos os Setores' : `${selectedSectors.length} Setores`}
+                            {selectedSectors.length === 0 ? 'Filtrar por Setores (Todos)' : `${selectedSectors.length} Setores Selecionados`}
                         </button>
                         {showSectorFilter && (
                             <div style={{
-                                position: 'absolute', top: '100%', right: 0,
+                                position: 'absolute', top: '100%', left: 0,
                                 background: '#1a202c', border: '1px solid #2d3748',
                                 padding: '10px', zIndex: 1100, borderRadius: '4px',
-                                maxHeight: '400px', overflowY: 'auto', minWidth: '240px',
+                                maxHeight: '400px', overflowY: 'auto', minWidth: '300px',
                                 boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.7)'
                             }}>
                                 <div style={{ marginBottom: '10px' }}>
@@ -646,20 +689,6 @@ const B3Treemap = () => {
                                         <span style={{ fontSize: '13px' }}>{sec}</span>
                                     </label>
                                 ))}
-                            </div>
-                        )}
-                    </div>
-
-                    <div className="search-container" ref={searchRef} style={{ position: 'relative' }}>
-                        <input type="text" placeholder="Buscar Ação..." className="fu-input" value={searchTerm}
-                            onChange={e => { setSearchTerm(e.target.value); setShowSuggestions(true); }} onFocus={() => setShowSuggestions(true)} />
-                        {showSuggestions && suggestions.length > 0 && (
-                            <div style={{
-                                position: 'absolute', top: '100%', left: 0, right: 0,
-                                background: '#1a202c', border: '1px solid #2d3748',
-                                zIndex: 1000, borderRadius: '4px', overflow: 'hidden'
-                            }}>
-                                {suggestions.map(t => <div key={t} style={{ padding: '8px 12px', cursor: 'pointer', borderBottom: '1px solid #2d3748' }} onClick={() => handleSelectTicker(t)}>{t}</div>)}
                             </div>
                         )}
                     </div>

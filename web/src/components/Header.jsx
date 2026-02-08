@@ -1,11 +1,9 @@
 import React from 'react';
 import { TrendingUp, Globe, BarChart3 } from 'lucide-react';
 
-import headerBg from '../assets/header_bg.png';
-
 const Header = () => {
   return (
-    <header className="header-section" style={{ backgroundImage: `url(${headerBg})` }}>
+    <header className="header-section">
       <div className="fu-container">
         <div className="header-content">
           <div className="header-brand">
@@ -45,22 +43,8 @@ const Header = () => {
       <style>{`
         .header-section {
           padding: var(--spacing-16) 0;
-          background-size: cover;
-          background-position: center;
           border-bottom: 1px solid var(--color-border);
           position: relative;
-          overflow: hidden;
-        }
-        /* Overlay for legibility */
-        .header-section::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(10, 10, 10, 0.65); /* Dark overlay - reduced for visibility */
-          z-index: 0;
         }
 
         .fu-container {
@@ -69,7 +53,7 @@ const Header = () => {
         }
         
         .header-content {
-          max-width: 800px;
+          max-width: 100%; /* Full width to match chart/container */
         }
         
         .header-brand {
@@ -103,14 +87,14 @@ const Header = () => {
           font-weight: 400;
           color: var(--color-text-secondary);
           margin-bottom: var(--spacing-6);
-          max-width: 600px;
+          max-width: 100%; /* Full width */
         }
         
         .intro-text {
           font-size: var(--font-size-lg);
           color: var(--color-text-tertiary);
           line-height: 1.8;
-          max-width: 650px;
+          max-width: 100%; /* Match chart width */
           margin-bottom: var(--spacing-8);
           border-left: 2px solid var(--color-accent-gold);
           padding-left: var(--spacing-4);

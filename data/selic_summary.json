@@ -1,0 +1,82 @@
+[
+    {
+        "start_date": "2006-02-01",
+        "end_date": "2008-04-16",
+        "selic_trend": "down",
+        "selic_change": -0.3478260869565217,
+        "selic_return": 0.48618275281098566,
+        "contact_color": "blue"
+    },
+    {
+        "start_date": "2008-04-16",
+        "end_date": "2009-01-21",
+        "selic_trend": "up",
+        "selic_change": 0.2222222222222223,
+        "selic_return": 0.1459729551865725,
+        "contact_color": "red"
+    },
+    {
+        "start_date": "2009-01-21",
+        "end_date": "2010-04-28",
+        "selic_trend": "down",
+        "selic_change": -0.3636363636363637,
+        "selic_return": 0.183759773788309,
+        "contact_color": "blue"
+    },
+    {
+        "start_date": "2010-04-28",
+        "end_date": "2011-08-31",
+        "selic_trend": "up",
+        "selic_change": 0.42857142857142866,
+        "selic_return": 0.22845945831542136,
+        "contact_color": "red"
+    },
+    {
+        "start_date": "2011-08-31",
+        "end_date": "2013-04-17",
+        "selic_trend": "down",
+        "selic_change": -0.42000000000000004,
+        "selic_return": 0.22545483909086417,
+        "contact_color": "red"
+    },
+    {
+        "start_date": "2013-04-17",
+        "end_date": "2016-10-19",
+        "selic_trend": "up",
+        "selic_change": 0.9655172413793103,
+        "selic_return": 0.7380390616386334,
+        "contact_color": "red"
+    },
+    {
+        "start_date": "2016-10-19",
+        "end_date": "2021-03-17",
+        "selic_trend": "down",
+        "selic_change": -0.8596491228070176,
+        "selic_return": 0.4954991951788481,
+        "contact_color": "blue"
+    },
+    {
+        "start_date": "2021-03-17",
+        "end_date": "2023-08-02",
+        "selic_trend": "up",
+        "selic_change": 5.875,
+        "selic_return": 0.396090088442705,
+        "contact_color": "red"
+    },
+    {
+        "start_date": "2023-08-02",
+        "end_date": "2024-09-18",
+        "selic_trend": "down",
+        "selic_change": -0.23636363636363644,
+        "selic_return": 0.19729117428455067,
+        "contact_color": "red"
+    },
+    {
+        "start_date": "2024-09-18",
+        "end_date": "2026-02-06",
+        "selic_trend": "up",
+        "selic_change": 0.42857142857142855,
+        "selic_return": 0.2966445144473453,
+        "contact_color": "blue"
+    }
+]

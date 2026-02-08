@@ -220,6 +220,30 @@ class DataPipeline:
             self.exporter.export_json(rankings, "rankings.json")
             self.exporter.export_excluded_list(self.excluded_data)
             
+            # 5. Selic & Macro Analysis
+            try:
+                self.logger.info("Starting Selic & Macro Analysis...")
+                from etl.selic import SelicAnalyzer
+                selic_analyzer = SelicAnalyzer()
+                selic_analyzer.fetch_data()
+                selic_analyzer.calculate_trends()
+                
+                # Export Summary
+                selic_summary = selic_analyzer.export_comparison_summary()
+                self.exporter.export_json(selic_summary, "selic_summary.json")
+                
+                # Generate Chart
+                # Ensure public directory exists
+                public_dir = os.path.join(os.getcwd(), "web", "public")
+                os.makedirs(public_dir, exist_ok=True)
+                chart_path = os.path.join(public_dir, "selic_analysis.html")
+                selic_analyzer.generate_html_chart(chart_path)
+                self.logger.info(f"Selic Analysis complete. Chart at {chart_path}")
+                
+            except Exception as e:
+                self.logger.error(f"Selic Analysis Failed: {e}")
+                # Don't fail the whole pipeline for this auxiliary task
+            
             self.logger.info(f"Pipeline Finished in {time.time() - start_time:.2f}s")
             
         except Exception as e:

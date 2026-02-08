@@ -5,6 +5,40 @@
   box-sizing: border-box;
 }
 
+html {
+  min-height: 100%;
+  background-color: #050505;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  background-color: #050505;
+  color: var(--color-text-primary);
+  font-family: var(--font-family-sans);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.global-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  /* Changed from -1 to 0 to be behind relative content but above body */
+  background-color: #0a0a0a;
+  background-image: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.95)), url('./assets/header_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;

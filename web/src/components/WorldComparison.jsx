@@ -64,32 +64,61 @@ const WorldComparison = () => {
 
     return (
         <section className="world-section fu-container">
-            <div className="section-header">
-                <h3 className="section-title">B3 vs O Mundo</h3>
-                <div className="toggle-group">
-                    <button
-                        className={`toggle-btn ${metric === 'p_l' ? 'active' : ''}`}
-                        onClick={() => setMetric('p_l')}
-                    >
-                        Preço (P/L)
-                    </button>
-                    <button
-                        className={`toggle-btn ${metric === 'net_margin' ? 'active' : ''}`}
-                        onClick={() => setMetric('net_margin')}
-                    >
-                        Rentabilidade (Margem)
-                    </button>
-                </div>
-            </div>
+            {/* Standardized Header */}
+            <div className="section-header" style={{ display: 'block', textAlign: 'left', marginBottom: 'var(--spacing-12)', maxWidth: '100%' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                    <h2 style={{
+                        fontFamily: 'var(--font-family-serif)',
+                        fontSize: '2.5rem',
+                        lineHeight: '1.2',
+                        marginBottom: 'var(--spacing-6)',
+                        background: 'linear-gradient(to right, var(--color-text-primary), var(--color-text-secondary))',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        display: 'inline-block'
+                    }}>
+                        B3 vs O Mundo
+                    </h2>
 
-            <div className="section-desc">
-                <p>
-                    Comparativo da <strong>B3</strong> com {universeCount} bolsas monitoradas, sempre considerando o maior conjunto disponível de companhias líderes em cada índice.
-                    A leitura pondera {metric === 'p_l' ? 'o múltiplo P/L agregado' : 'a margem líquida média dos últimos anos'} de cada mercado.
-                </p>
-                <p className="section-note">
-                    P/L compara o preço de mercado com o lucro anual médio (quanto maior, mais caro). Margem líquida indica qual parcela da receita se transforma em lucro depois de todos os custos e impostos.
-                </p>
+                    <div className="toggle-group" style={{ marginTop: '10px' }}>
+                        <button
+                            className={`toggle-btn ${metric === 'p_l' ? 'active' : ''}`}
+                            onClick={() => setMetric('p_l')}
+                        >
+                            Preço (P/L)
+                        </button>
+                        <button
+                            className={`toggle-btn ${metric === 'net_margin' ? 'active' : ''}`}
+                            onClick={() => setMetric('net_margin')}
+                        >
+                            Rentabilidade (Margem)
+                        </button>
+                    </div>
+                </div>
+
+                <div style={{
+                    marginTop: 'var(--spacing-4)',
+                    borderLeft: '2px solid var(--color-accent-gold)',
+                    paddingLeft: 'var(--spacing-6)',
+                    marginLeft: 'var(--spacing-2)'
+                }}>
+                    <div className="section-desc" style={{
+                        textAlign: 'justify',
+                        color: 'var(--color-text-tertiary)',
+                        fontSize: 'var(--font-size-lg)',
+                        lineHeight: '1.8',
+                        maxWidth: '100%',
+                        marginBottom: 0
+                    }}>
+                        <p style={{ marginBottom: 'var(--spacing-4)' }}>
+                            Comparativo da <strong>B3</strong> com {universeCount} bolsas monitoradas, sempre considerando o maior conjunto disponível de companhias líderes em cada índice.
+                            A leitura pondera {metric === 'p_l' ? 'o múltiplo P/L agregado' : 'a margem líquida média dos últimos anos'} de cada mercado.
+                        </p>
+                        <p className="section-note" style={{ fontSize: 'var(--font-size-sm)', opacity: 0.8 }}>
+                            P/L compara o preço de mercado com o lucro anual médio (quanto maior, mais caro). Margem líquida indica qual parcela da receita se transforma em lucro depois de todos os custos e impostos.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div className="chart-container fu-card">
@@ -185,7 +214,7 @@ const WorldComparison = () => {
         }
         .section-desc {
           margin-bottom: var(--spacing-8);
-          max-width: 800px;
+          max-width: 100%;
           color: var(--color-text-secondary);
         }
         .section-note {

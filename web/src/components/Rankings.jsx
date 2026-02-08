@@ -71,10 +71,40 @@ const Rankings = () => {
 
     return (
         <section className="rankings-section fu-container">
-            <h3 className="section-title">Estratégias de Seleção</h3>
-            <p className="section-subtitle">
-                Filtros quantitativos fundamentados em métricas essenciais de valuation, rentabilidade e crescimento.
-            </p>
+            {/* Standardized Header */}
+            <div style={{ textAlign: 'left', marginBottom: 'var(--spacing-12)', maxWidth: '100%' }}>
+                <h2 style={{
+                    fontFamily: 'var(--font-family-serif)',
+                    fontSize: '2.5rem',
+                    lineHeight: '1.2',
+                    marginBottom: 'var(--spacing-6)',
+                    background: 'linear-gradient(to right, var(--color-text-primary), var(--color-text-secondary))',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    display: 'inline-block'
+                }}>
+                    Estratégias de Seleção
+                </h2>
+
+                <div style={{
+                    marginTop: 'var(--spacing-4)',
+                    borderLeft: '2px solid var(--color-accent-gold)',
+                    paddingLeft: 'var(--spacing-6)',
+                    marginLeft: 'var(--spacing-2)'
+                }}>
+                    <div style={{
+                        textAlign: 'justify',
+                        color: 'var(--color-text-tertiary)',
+                        fontSize: 'var(--font-size-lg)',
+                        lineHeight: '1.8',
+                        maxWidth: '100%'
+                    }}>
+                        <p style={{ marginBottom: 0 }}>
+                            Filtros quantitativos fundamentados em métricas essenciais de valuation, rentabilidade e crescimento.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <div className="rankings-grid">
                 <RankingTable

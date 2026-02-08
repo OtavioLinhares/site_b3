@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import WorldComparison from './components/WorldComparison';
+import SelicAnalysis from './components/SelicAnalysis';
 import B3Treemap from './components/B3Treemap';
 
 import Rankings from './components/Rankings';
@@ -26,34 +27,25 @@ class ErrorBoundary extends React.Component {
   }
 }
 
+import LegalDisclaimer from './components/LegalDisclaimer';
+import Footer from './components/Footer';
+
 function App() {
   return (
     <ErrorBoundary>
-      <div className="app-layout">
+      <div className="app-layout" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="global-bg" style={{ position: 'fixed', zIndex: -1 }} />
         <Header />
 
         <main className="main-content">
+          <SelicAnalysis />
           <WorldComparison />
           <B3Treemap />
           <Rankings />
+          <LegalDisclaimer />
         </main>
 
-        <footer className="app-footer">
-          <div className="fu-container">
-            <p>© {new Date().getFullYear()} Análise Ações.</p>
-          </div>
-        </footer>
-
-        <style>{`
-        .app-footer {
-          padding: var(--spacing-8) 0;
-          margin-top: var(--spacing-16);
-          border-top: 1px solid var(--color-divider);
-          text-align: center;
-          font-size: var(--font-size-sm);
-          color: var(--color-text-tertiary);
-        }
-      `}</style>
+        <Footer />
       </div>
     </ErrorBoundary>
   );
