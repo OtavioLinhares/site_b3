@@ -629,7 +629,7 @@ const B3Treemap = () => {
                         </span>
                         <span style={{ color: 'var(--color-divider)' }}>|</span>
                         <span>
-                        Filtro: Liq. diária > R$ 1M
+                            Filtro: Liq. diária &gt; R$ 1M
                         </span>
                     </div>
                     {/*
