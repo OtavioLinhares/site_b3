@@ -112,7 +112,7 @@ const WorldComparison = () => {
                     }}>
                         <p style={{ marginBottom: 'var(--spacing-4)' }}>
                             Comparativo da <strong>B3</strong> com {universeCount} bolsas globais.
-                            Enquanto a rentabilidade das empresas brasileiras segue a média mundial, o Brasil se destaca como um dos mercados mais baratos pelo múltiplo P/L, indicando desconto.
+                            Enquanto a rentabilidade das empresas brasileiras segue a média mundial, <strong style={{ color: 'var(--color-positive)' }}>o Brasil se destaca como um dos mercados mais baratos</strong> pelo múltiplo P/L, indicando desconto.
                             Já as bolsas com as maiores margens tendem a apresentar um preço (P/L) elevado, tornando o investimento nesses mercados comparativamente mais caro.
                         </p>
                         <p className="section-note" style={{ fontSize: 'var(--font-size-sm)', opacity: 0.8 }}>
