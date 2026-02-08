@@ -445,7 +445,8 @@ class SelicAnalyzer:
         fig.add_trace(go.Scatter(x=df_perf.index, y=df_perf['Taxa Selic Anual'], name=name_selic, mode='lines', line=dict(color='#ff8a80', width=2, dash='dot'), yaxis='y2'))
         
         # Save
-        fig.write_html(output_path)
+        # Save with CDN to reduce file size (Fix for deployment timeout/failure)
+        fig.write_html(output_path, include_plotlyjs='cdn', config={'responsive': True})
         logger.info(f"Chart saved to {output_path}")
 
 # Standalone execution
