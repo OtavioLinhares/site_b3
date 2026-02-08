@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, Globe, BarChart3 } from 'lucide-react';
+import { TrendingUp, Globe, BarChart3, Cpu, ShieldAlert, Sparkles } from 'lucide-react';
 
 const Header = () => {
   return (
@@ -36,6 +36,18 @@ const Header = () => {
             <div className="stat-item">
               <BarChart3 size={20} className="stat-icon" />
               <span>Dados Diários</span>
+            </div>
+            <div className="stat-item">
+              <Cpu size={20} className="stat-icon" />
+              <span>Simulação de Estratégias</span>
+            </div>
+            <div className="stat-item">
+              <ShieldAlert size={20} className="stat-icon" />
+              <span>Cálculo de Risco</span>
+            </div>
+            <div className="stat-item">
+              <Sparkles size={20} className="stat-icon" />
+              <span>Previsão do Oráculo</span>
             </div>
           </div>
         </div>
