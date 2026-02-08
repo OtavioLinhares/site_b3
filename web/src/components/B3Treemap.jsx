@@ -612,18 +612,35 @@ const B3Treemap = () => {
                     gap: '12px'
                 }}>
                     <div style={{
-                        textAlign: 'justify',
+                        marginBottom: 'var(--spacing-4)',
                         color: 'var(--color-text-tertiary)',
-                        fontSize: 'var(--font-size-lg)',
-                        lineHeight: '1.8',
-                        maxWidth: '100%'
+                        fontSize: 'var(--font-size-sm)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 'var(--spacing-4)',
+                        flexWrap: 'wrap'
                     }}>
-                        <p style={{ marginBottom: '0' }}>
-                            P/L: Verde (Baixo) → Amarelo (Alto) | Vermelho (Negativo) | Liq. {">"} R$ 1M |
-                            <span style={{ marginLeft: '8px', color: '#4a90e2' }}>Margem Financeiro = ROE</span>
-                        </p>
+                        <span>
+                            <strong style={{ color: 'var(--color-text-secondary)' }}>Cor:</strong> P/L (Preço/Lucro)
+                        </span>
+                        <span style={{ color: 'var(--color-divider)' }}>|</span>
+                        <span>
+                            <strong style={{ color: 'var(--color-text-secondary)' }}>Tamanho:</strong> Valor de Mercado
+                        </span>
+                        <span style={{ color: 'var(--color-divider)' }}>|</span>
+                        <span>
+                        Filtro: Liq. diária > R$ 1M
+                        </span>
                     </div>
-
+                    {/*
+                <p style={{
+                    marginBottom: 'var(--spacing-6)',
+                     color: 'var(--color-text-tertiary)',
+                     fontSize: 'var(--font-size-xs)'
+                }}>
+                    * A intensidade da cor indica se a ação está descontada (Verde Escuro) ou cara (Amarelo). Vermelho indica prejuízo.
+                </p>
+                */}
                     {/* Sector Multi-filter moved here for flow */}
                     <div style={{ position: 'relative', alignSelf: 'flex-start' }}>
                         <button
