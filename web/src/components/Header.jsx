@@ -23,8 +23,9 @@ const Header = () => {
             Este projeto busca reduzir a complexidade do mercado financeiro através de uma
             <strong> abordagem objetiva, simples e holística</strong>.
             Porque o simples funciona: se ficar complicado, é porque não está certo.
-            Comparamos a B3 com as maiores bolsas do mundo, destacamos os segmentos vitais
-            e identificamos ativos com valor real intrínseco.
+            Aqui, unimos o passado, presente e futuro: comparamos a B3 globalmente e identificamos valor real (<strong>Hoje</strong>),
+            simulamos estratégias históricas (<strong>Passado</strong>), projetamos tendências com IA (<strong>Futuro</strong>)
+            e quantificamos a exposição real dos seus investimentos (<strong>Risco</strong>).
           </p>
 
           <div className="header-stats">

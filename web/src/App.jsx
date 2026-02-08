@@ -1,10 +1,13 @@
 import React from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import WorldComparison from './components/WorldComparison';
-import SelicAnalysis from './components/SelicAnalysis';
-import B3Treemap from './components/B3Treemap';
-
-import Rankings from './components/Rankings';
+import Navigation from './components/Navigation';
+import Today from './pages/Today';
+import Past from './pages/Past';
+import Future from './pages/Future';
+import Risk from './pages/Risk';
+import Footer from './components/Footer';
+import LegalDisclaimer from './components/LegalDisclaimer';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -27,26 +30,29 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-import LegalDisclaimer from './components/LegalDisclaimer';
-import Footer from './components/Footer';
-
 function App() {
   return (
     <ErrorBoundary>
-      <div className="app-layout" style={{ position: 'relative', zIndex: 1 }}>
-        <div className="global-bg" style={{ position: 'fixed', zIndex: -1 }} />
-        <Header />
+      <HashRouter>
+        <div className="app-layout" style={{ position: 'relative', zIndex: 1, minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+          <div className="global-bg" style={{ position: 'fixed', zIndex: -1 }} />
 
-        <main className="main-content">
-          <SelicAnalysis />
-          <WorldComparison />
-          <B3Treemap />
-          <Rankings />
-          <LegalDisclaimer />
-        </main>
+          <Header />
+          <Navigation />
 
-        <Footer />
-      </div>
+          <main className="main-content" style={{ flex: 1 }}>
+            <Routes>
+              <Route path="/" element={<Today />} />
+              <Route path="/passado" element={<Past />} />
+              <Route path="/futuro" element={<Future />} />
+              <Route path="/risco" element={<Risk />} />
+            </Routes>
+            <LegalDisclaimer />
+          </main>
+
+          <Footer />
+        </div>
+      </HashRouter>
     </ErrorBoundary>
   );
 }
