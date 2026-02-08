@@ -437,12 +437,33 @@ class SelicAnalyzer:
                     pass
 
         # Traces with Total Returns in Legend
+        # Traces with Total Returns in Legend
         # Multiply by 100 for correct percentage display
         name_ibov = f"Ibovespa (Total: {total_ibov_return * 100:+.1f}%)"
         name_selic = f"Selic (Total: {total_selic_return * 100:+.1f}%)"
 
-        fig.add_trace(go.Scatter(x=df_perf.index, y=df_perf['Ibovespa'], name=name_ibov, mode='lines', line=dict(color='#6c8dd9', width=2), yaxis='y1'))
-        fig.add_trace(go.Scatter(x=df_perf.index, y=df_perf['Taxa Selic Anual'], name=name_selic, mode='lines', line=dict(color='#ff8a80', width=2, dash='dot'), yaxis='y2'))
+        # Explicitly formatted tooltips to remove "Total" and parentheses (User request)
+        hovertemplate_ibov = "<b>Ibov</b>: %{y:,.0f}<extra></extra>"
+        hovertemplate_selic = "<b>Selic</b>: %{y:.2f}%<extra></extra>"
+
+        fig.add_trace(go.Scatter(
+            x=df_perf.index, 
+            y=df_perf['Ibovespa'], 
+            name=name_ibov, 
+            mode='lines', 
+            line=dict(color='#6c8dd9', width=2), 
+            yaxis='y1',
+            hovertemplate=hovertemplate_ibov
+        ))
+        fig.add_trace(go.Scatter(
+            x=df_perf.index, 
+            y=df_perf['Taxa Selic Anual'], 
+            name=name_selic, 
+            mode='lines', 
+            line=dict(color='#ff8a80', width=2, dash='dot'), 
+            yaxis='y2',
+            hovertemplate=hovertemplate_selic
+        ))
         
         # Save
         # Save with CDN to reduce file size (Fix for deployment timeout/failure)
