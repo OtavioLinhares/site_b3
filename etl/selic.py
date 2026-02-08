@@ -336,6 +336,13 @@ class SelicAnalyzer:
             plot_bgcolor='rgba(0,0,0,0)', # Transparent plot area
             font=dict(color='#e5e5e5'), # Light text for dark mode
             
+            # Tooltip Styling (Fix for White on White issue)
+            hoverlabel=dict(
+                bgcolor="#1a1a1a",     # Dark background
+                font=dict(color="white"), # White text
+                bordercolor="#333"
+            ),
+            
             # User requested legend in bottom right corner without white box
             legend=dict(
                 x=0.99, y=0.01, 
