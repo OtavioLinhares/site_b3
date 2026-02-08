@@ -89,8 +89,8 @@ const SelicAnalysis = () => {
                     // background: '#fff' // Removed white theme per user request
                 }}>
                     <iframe
-                        src={`${import.meta.env.BASE_URL}selic_analysis.html`}
-                        title="Selic Analysis Chart"
+                        src={`${import.meta.env.BASE_URL}selic_analysis.html?v=2`}
+                        title="Gráfico Interativo: Ibovespa vs Selic"
                         style={{ width: '100%', height: '100%', border: 'none' }}
                     />
                 </div>
