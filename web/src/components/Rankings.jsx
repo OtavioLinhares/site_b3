@@ -47,7 +47,7 @@ const Rankings = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`/data/rankings.json?t=${Date.now()}`)
+        fetch(`${import.meta.env.BASE_URL}data/rankings.json?t=${Date.now()}`)
             .then(res => res.json())
             .then(data => {
                 // Apply strict liquidity filter

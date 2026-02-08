@@ -210,7 +210,7 @@ const B3Treemap = () => {
     const searchRef = useRef(null);
 
     useEffect(() => {
-        fetch('/data/b3_stocks.json')
+        fetch(`${import.meta.env.BASE_URL}data/b3_stocks.json`)
             .then(res => res.json())
             .then(fetched => { setData(fetched.data || []); setLoading(false); })
             .catch(err => { setError(err.message); setLoading(false); });

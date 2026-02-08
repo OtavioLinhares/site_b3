@@ -89,7 +89,7 @@ const SelicAnalysis = () => {
                     // background: '#fff' // Removed white theme per user request
                 }}>
                     <iframe
-                        src="/selic_analysis.html"
+                        src={`${import.meta.env.BASE_URL}selic_analysis.html`}
                         title="Selic Analysis Chart"
                         style={{ width: '100%', height: '100%', border: 'none' }}
                     />

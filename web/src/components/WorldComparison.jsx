@@ -7,7 +7,7 @@ const WorldComparison = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/data/world_comparison.json')
+        fetch(`${import.meta.env.BASE_URL}data/world_comparison.json`)
             .then(res => res.json())
             .then(fetchedData => {
                 // Sort initial data locally if needed, but usually frontend handles sorting based on metric
