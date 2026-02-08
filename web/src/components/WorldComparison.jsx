@@ -111,8 +111,9 @@ const WorldComparison = () => {
                         marginBottom: 0
                     }}>
                         <p style={{ marginBottom: 'var(--spacing-4)' }}>
-                            Comparativo da <strong>B3</strong> com {universeCount} bolsas monitoradas, sempre considerando o maior conjunto disponível de companhias líderes em cada índice.
-                            A leitura pondera {metric === 'p_l' ? 'o múltiplo P/L agregado' : 'a margem líquida média dos últimos anos'} de cada mercado.
+                            Comparativo da <strong>B3</strong> com {universeCount} bolsas globais.
+                            Enquanto a rentabilidade das empresas brasileiras segue a média mundial, o Brasil se destaca como um dos mercados mais baratos pelo múltiplo P/L, indicando desconto.
+                            Já as bolsas com as maiores margens tendem a apresentar um preço (P/L) elevado, tornando o investimento nesses mercados comparativamente mais caro.
                         </p>
                         <p className="section-note" style={{ fontSize: 'var(--font-size-sm)', opacity: 0.8 }}>
                             P/L compara o preço de mercado com o lucro anual médio (quanto maior, mais caro). Margem líquida indica qual parcela da receita se transforma em lucro depois de todos os custos e impostos.
