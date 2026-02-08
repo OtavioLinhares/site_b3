@@ -4,7 +4,7 @@ const SelicAnalysis = () => {
     const cards = [
         {
             title: "O que é (e o que não é) o Ibovespa",
-            text: "O Ibovespa reflete as ações mais negociadas da bolsa, não necessariamente as melhores empresas. Por isso, seu desempenho depende fortemente da composição e concentração do índice em determinados períodos.",
+            text: "O Ibovespa reflete as ações mais negociadas da bolsa, não necessariamente as melhores empresas. Empresas em condições adversas costumam ser intensamente negociadas, sobretudo por operações de curto prazo, o que contribui para sua inclusão e relevância no índice.",
             color: "var(--color-accent-blue)"
         },
         {
