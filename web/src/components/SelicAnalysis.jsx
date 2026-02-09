@@ -75,6 +75,9 @@ const SelicAnalysis = () => {
                             <p>
                                 No longo prazo, a análise mostra que a Selic superou o Ibovespa, reforçando que investir em ações exige seleção criteriosa e leitura correta dos ciclos econômicos — e não apenas acompanhar um índice amplo.
                             </p>
+                            <p style={{ marginTop: 'var(--spacing-4)' }}>
+                                A análise reforça que, para o investidor que não possui uma postura proativa na escolha de suas ações — ou seja, que não compreende onde está alocando seu capital —, a renda fixa tende a ser uma alternativa mais segura e rentável. Além disso, a renda variável exige estômago: quem não está preparado para ver seu patrimônio oscilar negativamente em 30% ou 35% durante crises deve evitar essa classe de ativos. Somente após superar essas barreiras é que ferramentas de análise, como este site, tornam-se aliados poderosos para uma seleção de ativos fundamentada e vencedora.
+                            </p>
                         </div>
                     </div>
                 </div>
