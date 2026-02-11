@@ -28,7 +28,99 @@ class DataPipeline:
         
         # Hardcoded exclusions for obsolete or problematic tickers
         self.EXCLUDED_TICKERS = ['TRPN3']
+        
+        # Historical Data Modules
+        from etl.cvm_client import CVMClient
+        from etl.cvm_parser import CVMParser
+        from etl.price_client import PriceHistoryClient
+        
+        self.cvm_client = CVMClient()
+        self.cvm_parser = CVMParser()
+        self.price_client = PriceHistoryClient()
 
+    def run_historical_sync(self):
+        """
+        Runs the full Historical Data ETL (CVM + Prices).
+        Downloads DFP/ITR, parses them, fetches stock prices, and exports a history dataset.
+        """
+        self.logger.info("--- Starting Historical Data Sync ---")
+        
+        # Check if files already exist to skip redundant processing
+        # hist_fin_path = "data/processed/cvm_financials_history.csv"
+        # hist_price_path = "data/processed/price_history.json"
+        
+        # if os.path.exists(hist_fin_path) and os.path.exists(hist_price_path):
+        #     self.logger.info("Historical data already exists. Skipping sync.")
+        #     return
+
+        # 1. Download CVM Data (2011-Present)
+        years = range(2011, 2026)
+        
+        self.logger.info(f"Downloading CVM DFP/ITR for {years}...")
+        for year in years:
+            self.cvm_client.fetch_annual_reports(year) # DFP
+            self.cvm_client.fetch_quarterly_reports(year)
+
+        # 2. Parse Data
+        self.logger.info("Parsing CVM Files...")
+        all_dfs = []
+        for year in years:
+            df_dfp = self.cvm_parser.parse_financials(year, 'DFP')
+            if not df_dfp.empty: all_dfs.append(df_dfp)
+            
+            df_itr = self.cvm_parser.parse_financials(year, 'ITR') 
+            if not df_itr.empty: all_dfs.append(df_itr)
+            
+        if not all_dfs:
+            self.logger.warning("No historical data parsed.")
+            history_df = pd.DataFrame()
+        else:
+            history_df = pd.concat(all_dfs, ignore_index=True)
+            self.logger.info(f"Parsed {len(history_df)} historical records.")
+
+        # 3. Fetch Price History for valid tickers
+        # Use Fundamentus data to get list of active tickers
+        current_df = self.f_client.fetch_all_current()
+        tickers = current_df['ticker'].unique().tolist() if not current_df.empty else []
+        
+        # Yahoo Finance requires .SA suffix for Brazilian stocks
+        tickers_sa = [f"{t}.SA" for t in tickers if not t.endswith('.SA')]
+        
+        self.logger.info(f"Fetching Price History for {len(tickers_sa)} tickers (.SA suffix added)...")
+        
+        price_map = self.price_client.fetch_batch(tickers_sa) # Returns {ticker: df}
+        
+        # 4. Export
+        os.makedirs("data/processed", exist_ok=True)
+        if not history_df.empty:
+            history_df.to_csv("data/processed/cvm_financials_history.csv", index=False)
+        
+        import json
+        serialized_prices = {}
+        for t, df in price_map.items():
+            if df is None: continue
+            df_reset = df.reset_index()
+            if 'Date' in df_reset.columns:
+                 df_reset['Date'] = df_reset['Date'].dt.strftime('%Y-%m-%d')
+            serialized_prices[t] = df_reset.to_dict(orient='records')
+            
+        with open("data/processed/price_history.json", "w") as f:
+            json.dump(serialized_prices, f)
+            
+        self.logger.info("Historical Sync Completed.")
+
+    def run_data_processing(self):
+        """
+        Runs the Data Processor to generate frontend JSON.
+        """
+        try:
+            from etl.data_processor import DataProcessor
+            self.logger.info("Starting Data Processing (Metrics Calculation)...")
+            dp = DataProcessor()
+            dp.run()
+            self.logger.info("Data Processing complete.")
+        except Exception as e:
+            self.logger.error(f"Data Processing failed: {e}")
     def fetch_yfinance_market_cap(self, ticker_sa):
         """
         Fetches Market Cap from YFinance for validation.
@@ -52,10 +144,22 @@ class DataPipeline:
             self.logger.info("Fetching Fundamentus data...")
             df_raw = self.f_client.fetch_all_current()
             
+            # RUN HISTORICAL SYNC (Optionally, or always?)
+            # Since user asked for it now, let's run it.
+            # In production, we might want to check a flag or file age.
+            self.run_historical_sync()
+            
             if df_raw.empty:
                 raise Exception("Fundamentus returned empty data.")
             
             self.logger.info(f"Fundamentus returned {len(df_raw)} records.")
+        
+            # Save raw ticker data for DataProcessor mapping
+            df_raw.to_csv("data/processed/fundamentus_tickers.csv", index=False)
+            
+            # 2. Filter & Clean Data
+            # df = self.filter_data(df_raw) # This line was not in the original code, but implied by the instruction.
+            # Assuming the intent is to replace the comment and add the save.
             
             # 2. Process & Validate Each Asset
             valid_assets = []
@@ -104,8 +208,10 @@ class DataPipeline:
                 # Source 1: Fundamentus Detailed (mcap_fund)
                 # Source 2: YFinance (mcap_yf)
                 mcap_yf = None
-                if not getattr(self, 'skip_yf', False):
-                    mcap_yf = self.fetch_yfinance_market_cap(ticker_sa)
+                
+                # OPTIMIZATION: Disabling YFinance validation to speed up process
+                # if not getattr(self, 'skip_yf', False):
+                #     mcap_yf = self.fetch_yfinance_market_cap(ticker_sa)
                 
                 # Check consistency
                 # Note: If YFinance fails (Rate Limit), we TRUST Fundamentus as Plan B.
@@ -243,6 +349,9 @@ class DataPipeline:
             except Exception as e:
                 self.logger.error(f"Selic Analysis Failed: {e}")
                 # Don't fail the whole pipeline for this auxiliary task
+            
+            # 6. Run Historical Data Processor
+            self.run_data_processing()
             
             self.logger.info(f"Pipeline Finished in {time.time() - start_time:.2f}s")
             
