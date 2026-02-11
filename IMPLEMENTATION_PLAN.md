@@ -38,6 +38,23 @@
 | Top 10 Crescimento (CAGR de receita, margens) | ⏳ | Requer séries históricas. |
 | Visualizações (scatter, filtros, tooltips) | ⏳ | Trabalho de front após dados disponíveis. |
 
+#### Fase 4 – Front-end da Simulação (Dashboard & Interatividade)
+| Tarefa | Status | Notas |
+| --- | --- | --- |
+| **Dashboard UI**: Aprimorar `BacktestPage.jsx` (Gráficos, Cards, Layout "Fuhui") | ⏳ | Foco em "visual excellence" e dark mode premium. |
+| **Strategy Builder**: Conectar `StrategyParameters.jsx` ao estado da página | ⏳ | Permitir que o usuário defina regras complexas visualmente. |
+| **Integração (Mock/Real)**: Preparar fluxo de "Executar Simulação" | ⏳ | UI deve gerar o JSON de config; Backend (`run_backtest.py`) deve ler este JSON. |
+| **Visualização de Risco**: Implementar gráfico de Drawdown e Volatilidade | ⏳ | Novos componentes baseados nos dados do `backtest_results.json`. |
+
+#### Fase 5 – Correções e Melhorias na Simulação (Backtest Engine)
+| Tarefa | Status | Notas |
+| --- | --- | --- |
+| Cálculo de `max_drawdown` | 🔴 | Implementar em `engine.py`. |
+| Correção de crash quando sem holdings | 🔴 | `backtest/engine.py`. |
+| Suporte a Configuração Externa | ⏳ | Modificar `run_backtest.py` para aceitar `strategy_config.json`. |
+
+
+
 ### Backlog imediato
 1. Confirmar com o time a lista definitiva das 12 bolsas e ajustar o script/outputs.
 2. Revisar outliers da B3 (market cap e margens zeradas) antes de expor no front.

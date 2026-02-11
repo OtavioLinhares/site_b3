@@ -6,7 +6,8 @@ const Navigation = () => {
         { path: '/', label: 'Hoje' },
         { path: '/passado', label: 'Passado' },
         { path: '/futuro', label: 'Futuro' },
-        { path: '/risco', label: 'Risco' }
+        { path: '/risco', label: 'Risco' },
+        { path: '/backtest', label: 'Simulação' }
     ];
 
     return (

@@ -6,6 +6,7 @@ import Today from './pages/Today';
 import Past from './pages/Past';
 import Future from './pages/Future';
 import Risk from './pages/Risk';
+import BacktestPage from './pages/BacktestPage';
 import Footer from './components/Footer';
 import LegalDisclaimer from './components/LegalDisclaimer';
 
@@ -46,6 +47,7 @@ function App() {
               <Route path="/passado" element={<Past />} />
               <Route path="/futuro" element={<Future />} />
               <Route path="/risco" element={<Risk />} />
+              <Route path="/backtest" element={<BacktestPage />} />
             </Routes>
             <LegalDisclaimer />
           </main>
