@@ -1,107 +1,126 @@
 """
 Fase 0: Inspeção RÁPIDA usando DataProvider
 
-Objetivo: Sample de 20 tickers para identificar problemas de qualidade
+Objetivo: fornecer um panorama da cobertura de dados e inspecionar uma amostra
+de tickers críticos.
 """
+
+from typing import Iterable
 
 from backtest.data_provider import DataProvider
 import pandas as pd
 
+DEFAULT_SAMPLE = 10
+INSPECTION_DATE = pd.Timestamp("2023-01-15")
+
+
+def _print_header(title: str) -> None:
+    print("\n" + "=" * 80)
+    print(title)
+    print("=" * 80 + "\n")
+
+
+def _print_quality_summary(report: dict) -> None:
+    print(f"- Tickers com fundamentalistas: {report['total_financial_tickers']}")
+    print(f"- Tickers com histórico de preços: {report['total_price_tickers']}")
+    print(
+        f"- Sem histórico de preços (mas com financials): "
+        f"{len(report['tickers_without_prices'])}"
+    )
+    print(
+        f"- Sem financials no JSON (mas com preços): "
+        f"{len(report['tickers_without_financials'])}"
+    )
+
+    def _emit(issue_map: dict, label: str, limit: int = 5) -> None:
+        if not issue_map:
+            return
+        print(f"\n{label}:")
+        for indicator, tickers in sorted(
+            issue_map.items(), key=lambda kv: len(kv[1]), reverse=True
+        ):
+            if not tickers:
+                continue
+            sample = ", ".join(tickers[:limit])
+            print(f"  - {indicator}: {len(tickers)} (ex.: {sample})")
+
+    _emit(report.get("missing", {}), "Indicadores ausentes")
+    _emit(report.get("zero", {}), "Indicadores com valor zero")
+
+
+def _inspect_sample(data_provider: DataProvider, tickers: Iterable[str]) -> None:
+    for ticker in tickers:
+        print(f"🔍 {ticker}:")
+
+        if ticker not in data_provider.prices_data:
+            print("   ❌ Sem histórico de preços carregado.")
+        else:
+            price_row = data_provider.get_latest_price_row(ticker, INSPECTION_DATE)
+            if price_row is None:
+                print(
+                    f"   ⚠️ Sem preço disponível até {INSPECTION_DATE.date()}. "
+                    "Verificar sincronização de preços."
+                )
+            else:
+                price = float(price_row["close"])
+                price_date = price_row.name
+                print(
+                    f"   ✅ Preço: R$ {price:.2f} "
+                    f"(mais recente: {price_date.date()})"
+                )
+
+        fin_df = data_provider.get_financials_data(ticker)
+        if fin_df.empty:
+            print("   ❌ Nenhum fundamentalista disponível.")
+            print()
+            continue
+
+        fin_row = data_provider.get_latest_financials_row(ticker, INSPECTION_DATE)
+        if fin_row is None:
+            latest_date = fin_df.index.max()
+            print(
+                f"   ⚠️ Sem fundamentalista até {INSPECTION_DATE.date()} "
+                f"(último registro: {latest_date.date()})"
+            )
+            print()
+            continue
+
+        p_l = fin_row.get("p_l")
+        roe = fin_row.get("roe")
+        fin_date = fin_row.name.date()
+        p_l_marker = "⚠️" if p_l is None else ("⚠️" if p_l == 0 else "✅")
+        roe_marker = "⚠️" if roe is None else ("⚠️" if roe == 0 else "✅")
+
+        print(f"   ✅ Fundamentalista carregado ({fin_date})")
+        print(f"   {p_l_marker} P/L: {p_l}")
+        print(
+            f"   {roe_marker} ROE: "
+            f"{'n/a' if roe is None else f'{roe*100:.2f}%'}"
+        )
+        print()
+
+
 def quick_inspect():
-    print("\n" + "="*80)
-    print("📊 INSPEÇÃO RÁPIDA DE DADOS (Sample)")
-    print("="*80 + "\n")
-    
+    _print_header("📊 INSPEÇÃO RÁPIDA DE DADOS")
+
     dp = DataProvider()
     dp.load_data()
-    
-    print(f"Total de tickers no universo: {len(dp.assets_list)}\n")
-    
-    # Sample de 20 tickers
-    sample_tickers = dp.assets_list[:20]
-    
-    print(f"Testando {len(sample_tickers)} tickers:\n")
-    
-    test_date = pd.to_datetime("2023-01-15")
-    
-    issues = {
-        'p_l_zero': [],
-        'p_l_null': [],
-        'roe_zero': [],
-        'roe_null': [],
-        'no_price': [],
-        'no_financials': []
-    }
-    
-    for ticker in sample_tickers:
-        print(f"🔍 {ticker}:")
-        
-        # Test price
-        price_row = dp.get_latest_price_row(ticker, test_date)
-        if price_row is None:
-            print(f"   ❌ SEM PREÇO")
-            issues['no_price'].append(ticker)
-            continue
-        else:
-            price = float(price_row['close'])
-            print(f"   ✅ Preço: R$ {price:.2f}")
-        
-        # Test financials
-        fin_row = dp.get_latest_financials_row(ticker, test_date)
-        if fin_row is None:
-            print(f"   ❌ SEM FUNDAMENTALISTA")
-            issues['no_financials'].append(ticker)
-            continue
-        
-        # Check P/L
-        p_l = fin_row.get('p_l')
-        if p_l is None:
-            print(f"   ⚠️  P/L: NULL")
-            issues['p_l_null'].append(ticker)
-        elif p_l == 0:
-            print(f"   🚨 P/L: ZERO (dado inválido)")
-            issues['p_l_zero'].append(ticker)
-        else:
-            print(f"   ✅ P/L: {p_l:.2f}")
-        
-        # Check ROE
-        roe = fin_row.get('roe')
-        if roe is None:
-            print(f"   ⚠️  ROE: NULL")
-            issues['roe_null'].append(ticker)
-        elif roe == 0:
-            print(f"   🚨 ROE: ZERO (dado inválido)")
-            issues['roe_zero'].append(ticker)
-        else:
-            print(f"   ✅ ROE: {roe*100:.2f}%")
-        
-        print()
-    
-    # Summary
-    print("\n" + "="*80)
-    print("📋 RESUMO DE PROBLEMAS (Sample de 20 tickers)")
-    print("="*80 + "\n")
-    
-    total_with_issues = 0
-    for issue_type, tickers in issues.items():
-        count = len(tickers)
-        if count > 0:
-            total_with_issues += count
-            pct = (count / len(sample_tickers)) * 100
-            marker = "🚨" if "zero" in issue_type else "⚠️ "
-            print(f"{marker} {issue_type}: {count} tickers ({pct:.0f}%)")
-            print(f"   → {', '.join(tickers)}")
-    
-    print(f"\n📊 {total_with_issues} problemas encontrados em {len(sample_tickers)} tickers testados")
-    print(f"   Taxa de problemas: {(total_with_issues/len(sample_tickers))*100:.0f}%\n")
-    
-    # Recommendations
-    print("🔧 AÇÃO NECESSÁRIA:")
-    if issues['p_l_zero'] or issues['roe_zero']:
-        print("   ❌ CRÍTICO: Dados com zero impedem critérios de funcionar")
-        print("   → Adicionar filtros de qualidade no DataProvider.load_data()")
-        print("   → Excluir tickers com P/L=0 ou ROE=0 do universo")
-    print()
+    report = dp.get_data_quality_report()
+
+    print(f"Total de tickers no universo (com preços): {len(dp.assets_list)}")
+    _print_quality_summary(report)
+
+    if not dp.assets_list:
+        print("\n⚠️ Universo vazio – rode o DataPipeline antes da inspeção.")
+        return
+
+    sample_size = min(DEFAULT_SAMPLE, len(dp.assets_list))
+    sample_tickers = dp.assets_list[:sample_size]
+
+    print(f"\nAmostra avaliada: {sample_size} tickers")
+    print("-" * 80 + "\n")
+    _inspect_sample(dp, sample_tickers)
+
 
 if __name__ == "__main__":
     quick_inspect()

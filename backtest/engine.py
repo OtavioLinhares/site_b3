@@ -321,30 +321,49 @@ class BacktestEngine:
         for group in criteria_groups:
             # Evaluate items in group
             group_pass = True
-            if group.logic == 'OR':
+            if isinstance(group, dict):
+                group_logic = str(group.get('logic', 'AND')).upper()
+                items = group.get('items', [])
+            else:
+                group_logic = getattr(group, 'logic', 'AND')
+                if isinstance(group_logic, str):
+                    group_logic = group_logic.upper()
+                items = getattr(group, 'items', [])
+            if items is None:
+                items = []
+            elif not isinstance(items, (list, tuple)):
+                items = list(items)
+            if group_logic == 'OR':
                 group_pass = False # Default fail, need one true
             
-            for item in group.items:
-                metric_val = get_val(item.indicator)
+            for item in items:
+                indicator = item.indicator if hasattr(item, 'indicator') else item.get('indicator')
+                operator = item.operator if hasattr(item, 'operator') else item.get('operator')
+                value = item.value if hasattr(item, 'value') else item.get('value')
+                value_min = getattr(item, 'value_min', None) if hasattr(item, 'value_min') else item.get('value_min')
+                value_max = getattr(item, 'value_max', None) if hasattr(item, 'value_max') else item.get('value_max')
+
+                metric_val = get_val(indicator)
                 if metric_val is None:
                     # Missing data triggers fail?
                     item_pass = False
                 else:
                     item_pass = False
-                    if item.operator == '>': item_pass = metric_val > item.value
-                    elif item.operator == '>=': item_pass = metric_val >= item.value
-                    elif item.operator == '<': item_pass = metric_val < item.value
-                    elif item.operator == '<=': item_pass = metric_val <= item.value
-                    elif item.operator == 'range': 
-                        item_pass = (metric_val >= item.value_min) and (metric_val <= item.value_max)
-                    elif item.operator == 'outsiderange':
-                         item_pass = (metric_val < item.value_min) or (metric_val > item.value_max)
+                    if operator == '>': item_pass = metric_val > value
+                    elif operator == '>=': item_pass = metric_val >= value
+                    elif operator == '<': item_pass = metric_val < value
+                    elif operator == '<=': item_pass = metric_val <= value
+                    elif operator == '==': item_pass = metric_val == value
+                    elif operator == 'range':
+                        item_pass = (metric_val >= value_min) and (metric_val <= value_max)
+                    elif operator == 'outsiderange':
+                        item_pass = (metric_val < value_min) or (metric_val > value_max)
                 
-                if group.logic == 'AND':
+                if group_logic == 'AND':
                     if not item_pass:
                         group_pass = False
                         break 
-                elif group.logic == 'OR':
+                elif group_logic == 'OR':
                     if item_pass:
                         group_pass = True
                         break
@@ -411,26 +430,35 @@ class BacktestEngine:
             if fin_row is None: continue
             if (date - fin_row.name).days > 500: continue # Stale financials
             
-            # Data Quality Check: Collect indicators used in criteria
+            # Data Quality Check: Collect indicators used nas regras
             required_indicators = set()
             for group in self.config.entry_criteria:
-                for item in group['items']:
-                    required_indicators.add(item['indicator'])
-            
-            # Validate required data exists and is VALID (not 0, not None, not negative for ratios)
+                if isinstance(group, dict):
+                    items = group.get('items', [])
+                else:
+                    items = getattr(group, 'items', []) or []
+
+                for item in items:
+                    indicator = (
+                        item['indicator']
+                        if isinstance(item, dict)
+                        else getattr(item, 'indicator', None)
+                    )
+                    if indicator:
+                        required_indicators.add(indicator)
+
+            # Validate required data exists (valores negativos são aceitos; zeros ainda sinalizam alerta)
             data_valid = True
             for indicator in required_indicators:
                 val = fin_row.get(indicator)
-                
-                # Check if indicator requires positive value (ratios like P/L, P/VP, ROE, etc.)
-                positive_required = indicator in ['p_l', 'p_vp', 'roe', 'roic', 'ev_ebitda']
-                
+
                 if val is None:
                     data_valid = False
                     break
-                
-                if positive_required and val <= 0:
-                    # P/L = 0 means no profit or bad data
+
+                zero_sensitive = indicator in ['p_l', 'p_vp', 'roe', 'roic', 'ev_ebitda']
+                if zero_sensitive and val == 0:
+                    # Valores zerados continuam indicando ausência de dado confiável
                     data_valid = False
                     break
             
@@ -444,19 +472,20 @@ class BacktestEngine:
             # Passed! Calculate Score for Ranking
             # Score based on configured weights
             score = 0
+            score_weights = getattr(self.config, "entry_score_weights", "balanced")
             
-            if self.config.entry_score_weights == 'value':
+            if score_weights == 'value':
                 # Value: Lower P/L, P/VP better
                 p_l = fin_row.get('p_l', 20)
                 p_vp = fin_row.get('p_vp', 3)
                 score = p_l * 0.6 + p_vp * 0.4
                 
-            elif self.config.entry_score_weights == 'growth':
+            elif score_weights == 'growth':
                 # Growth: Higher CAGR better (negate for ascending sort)
                 cagr = fin_row.get('revenue_cagr_5y', 0)
                 score = -cagr  # Negative so higher CAGR = lower score
                 
-            elif self.config.entry_score_weights == 'quality':
+            elif score_weights == 'quality':
                 # Quality: Higher ROE, Lower Debt better
                 roe = fin_row.get('roe', 0.05)
                 debt_ratio = fin_row.get('net_debt_ebitda', 3)
@@ -495,4 +524,3 @@ class BacktestEngine:
             
             if qty > 0:
                 self.portfolio.buy(date, cand['ticker'], qty, cand['price'])
-

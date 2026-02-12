@@ -37,6 +37,7 @@ class StrategyConfigRequest(BaseModel):
     # Step 2: Entry
     entry_logic: str # AND, OR
     entry_criteria: List[CriteriaGroup]
+    entry_score_weights: str = "balanced"  # value, growth, quality, balanced
 
     # Step 3: Exit
     exit_mode: str 

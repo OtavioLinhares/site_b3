@@ -1,10 +1,18 @@
 {
-  "generated_at": "2026-02-09T17:28:27.888543Z",
+  "generated_at": "2026-02-12T00:04:27.170828Z",
   "schema_version": "1.0",
   "data": [
     {
       "ticker": "ADHM3",
       "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "LCAM3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "PORT3",
+      "reason": "DELISTED_2025_OPA_MSC"
     },
     {
       "ticker": "AERI3",
@@ -481,6 +489,114 @@
     {
       "ticker": "VTLM3",
       "reason": "OUTLIER_METRICS"
+    },
+    {
+      "ticker": "CBMA4",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "TESA3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "JMCD3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "SEDU3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "DMMO3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "CNSY3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "LLBI3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "ATEA3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "CLSA3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "ROXO34",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "PETR4",
+      "reason": "NO_B3_TRADING"
+    },
+    {
+      "ticker": "INBR3",
+      "reason": "NO_B3_TRADING"
+    },
+    {
+      "ticker": "WAV3",
+      "reason": "NO_B3_TRADING"
+    },
+    {
+      "ticker": "HOSI11",
+      "reason": "REMOVE_NON_EQUITY"
+    },
+    {
+      "ticker": "TROC3",
+      "reason": "NO_B3_TRADING"
+    },
+    {
+      "ticker": "VOKE3",
+      "reason": "NO_B3_TRADING"
+    },
+    {
+      "ticker": "TIET11",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "ENBR3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "CBOH3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "CRFB3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "PRBC4",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "RIVA3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "GENT3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "RBNS11",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "COMR3",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "ASAB11",
+      "reason": "DELISTED_CONFIRMED"
+    },
+    {
+      "ticker": "REAG3",
+      "reason": "DELISTED_CONFIRMED"
     }
   ]
 }

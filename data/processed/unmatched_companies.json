@@ -1,0 +1,997 @@
+[
+  {
+    "company_name": "PARTICIPAÇÕES INDUST. DO NORDESTE S.A.",
+    "last_report": "2021-03-31",
+    "status": "registrado_cancelamento",
+    "report_count": 13,
+    "delisting_info": {
+      "code": "BBPA",
+      "company_name": "PARTICIPAÇÕES INDUSTRIAIS DO NORDESTE S.A.",
+      "company_name_normalized": "PARTICIPACOES INDUSTRIAIS DO NORDESTE S A",
+      "trading_name": "PART INDS NE",
+      "cnpj": "14.308.514/0001-13",
+      "registration_date": "04/11/1980",
+      "cancellation_date": "25/03/2009",
+      "address": "Rua Miguel Calmon, 57  - 7º andar / Parte- CEP:40015-010- Salvador - BA- Tel.:(71)3341-1122",
+      "reason": "Mudou registro para Balcão Organizado",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "CIA INDUSTRIAL SCHLOSSER S.A.",
+    "last_report": "2025-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 31,
+    "delisting_info": {
+      "code": "SCLO",
+      "company_name": "CIA INDUSTRIAL SCHLOSSER S.A.",
+      "company_name_normalized": "CIA INDUSTRIAL SCHLOSSER S A",
+      "trading_name": "SCHLOSSER",
+      "cnpj": "82.981.929/0001-03",
+      "registration_date": "26/04/1978",
+      "cancellation_date": "06/03/2017",
+      "address": "Avenida Getúlio Vargas, 63/87- CEP: 88353-000- Brusque-SC- Tel.:(47) 3251-8001",
+      "reason": "Listagem cancelada na BM|FBOVESPA, nos termos do item 10.2 do Regulamento para Listagem de Emissores e Admissão de Valores Mobiliários (Regulamento), devido ao descumprimento de requisitos previstos no Regulamento.",
+      "matched_tickers": [
+        "SCLO3",
+        "SCLO4"
+      ]
+    }
+  },
+  {
+    "company_name": "COBRASMA S.A.",
+    "last_report": "2025-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 31,
+    "delisting_info": {
+      "code": "CBMA",
+      "company_name": "COBRASMA S.A.",
+      "company_name_normalized": "COBRASMA S A",
+      "trading_name": "COBRASMA",
+      "cnpj": "61.080.313/0001-91",
+      "registration_date": "07/03/1946",
+      "cancellation_date": "06/03/2017",
+      "address": "Rua Prof. Luis Eulálio de Bueno Vidigal, 131- CEP: 06093-085- Osasco-SP- Tel.:(11) 4623-8436",
+      "reason": "Listagem cancelada na BM|FBOVESPA, nos termos do item 10.2 do Regulamento para Listagem de Emissores e Admissão de Valores Mobiliários (Regulamento), devido ao descumprimento de requisitos previstos no Regulamento.",
+      "matched_tickers": [
+        "CBMA3"
+      ]
+    }
+  },
+  {
+    "company_name": "CONSTRUTORA LIX DA CUNHA S.A.",
+    "last_report": "2018-12-31",
+    "status": "registrado_cancelamento",
+    "report_count": 4,
+    "delisting_info": {
+      "code": "LIXC",
+      "company_name": "CONSTRUTORA LIX DA CUNHA S.A.",
+      "company_name_normalized": "CONSTRUTORA LIX DA CUNHA S A",
+      "trading_name": "LIX DA CUNHA",
+      "cnpj": "46.014.635/0001-49",
+      "registration_date": "06/04/1972",
+      "cancellation_date": "17/01/2018",
+      "address": "Lrg das Andorinhas, 41 - Sala 02, Edifício Andorinhas- Cep: 13015-102- Campinas-SP- Tel.:(19) 2129-7766",
+      "reason": "Listagem cancelada na B3, nos termos do item 10.2 do Regulamento para Listagem de Emissores e Admissão de Valores Mobiliários (Regulamento), devido ao descumprimento de requisitos previstos no Regulamento.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "IGB ELETRONICA S.A - EM RECUPERACAO JUDICIAL",
+    "last_report": "2022-09-30",
+    "status": "deslistada_por_inatividade",
+    "report_count": 19,
+    "delisting_info": null
+  },
+  {
+    "company_name": "NADIR FIGUEIREDO IND E COM S.A.",
+    "last_report": "2019-12-31",
+    "status": "registrado_cancelamento",
+    "report_count": 8,
+    "delisting_info": {
+      "code": "NAFG",
+      "company_name": "NADIR FIGUEIREDO IND E COM S.A.",
+      "company_name_normalized": "NADIR FIGUEIREDO IND E COM S A",
+      "trading_name": "NADIR FIGUEI",
+      "cnpj": "61.067.161/0001-97",
+      "registration_date": "18/03/1971",
+      "cancellation_date": "22/04/2020",
+      "address": "Av. Morvan Dias de Figueiredo, 3535- CEP:02063-903- São Pailo-SP- Tel.: (11) 2967-8800",
+      "reason": "Cancelou registro de Cia Aberta .O acionista Flamengo Participações S.A. realizou OPA na B3 em 13/03/2020. ",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "BLUE TECH SOLUTIONS EQI S.A.",
+    "last_report": "2021-12-31",
+    "status": "registrado_cancelamento",
+    "report_count": 16,
+    "delisting_info": {
+      "code": "BLUT",
+      "company_name": "BLUE TECH SOLUTIONS E.Q.I. S",
+      "company_name_normalized": "BLUE TECH SOLUTIONS E Q I S",
+      "trading_name": "B TECH EQI",
+      "cnpj": "60.637.238/0001-54",
+      "registration_date": "20/05/1985",
+      "cancellation_date": "23/02/2023",
+      "address": "AV ALCÂNTARA MACHADO, 80 - CONJUNTO 31-CEP: 03102-000  -SÃO PAULO - SP-Tel: 55 011 20615511",
+      "reason": "Listagem cancelada na B3 com base no item 9.3 (c) do Regulamento para Listagem de Emissores e Admissão a Negociação de Valores Mobiliários, em razão da decretação da sua falência.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "ITAUTEC S.A. - GRUPO ITAUTEC",
+    "last_report": "2019-06-30",
+    "status": "registrado_cancelamento",
+    "report_count": 6,
+    "delisting_info": {
+      "code": "ITEC",
+      "company_name": "ITAUTEC S.A. - GRUPO ITAUTEC",
+      "company_name_normalized": "ITAUTEC S A GRUPO ITAUTEC",
+      "trading_name": "ITAUTEC",
+      "cnpj": "54.526.082/0001-31",
+      "registration_date": "18/11/1985",
+      "cancellation_date": "24/06/2019",
+      "address": "Avenida Paulista, 1938 - 5º andar/parte- CEP: 01310-942- São Paulo -SP- Tel.: (11) 3543-4000",
+      "reason": "Incorporada pela Itaúsa  Investimentos Itaú S.A. . Cada ação foi substituída por 1 ação PN de emissão da Itaúsa",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "CIA HERING",
+    "last_report": "2021-09-30",
+    "status": "deslistada_por_inatividade",
+    "report_count": 15,
+    "delisting_info": null
+  },
+  {
+    "company_name": "KOSMOS COMÉRCIO DE VESTUÁRIO S/A - EM RECUPERAÇÃO JUDICIAL",
+    "last_report": "2019-12-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 8,
+    "delisting_info": null
+  },
+  {
+    "company_name": "LITEL PARTICIPACOES S.A.",
+    "last_report": "2019-12-31",
+    "status": "registrado_cancelamento",
+    "report_count": 8,
+    "delisting_info": {
+      "code": "LTEL",
+      "company_name": "LITEL PARTICIPAÇÕES S.A.",
+      "company_name_normalized": "LITEL PARTICIPACOES S A",
+      "trading_name": "LITEL",
+      "cnpj": "00.743.065/0001-27",
+      "registration_date": "18/10/1995",
+      "cancellation_date": "26/12/2000",
+      "address": "Av. Almirante Barroso,52 - 33ºandar / Parte - CEP: 20031 - 918 - Rio de Janeiro - RJ - Tel.: (21)2510-9999",
+      "reason": "Mudou registro para Balcão Organizado (SOMA).",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "EMPRESA NAC COM REDITO PART S.A.ENCORPAR",
+    "last_report": "2021-12-31",
+    "status": "registrado_cancelamento",
+    "report_count": 16,
+    "delisting_info": {
+      "code": "ECPR",
+      "company_name": "EMPRESA NAC COM REDITO PART S.A.ENCORPAR",
+      "company_name_normalized": "EMPRESA NAC COM REDITO PART S A ENCORPAR",
+      "trading_name": "ENCORPAR",
+      "cnpj": "01.971.614/0001-83",
+      "registration_date": "07/10/1997",
+      "cancellation_date": "22/06/2022",
+      "address": "R AIMORES, 981- CEP:30140-071- Belo Horizonte- MG- Tel.: (31) 2129-9877",
+      "reason": "Cancelou registro de Cia Aberta . O acionista controlador, Wembley Sociedade Anonima. realizou OPA na B3 em 17/02/2022 ao preço de R$ 90,00/ação.",
+      "matched_tickers": [
+        "ECPR3",
+        "ECPR4"
+      ]
+    }
+  },
+  {
+    "company_name": "MASSA FALIDA DA MMX MINERACAO E METALICOS S.A.",
+    "last_report": "2021-03-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 13,
+    "delisting_info": null
+  },
+  {
+    "company_name": "VIRGO II COMPANHIA DE SECURITIZACAO",
+    "last_report": "2022-03-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 17,
+    "delisting_info": null
+  },
+  {
+    "company_name": "AES TIETE ENERGIA SA",
+    "last_report": "2021-09-30",
+    "status": "deslistada_por_inatividade",
+    "report_count": 15,
+    "delisting_info": null
+  },
+  {
+    "company_name": "ANDRADE GUTIERREZ PARTICIPACOES S.A.",
+    "last_report": "2019-03-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 5,
+    "delisting_info": null
+  },
+  {
+    "company_name": "POMIFRUTAS S/A EM RECUPERACAO JUDICIAL",
+    "last_report": "2023-12-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 24,
+    "delisting_info": null
+  },
+  {
+    "company_name": "TERRA SANTA AGRO S.A.",
+    "last_report": "2021-06-30",
+    "status": "registrado_cancelamento",
+    "report_count": 14,
+    "delisting_info": {
+      "code": "TESA",
+      "company_name": "TERRA SANTA AGRO S.A.",
+      "company_name_normalized": "TERRA SANTA AGRO S A",
+      "trading_name": "TERRA SANTA",
+      "cnpj": "05.799.312/0001-20",
+      "registration_date": "09/11/2006",
+      "cancellation_date": "26/08/2021",
+      "address": "PÇ GENERAL GENTIL FALCAO, 108 - 8.ANDAR- CEP: 4571150 - São Paulo - SP- Tel.: (11) 3137-3100",
+      "reason": "Incorporada pela SLC Agrícola S.A.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "J. MACEDO S.A.",
+    "last_report": "2025-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 31,
+    "delisting_info": {
+      "code": "JMCD",
+      "company_name": "J. MACEDO S.A.",
+      "company_name_normalized": "J MACEDO S A",
+      "trading_name": "J. MACEDO",
+      "cnpj": "14.998.371/0001-19",
+      "registration_date": "16/10/2007",
+      "cancellation_date": "20/01/2025",
+      "address": "R BENEDITO MACÊDO, Nº 79- CEP: 60180-415- Fortaleza - CE- TEL: 55 (085) 4006-6000",
+      "reason": "Cancelou registro de cia. aberta tendo em vista que a companhia não teve nenhum valor mobiliário admitido à negociação até o término do ano civil seguinte à data em que deixou de ter valores mobiliários admitidos à negociação.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "ALIANSCE SHOPPING CENTERS S.A.",
+    "last_report": "2019-06-30",
+    "status": "registrado_cancelamento",
+    "report_count": 6,
+    "delisting_info": {
+      "code": "ALSC",
+      "company_name": "ALIANSCE SHOPPING CENTERS S.A.",
+      "company_name_normalized": "ALIANSCE SHOPPING CENTERS S A",
+      "trading_name": "ALIANSCE",
+      "cnpj": "06.082.980/0001-03",
+      "registration_date": "28/01/2010",
+      "cancellation_date": "30/08/2019",
+      "address": "Rua Dias Ferreira, 190 - 3º andar - Sala 301- CEP: 22431-050- Rio de Janeiro - RJ- Tel.: (21) 2176-7272",
+      "reason": "Incorporada pela Sonae Sierra Brasil S.A. Cada ação foi substituída por 0,787808369 ações da Sonae. ",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "CIA MINEIRA DE AÇUCAR E ALCOOL PARTICIPAÇÕES",
+    "last_report": "2023-03-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 21,
+    "delisting_info": null
+  },
+  {
+    "company_name": "SOMOS EDUCAÇÃO S.A.",
+    "last_report": "2019-03-31",
+    "status": "registrado_cancelamento",
+    "report_count": 5,
+    "delisting_info": {
+      "code": "SEDU",
+      "company_name": "SOMOS EDUCAÇÃO S.A",
+      "company_name_normalized": "SOMOS EDUCACAO S A",
+      "trading_name": "SOMOS EDUCA",
+      "cnpj": "02.541.982/0001-54",
+      "registration_date": "22/07/2011",
+      "cancellation_date": "22/05/2019",
+      "address": "Avenida das Nações Unidas, 7221 - 1º andar- CEP: 05425-902- São Paulo - SP- Tel.: (11) 4383-8257",
+      "reason": "Cancelou registro de cia aberta. A Saber Serviços Educacionais S.A.L . realizou OPA na B3 em 07/05/2019 ao preço de R$ 24,55 /ação. ",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "STATKRAFT ENERGIAS RENOVAVEIS S.A.",
+    "last_report": "2024-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 27,
+    "delisting_info": {
+      "code": "STKF",
+      "company_name": "STATKRAFT ENERGIAS RENOVAVEIS S.A.",
+      "company_name_normalized": "STATKRAFT ENERGIAS RENOVAVEIS S A",
+      "trading_name": "STATKRAFT",
+      "cnpj": "00.622.416/0001-41",
+      "registration_date": "19/09/2011",
+      "cancellation_date": "26/11/2024",
+      "address": "AV PREF. OSMAR CUNHA, 416 - 10.ANDAR- Cep: 88015-100- FLORIANOPOLIS - SC- Tel.: 55 (048) 3877-7164",
+      "reason": "Cancelou registro de cia. aberta.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "COMPANHIA DE LOCAÇÃO DAS AMÉRICAS",
+    "last_report": "2025-06-30",
+    "status": "registrado_cancelamento",
+    "report_count": 30,
+    "delisting_info": {
+      "code": "LCAM",
+      "company_name": "CIA LOCAÇÃO DAS AMÉRICAS",
+      "company_name_normalized": "CIA LOCACAO DAS AMERICAS",
+      "trading_name": "LOCAMERICA",
+      "cnpj": "10.215.988/0001-60",
+      "registration_date": "01/03/2023",
+      "cancellation_date": "01/08/2025",
+      "address": "AVENIDA RAJA GABAGLIA, 1781 - 12.ANDAR- CEP: 30380-457- Belo Horizonte-MG- Tel.:(31) 3319-1500",
+      "reason": "Companhia incorporada pela Localiza Rent a Car S.A.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "MGI - MINAS GERAIS PARTICIPAÇÕES S.A.",
+    "last_report": "2019-12-31",
+    "status": "registrado_cancelamento",
+    "report_count": 8,
+    "delisting_info": {
+      "code": "MGIP",
+      "company_name": "Minas Gerais Participações S.A.",
+      "company_name_normalized": "MINAS GERAIS PARTICIPACOES S A",
+      "trading_name": "MGI PARTICIP",
+      "cnpj": "19.296.342/0001-29",
+      "registration_date": "04/09/2012",
+      "cancellation_date": "01/04/2022",
+      "address": "ROD PAPA JOÃO PAULO II, 4001/ PREDIO GERAIS - CEP:31360-901- Belo Horizonte - MG- Tel.: (31) 3915-4858",
+      "reason": "Cancelou o registro de cia aberta. ",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "DOMMO ENERGIA S.A.",
+    "last_report": "2022-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 19,
+    "delisting_info": {
+      "code": "DMMO",
+      "company_name": "DOMMO ENERGIA S.A.",
+      "company_name_normalized": "DOMMO ENERGIA S A",
+      "trading_name": "DOMMO",
+      "cnpj": "08.926.302/0001-05",
+      "registration_date": "16/10/2014",
+      "cancellation_date": "09/03/2023",
+      "address": "R LAURO MULLER, 116 - 38.ANDAR - SALAS 3802 E 3804-CEP: 22290-160  -RIO DE JANEIRO - RJ-Tel: 55 021 21964545",
+      "reason": "Incorporação das ações da Dommo pela Petro Rio OPCO Exploração Petrolífera S.A. (OPCO), subsidiária da Petro Rio.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "MAESTRO LOCADORA DE VEICULOS S.A.",
+    "last_report": "2019-06-30",
+    "status": "deslistada_por_inatividade",
+    "report_count": 3,
+    "delisting_info": null
+  },
+  {
+    "company_name": "CONCEBRA - CONCESSIONARIA DAS RODOVIAS CENTRAIS DO BRASIL",
+    "last_report": "2022-09-30",
+    "status": "deslistada_por_inatividade",
+    "report_count": 17,
+    "delisting_info": null
+  },
+  {
+    "company_name": "CINESYSTEM S.A.",
+    "last_report": "2023-06-30",
+    "status": "registrado_cancelamento",
+    "report_count": 22,
+    "delisting_info": {
+      "code": "CNSY",
+      "company_name": "CINESYSTEM S.A.",
+      "company_name_normalized": "CINESYSTEM S A",
+      "trading_name": "CINESYSTEM",
+      "cnpj": "07.437.016/0001-05",
+      "registration_date": "27/07/2016",
+      "cancellation_date": "07/06/2023",
+      "address": "AV GETULIO VARGAS, 266 - SALA 504 - ZONA 01-CEP: 87013-919  -MARINGA - PR-Tel: 55 044 32202152",
+      "reason": "Solicitou o cancelamento voluntário de sua listagem perante a B3, tendo em vista deliberação em Assembleia Geral Extraordinária realizada em 06/06/2023.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "INSTITUTO HERMES PARDINI S.A.",
+    "last_report": "2023-03-31",
+    "status": "registrado_cancelamento",
+    "report_count": 21,
+    "delisting_info": {
+      "code": "PARD",
+      "company_name": "INSTITUTO HERMES PARDINI S.A.",
+      "company_name_normalized": "INSTITUTO HERMES PARDINI S A",
+      "trading_name": "IHPARDINI",
+      "cnpj": "19.378.769/0001-76",
+      "registration_date": "10/02/2017",
+      "cancellation_date": "05/06/2023",
+      "address": "Rua Aimorés, 66 - CEP: 30140-070 - Belo Horizonte - MG - Tel.:(31) 3629-4671",
+      "reason": "Cancelou registro de cia. aberta.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "STARA S.A. - INDÚSTRIA DE IMPLEMENTOS AGRÍCOLAS",
+    "last_report": "2021-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 15,
+    "delisting_info": {
+      "code": "STTR",
+      "company_name": "STARA S.A. - INDÚSTRIA DE IMPLEMENTOS AGRÍCOLAS",
+      "company_name_normalized": "STARA S A INDUSTRIA DE IMPLEMENTOS AGRICOLAS",
+      "trading_name": "STARA",
+      "cnpj": "91.495.499/0001-00",
+      "registration_date": "18/09/2017",
+      "cancellation_date": "19/08/2022",
+      "address": "Avenida Stara, 519- CEP: 99470-000- Não-me-toque - RS- Tel.: (54) 3332-2800",
+      "reason": "Cancelou o registro de cia aberta. ",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "SMILES FIDELIDADE S.A.",
+    "last_report": "2021-06-30",
+    "status": "registrado_cancelamento",
+    "report_count": 14,
+    "delisting_info": {
+      "code": "SMLS",
+      "company_name": "SMILES FIDELIDADE S.A.",
+      "company_name_normalized": "SMILES FIDELIDADE S A",
+      "trading_name": "SMILES",
+      "cnpj": "05.730.375/0001-20",
+      "registration_date": "10/10/2017",
+      "cancellation_date": "01/11/2021",
+      "address": "AL RIO NEGRO, 585 - BLOCO B - ED. PADAUIRI- CEP: 6454000- Barueri-SP- Tel.: (11) 4871-2012",
+      "reason": "Incorporada pela Gol Linhas Aéreas S.A.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "FLEX GESTÃO DE RELACIONAMENTOS S.A.-EM RECUPERAÇÃO JUDICIAL",
+    "last_report": "2023-06-30",
+    "status": "deslistada_por_inatividade",
+    "report_count": 21,
+    "delisting_info": null
+  },
+  {
+    "company_name": "NOTRE DAME INTERMÉDICA PARTICIPAÇÕES S.A.",
+    "last_report": "2021-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 15,
+    "delisting_info": {
+      "code": "GNDI",
+      "company_name": "NOTRE DAME INTERMEDICA PARTICIPACOES AS",
+      "company_name_normalized": "NOTRE DAME INTERMEDICA PARTICIPACOES AS",
+      "trading_name": "INTERMEDICA",
+      "cnpj": "19.853.511/0001-84",
+      "registration_date": "19/04/2018",
+      "cancellation_date": "04/03/2022",
+      "address": "AV PAULISTA, 867 - 8o ANDAR, CJ 82, SL A- CEP- 01311-100- São Paulo - SP- Tel.: (11) 3155-9276",
+      "reason": "Incorporada pela Hapvida Participações e Investimentos S.A. Cada  ação foi substituída por 5,2436 ação da Hapvida mais uma parcela em dinheiro correspondente a R$ 5,12601160179/ação. ",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "GP INVESTMENTS, LTD.",
+    "last_report": "2025-06-30",
+    "status": "registrado_cancelamento",
+    "report_count": 30,
+    "delisting_info": {
+      "code": "GPIV",
+      "company_name": "GP INVESTMENTS LTD.",
+      "company_name_normalized": "GP INVESTMENTS LTD",
+      "trading_name": "GP INVEST",
+      "cnpj": "07.857.850/0001-50",
+      "registration_date": "30/5/2006",
+      "cancellation_date": "13/10/2025",
+      "address": "0- -- -- -",
+      "reason": "Descontinuidade do programa de BDR. Cada BDR detido em 11/08/2025, foi resgatado pelo valor líquido de R$ 4,333204, cujo pagamento foi efetuado em 18/08/2025. ",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "WILSON SONS LTD.",
+    "last_report": "2021-06-30",
+    "status": "registrado_cancelamento",
+    "report_count": 14,
+    "delisting_info": {
+      "code": "WSON",
+      "company_name": "WILSON SONS LTD.",
+      "company_name_normalized": "WILSON SONS LTD",
+      "trading_name": "WILSON SONS",
+      "cnpj": "05.721.735/0001-28",
+      "registration_date": "25/04/2007",
+      "cancellation_date": "17/11/2021",
+      "address": "0- -- -- -",
+      "reason": "Incorporada pela Wilson Sons Holdings Brasil S.A",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "BIOTOSCANA INVESTMENTS S.A.",
+    "last_report": "2020-06-30",
+    "status": "registrado_cancelamento",
+    "report_count": 10,
+    "delisting_info": {
+      "code": "GBIO",
+      "company_name": "BIOTOSCANA INVESTMENTS S.A",
+      "company_name_normalized": "BIOTOSCANA INVESTMENTS S A",
+      "trading_name": "BIOTOSCANA",
+      "cnpj": "19.688.956/0001-56",
+      "registration_date": "21/07/2017",
+      "cancellation_date": "19/11/2020",
+      "address": "0- -- -- -",
+      "reason": "Cancelou registro de emissor estrangeiro.Foi realizada OPA na B3 em 14/08/2020 ao preço de R$ 11,23/Bdr.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "INNCORP S.A.",
+    "last_report": "2018-03-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 1,
+    "delisting_info": null
+  },
+  {
+    "company_name": "ANDRADE GUTIERREZ CONCESSOES S.A.",
+    "last_report": "2018-09-30",
+    "status": "deslistada_por_inatividade",
+    "report_count": 3,
+    "delisting_info": null
+  },
+  {
+    "company_name": "MAGNESITA REFRATARIOS S.A.",
+    "last_report": "2018-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 3,
+    "delisting_info": {
+      "code": "MAGG",
+      "company_name": "MAGNESITA REFRATARIOS S.A.",
+      "company_name_normalized": "MAGNESITA REFRATARIOS S A",
+      "trading_name": "MAGNESITA SA",
+      "cnpj": "08.684.547/0001-65",
+      "registration_date": "19/02/2008",
+      "cancellation_date": "28/01/2019",
+      "address": "Praça Loius Ensch, 240- CEP: 32210-902- Contagem - MG- Tel. :(11) 3152-3241",
+      "reason": "Cancelou o registro de cia aberta.A Dutch Brasil Holding B.V realizou OPA na B3 em 10/12/2018.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "CONCESSÃO METROVIÁRIA DO RIO DE JANEIRO S.A.",
+    "last_report": "2018-03-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 1,
+    "delisting_info": null
+  },
+  {
+    "company_name": "DASS NORDESTE CALÇADOS E ARTIGOS ESPORTIVOS S.A",
+    "last_report": "2018-06-30",
+    "status": "deslistada_por_inatividade",
+    "report_count": 2,
+    "delisting_info": null
+  },
+  {
+    "company_name": "PARANA BCO S.A.",
+    "last_report": "2021-09-30",
+    "status": "deslistada_por_inatividade",
+    "report_count": 7,
+    "delisting_info": null
+  },
+  {
+    "company_name": "UP ENGENHARIA E URBANISMO S.A.",
+    "last_report": "2020-06-30",
+    "status": "deslistada_por_inatividade",
+    "report_count": 4,
+    "delisting_info": null
+  },
+  {
+    "company_name": "TRIPLE PLAY BRASIL PARTICIPAÇÕES S.A.",
+    "last_report": "2020-12-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 5,
+    "delisting_info": null
+  },
+  {
+    "company_name": "2W ECOBANK S.A.",
+    "last_report": "2020-12-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 5,
+    "delisting_info": null
+  },
+  {
+    "company_name": "MOSAICO TECNOLOGIA AO CONSUMIDOR S.A.",
+    "last_report": "2021-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 8,
+    "delisting_info": {
+      "code": "MOSI",
+      "company_name": "MOSAICO TECNOLOGIA AO CONSUMIDOR S.A.",
+      "company_name_normalized": "MOSAICO TECNOLOGIA AO CONSUMIDOR S A",
+      "trading_name": "MOSAICO",
+      "cnpj": "09.083.175/0001-84",
+      "registration_date": "03/02/2021",
+      "cancellation_date": "31/03/2022",
+      "address": "R Visconde de Caravelas, 14 - 2. andar- CEP: 22271-022- Rio de Janeiro- RJ- Tel.: (21) 3002-7600",
+      "reason": "Incorporada pelo Banco Pan S.A.Cada  ação foi substituída por 0,8 ação do Banco Pan e 1 bônus de subscrição. ",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "FOCUS ENERGIA HOLDING PARTICIPAÇÕES S.A.",
+    "last_report": "2021-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 8,
+    "delisting_info": {
+      "code": "POWE",
+      "company_name": "FOCUS ENERGIA HOLDING PARTICIPAÇÕES S.A",
+      "company_name_normalized": "FOCUS ENERGIA HOLDING PARTICIPACOES S A",
+      "trading_name": "FOCUS ON",
+      "cnpj": "26.735.020/0001-02",
+      "registration_date": "04/02/2021",
+      "cancellation_date": "01/06/2022",
+      "address": "AV MAGALHAES DE CASTRO 4800/ CONJUNTO 91 - CEP:05676-120- São Paulo - SP- Tel.: (11) 3136-0011",
+      "reason": "Incorporada pela Eneva S.A",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "CVLB BRASIL S.A",
+    "last_report": "2025-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 24,
+    "delisting_info": {
+      "code": "EBXG",
+      "company_name": "EBX BRASIL S.A.",
+      "company_name_normalized": "EBX BRASIL S A",
+      "trading_name": "EBX BRASIL",
+      "cnpj": "10.847.761/0001-37",
+      "registration_date": "08/10/2009",
+      "cancellation_date": "21/03/2014",
+      "address": "Praça Mahatma Gandhi, 14 - 22º andar- CEP: 20031-100- Rio de Janeiro - RJ- Tel.: (21) 2163-5500",
+      "reason": "Cancelou registro de cia. aberta.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "CS BRASIL PARTICIPAÇÕES E LOCAÇÕES S.A.",
+    "last_report": "2021-12-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 9,
+    "delisting_info": null
+  },
+  {
+    "company_name": "FINANCEIRA ALFA S.A.- CRED FINANC E INVS",
+    "last_report": "2023-12-31",
+    "status": "registrado_cancelamento",
+    "report_count": 7,
+    "delisting_info": {
+      "code": "CRIV",
+      "company_name": "FINANCEIRA ALFA S.A.- CRED FINANC E INVS",
+      "company_name_normalized": "FINANCEIRA ALFA S A CRED FINANC E INVS",
+      "trading_name": "ALFA FINANC",
+      "cnpj": "17.167.412/0001-13",
+      "registration_date": "16/01/1969",
+      "cancellation_date": "07/06/2024",
+      "address": "AL SANTOS, 466 - 4.ANDAR - CEP:01418-000 - CERQUEIRA CÉSAR - SP - Tel.:(011) 3175-5001",
+      "reason": "Cancelou registro de cia. aberta.",
+      "matched_tickers": [
+        "CRIV3",
+        "CRIV4"
+      ]
+    }
+  },
+  {
+    "company_name": "RIVA INCORPORADORA S.A",
+    "last_report": "2022-12-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 9,
+    "delisting_info": null
+  },
+  {
+    "company_name": "HOUSI S.A.",
+    "last_report": "2022-03-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 9,
+    "delisting_info": null
+  },
+  {
+    "company_name": "LG INFORMÁTICA S.A.",
+    "last_report": "2021-12-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 5,
+    "delisting_info": null
+  },
+  {
+    "company_name": "ATHENA SAÚDE BRASIL SA",
+    "last_report": "2022-09-30",
+    "status": "deslistada_por_inatividade",
+    "report_count": 9,
+    "delisting_info": null
+  },
+  {
+    "company_name": "HUMBERG AGRIBRASIL COMÉRCIO E EXPORTAÇÃO DE GRÃOS S.A.",
+    "last_report": "2025-06-30",
+    "status": "registrado_cancelamento",
+    "report_count": 19,
+    "delisting_info": {
+      "code": "GRAO",
+      "company_name": "HUMBERG AGRIBRASIL COM. E EXPORT. DE GRÃOS S.A.",
+      "company_name_normalized": "HUMBERG AGRIBRASIL COM E EXPORT DE GRAOS S A",
+      "trading_name": "AGRIBRASIL",
+      "cnpj": "18.483.666/0001-03",
+      "registration_date": "11/06/2021",
+      "cancellation_date": "12/09/2025",
+      "address": "R HUNGRIA 620 - 8 ANDAR - ED. PADDOCK II- CEP: 01455-000- São Paulo -SP- Tel.:(11) 2714-0825",
+      "reason": "A B3 cancelou de ofício, nos termos do art. 69 do Regulamento de Emissores, a listagem da Humberg Agribrasil Com. Export. de Gãos S.A em razão do seu pedido de cancelamento voluntário de sua listagem na B3",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "CLEAR SALE S.A.",
+    "last_report": "2025-03-31",
+    "status": "registrado_cancelamento",
+    "report_count": 18,
+    "delisting_info": {
+      "code": "CLSA",
+      "company_name": "CLEAR SALE S.A.",
+      "company_name_normalized": "CLEAR SALE S A",
+      "trading_name": "CLEARSALE",
+      "cnpj": "03.802.115/0001-98",
+      "registration_date": "28/07/2021",
+      "cancellation_date": "03/04/2025",
+      "address": "Rua Achilles Orlando Curtolo,  349 - Parque Industrial- CEP: 01144-010- São Paulo - SP- Tel.: (11)37288788",
+      "reason": "Incorporada pela Serasa S.A. As ações da companhia foram substituídas por dinheiro ou BDRs de emissão da Experian PLC (acionista controlador da Serasa S.A.). ",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "GETNET ADQ E SERV PARA MEIOS DE PAGTO S.A. - INST PAGTO",
+    "last_report": "2022-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 8,
+    "delisting_info": {
+      "code": "GETT",
+      "company_name": "GETNET ADQ. E SERV MEIOS DE PGTO S.A - INST PGTO.",
+      "company_name_normalized": "GETNET ADQ E SERV MEIOS DE PGTO S A INST PGTO",
+      "trading_name": "GETNET BR",
+      "cnpj": "10.440.482/0001-54",
+      "registration_date": "05/10/2021",
+      "cancellation_date": "28/12/2022",
+      "address": "AV PRESIDENTE JUSCELINO KUBITSCHEK 2235, 12º andar- CEP: 04543-011- São Paulo - SP- Tel.: (11) 5184-9002",
+      "reason": "Cancelou registro de Cia Aberta . O acionista PagoNxt Merchant Solutions, S.L realizou OPA na B3 em 01/12/2022 ao preço de R$ 2,36/ação ON ou PN e R$ 4,72/unit. ",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "WILSON SONS S.A.",
+    "last_report": "2025-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 20,
+    "delisting_info": {
+      "code": "WSON",
+      "company_name": "WILSON SONS LTD.",
+      "company_name_normalized": "WILSON SONS LTD",
+      "trading_name": "WILSON SONS",
+      "cnpj": "05.721.735/0001-28",
+      "registration_date": "25/04/2007",
+      "cancellation_date": "17/11/2021",
+      "address": "0- -- -- -",
+      "reason": "Incorporada pela Wilson Sons Holdings Brasil S.A",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "FULWOOD S.A.",
+    "last_report": "2023-03-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 10,
+    "delisting_info": null
+  },
+  {
+    "company_name": "CENCOSUD BRASIL COMERCIAL S.A.",
+    "last_report": "2024-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 16,
+    "delisting_info": {
+      "code": "CENB",
+      "company_name": "CENCOSUD BRASIL COMERCIAL S.A.",
+      "company_name_normalized": "CENCOSUD BRASIL COMERCIAL S A",
+      "trading_name": "CENCOSUD BR",
+      "cnpj": "39.346.861/0350-38",
+      "registration_date": "01/03/2023",
+      "cancellation_date": "16/01/2025",
+      "address": "Avenida das Nações Unidas, 12.995 - 21º andar- Cep:04578-000- São Paulo - SP- Tel.: 55 (011) 4377-9403",
+      "reason": "Cancelou registro de cia. Aberta perante a CVM nos termos do artigo 70 do seu Regulamento de Emissores",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "TROCAFONE S.A.",
+    "last_report": "2021-09-30",
+    "status": "deslistada_por_inatividade",
+    "report_count": 4,
+    "delisting_info": null
+  },
+  {
+    "company_name": "SELF IT ACADEMIAS HOLDING S.A.",
+    "last_report": "2022-09-30",
+    "status": "deslistada_por_inatividade",
+    "report_count": 8,
+    "delisting_info": null
+  },
+  {
+    "company_name": "G2D INVESTMENTS, LTD.",
+    "last_report": "2022-12-31",
+    "status": "registrado_cancelamento",
+    "report_count": 2,
+    "delisting_info": {
+      "code": "GPIV",
+      "company_name": "GP INVESTMENTS LTD.",
+      "company_name_normalized": "GP INVESTMENTS LTD",
+      "trading_name": "GP INVEST",
+      "cnpj": "07.857.850/0001-50",
+      "registration_date": "30/5/2006",
+      "cancellation_date": "13/10/2025",
+      "address": "0- -- -- -",
+      "reason": "Descontinuidade do programa de BDR. Cada BDR detido em 11/08/2025, foi resgatado pelo valor líquido de R$ 4,333204, cujo pagamento foi efetuado em 18/08/2025. ",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "NU HOLDINGS LTD.",
+    "last_report": "2023-06-30",
+    "status": "registrado_cancelamento",
+    "report_count": 11,
+    "delisting_info": {
+      "code": "NUBR",
+      "company_name": "NU HOLDINGS LTD.",
+      "company_name_normalized": "NU HOLDINGS LTD",
+      "trading_name": "NU-NUBANK",
+      "cnpj": "24.410.913/0001-44",
+      "registration_date": "08/12/2021",
+      "cancellation_date": "11/08/2023",
+      "address": "0- -- -- -",
+      "reason": "Listagem cancelada como Companhia Estrangeira, em razão do encerramento do seu Programa de BDR Nível III. ",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "CEL PARTICIPAÇÕES S.A. - CELPAR",
+    "last_report": "2025-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 16,
+    "delisting_info": {
+      "code": "CVPT",
+      "company_name": "CEVAL PARTICIPAÇÕES S.A.",
+      "company_name_normalized": "CEVAL PARTICIPACOES S A",
+      "trading_name": "CEVAL PART",
+      "cnpj": "02.189.227/0001-52",
+      "registration_date": "29/01/1998",
+      "cancellation_date": "04/08/1999",
+      "address": "Rod. Jorge Lacerda  Km 20 - CEP: 89110-000 - Gaspar - SC - Tel.:  (47)331-2222",
+      "reason": "Dissolução por liquidação da empresa. Cada lote de mil ações independente da espécie foi substituído pelas seguintes quantidades de ações das empresas investidas: Ceval Alimentos S.A. 841,633254 ações ON e 213,273463 ações PN; Seara Alimentos S.A. 841,633254 ações ON e 339,123560  ações PN; e Santista Alimentos S.A. 1,084431 ações ON.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "BRAZILIAN FINANCE E REAL ESTATE S.A.",
+    "last_report": "2024-06-30",
+    "status": "registrado_cancelamento",
+    "report_count": 11,
+    "delisting_info": {
+      "code": "BFRE",
+      "company_name": "BRAZILIAN FINANCE E REAL ESTATE S.A.",
+      "company_name_normalized": "BRAZILIAN FINANCE E REAL ESTATE S A",
+      "trading_name": "BRAZILIAN FR",
+      "cnpj": "02.762.113/0001-50",
+      "registration_date": "02/07/2012",
+      "cancellation_date": "20/08/2024",
+      "address": "AV PAULISTA 1374 - 15.ANDAR- Cep: 01310-100- Bela vista - SP- Tel.: 55 (011) 3264-5343",
+      "reason": "Cancelou registro de cia. aberta.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "AMAZONE FUN PARKS S.A.",
+    "last_report": "2023-03-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 5,
+    "delisting_info": null
+  },
+  {
+    "company_name": "CREDGRID SERVIÇOS FINANCEIROS S.A.",
+    "last_report": "2022-12-31",
+    "status": "deslistada_por_inatividade",
+    "report_count": 5,
+    "delisting_info": null
+  },
+  {
+    "company_name": "ALMACENES ÉXITO S.A.",
+    "last_report": "2025-03-31",
+    "status": "registrado_cancelamento",
+    "report_count": 14,
+    "delisting_info": {
+      "code": "EXCO",
+      "company_name": "ALMACENES EXITO S.A.",
+      "company_name_normalized": "ALMACENES EXITO S A",
+      "trading_name": "EXITO",
+      "cnpj": "23.041.875/0001-37",
+      "registration_date": "04/04/2023",
+      "cancellation_date": "04/08/2025",
+      "address": "AVENIDA BRIGADEIRO LUÍS ANTÔNIO, 3172- CEP: 01402-002- São Paulo-SP- Tel.:(11) 3886-0305",
+      "reason": "A CVM aprovou o cancelamento do registro da Companhia como emissora estrangeira de valores mobiliários categoria A.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "YBYRÁ CAPITAL S.A.",
+    "last_report": "2025-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 15,
+    "delisting_info": {
+      "code": "YBRA",
+      "company_name": "YBYRÁ CAPITAL S.A.",
+      "company_name_normalized": "YBYRA CAPITAL S A",
+      "trading_name": "YBYRA S/A",
+      "cnpj": "02.217.319/0001-07",
+      "registration_date": "11/09/1998",
+      "cancellation_date": "24/01/2025",
+      "address": "AV PRESIDENTE WILSON 231 - 28 ANDAR/PARTE- CEP: 20030-021 - Rio de Janeiro-RJ- Tel.:(21) 38043700",
+      "reason": "Listagem cancelada na B3, nos termos do art. 65, IV, c/c art. 70, parágrafo único, do Regulamento de Emissores (Regulamento), devido ao descumprimento de requisitos previstos no Regulamento.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "VITAL ENGENHARIA AMBIENTAL S.A.",
+    "last_report": "2025-09-30",
+    "status": "registrado_cancelamento",
+    "report_count": 8,
+    "delisting_info": {
+      "code": "VEGA",
+      "company_name": "VEGA ENGENHARIA AMBIENTAL S.A.",
+      "company_name_normalized": "VEGA ENGENHARIA AMBIENTAL S A",
+      "trading_name": "VEGA ENG",
+      "cnpj": "01.832.326/0001-48",
+      "registration_date": "02/06/1998",
+      "cancellation_date": "13/03/2002",
+      "address": "Pça. Alberto Lion,366 - CEP: 01515 - 000 - São Paulo - SP  - Tel.: (11)6165-3575",
+      "reason": "Cancelou registro de Cia Aberta . Aprovado por 100% dos acionistas.",
+      "matched_tickers": []
+    }
+  },
+  {
+    "company_name": "ENGELHART CTP (BRASIL) S.A.",
+    "last_report": "2024-12-31",
+    "status": "registrado_cancelamento",
+    "report_count": 1,
+    "delisting_info": {
+      "code": "EGLT",
+      "company_name": "ENGELHART CTP (BRASIL) S.A.",
+      "company_name_normalized": "ENGELHART CTP BRASIL S A",
+      "trading_name": "ENGELHART",
+      "cnpj": "14.796.754/0001-04",
+      "registration_date": "16/07/2024",
+      "cancellation_date": "07/05/2025",
+      "address": "AVENIDA BRIGADEIRO FARIA LIMA, 3477- 11º ANDAR - PARTE- CEP: 04538-133 - São Paulo-SP- Tel: ( 11)  33832000",
+      "reason": "Incorporada pela BTG Pactutal Commodities Sertrading S.A, com sua consequente extinção. ",
+      "matched_tickers": []
+    }
+  }
+]

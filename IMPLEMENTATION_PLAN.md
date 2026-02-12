@@ -14,6 +14,9 @@
 | Pipeline B3 (Fundamentus + validações + export) | ✅ | `etl/pipeline.py` gera `b3_stocks.json`, `rankings.json`, `excluded_companies.json`, logs e garante atomicidade. |
 | Banco e JSON com metadata (`generated_at`, etc.) | ✅ | Exporter cuida do envoltório e move atômico. |
 | Lista de exclusões com motivo | ✅ | `public/data/excluded_companies.json`. |
+| ETL histórico CVM + preços com cache incremental | ✅ | `run_historical_sync()` agora reutiliza `data/processed/price_history.json` e só baixa tickers faltantes; execução diária evita redownload total. |
+| Mapeamento determinístico CVM → ticker | ⏳ | Overrides em `data/cvm_ticker_overrides.json` + duplicação PN→ON cobrem bancos e grandes caps; 113 companhias “ativo_recente” foram movidas para `data/ignored_cvm_companies.json` e serão ignoradas; restam 73 pendências efetivas (43 com cancelamento registrado, 20 em reestruturação, 10 históricos). |
+| Métricas derivadas completas (`p_vp`, payout, etc.) | ✅ | `DataProcessor.calculate_multiples` preenche `p_vp` via Fundamentus/cálculo fallback e mantém DY, ROE, ROIC coerentes. |
 
 #### Fase 1 – Abertura + B3 vs Mundo
 | Tarefa | Status | Próximos passos |
@@ -52,6 +55,7 @@
 | Cálculo de `max_drawdown` | 🔴 | Implementar em `engine.py`. |
 | Correção de crash quando sem holdings | 🔴 | `backtest/engine.py`. |
 | Suporte a Configuração Externa | ⏳ | Modificar `run_backtest.py` para aceitar `strategy_config.json`. |
+| Campo `entry_score_weights` no domínio/configuração | ✅ | Campo adicionado ao domínio + fallback no engine; `diagnostic_test.py` executa a simulação end-to-end. |
 
 
 
@@ -60,6 +64,7 @@
 2. Revisar outliers da B3 (market cap e margens zeradas) antes de expor no front.
 3. Integrar front-end (bloco 2) ao novo formato.
 4. Definir estratégia de automação diária para atualizar planilhas e rodar `process_manual_indices.py`.
+5. Implementar cache incremental para CVM/precificação e recalcular métricas faltantes antes da próxima janela de simulação.
 
 ### Observações operacionais
 - Todos os scripts falham com código ≠ 0 em caso de erro (respeitando requisito do cron).
@@ -67,3 +72,4 @@
 - Logs diários armazenados em `logs/update_YYYY-MM-DD.log`.
 - Coleta internacional depende de planilhas do Investing.com; garantir que os CSVs estejam atualizados antes da execução diária.
 - Para evitar inconsistências, futuras alterações no pipeline devem ser refletidas tanto no `PROJECT_PLAN.md` quanto aqui, seguindo a regra de ouro do documento funcional.
+- 2026-02-11: `pytest` (test_entry_criteria, test_market_timeline) executado com sucesso após ajustes no motor.

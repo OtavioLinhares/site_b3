@@ -4,6 +4,7 @@ import json
 import os
 import logging
 from datetime import datetime
+from collections import defaultdict
 import ipeadatapy as ip
 
 # Configure Logging
@@ -17,45 +18,80 @@ class DataProvider:
         self.prices_data = {}
         self.benchmarks = {}
         self.assets_list = []
+        self.price_meta = {}
+        self.data_quality_report = {
+            "missing": defaultdict(list),
+            "zero": defaultdict(list),
+            "tickers_without_financials": [],
+            "tickers_without_prices": [],
+            "tickers_without_prices_history": [],
+            "total_financial_tickers": 0,
+            "total_price_tickers": 0,
+        }
         
     def load_data(self):
         """Loads processed asset data and price history."""
+        self.financials_data = {}
+        self.prices_data = {}
+        self.assets_list = []
+        self.price_meta = {}
+        # Reset report
+        self.data_quality_report = {
+            "missing": defaultdict(list),
+            "zero": defaultdict(list),
+            "tickers_without_financials": [],
+            "tickers_without_prices": [],
+            "tickers_without_prices_history": [],
+            "total_financial_tickers": 0,
+            "total_price_tickers": 0,
+        }
+
+        indicators_to_track = [
+            "p_l",
+            "p_vp",
+            "roe",
+            "roic",
+            "dy",
+            "net_margin",
+            "revenue",
+            "net_income",
+        ]
+
         # 1. Load Financials (Quarterly)
         if os.path.exists(self.data_path):
             try:
                 with open(self.data_path, 'r') as f:
-                    self.financials_data = json.load(f)
-                logger.info(f"Loaded financials for {len(self.financials_data)} assets.")
-                
-                # DATA QUALITY FILTER: Remove tickers with invalid critical indicators
-                invalid_tickers = set()
-                
-                for ticker, records in list(self.financials_data.items()):
+                    loaded = json.load(f)
+
+                if isinstance(loaded, dict):
+                    self.financials_data = loaded
+                else:
+                    logger.error("Unexpected financials format (expected dict by ticker).")
+                    self.financials_data = {}
+
+                total_financial = len(self.financials_data)
+                self.data_quality_report["total_financial_tickers"] = total_financial
+
+                for ticker, records in self.financials_data.items():
                     if not records:
-                        invalid_tickers.add(ticker)
+                        self.data_quality_report["tickers_without_financials"].append(ticker)
                         continue
-                    
-                    # Check latest record
+
                     latest = records[-1] if isinstance(records, list) else records
-                    
-                    # Critical indicators: P/L, ROE, P/VP cannot be zero or negative
-                    critical = ['p_l', 'roe', 'p_vp']
-                    
-                    for ind in critical:
-                        val = latest.get(ind)
-                        if val is None or val <= 0:
-                            invalid_tickers.add(ticker)
-                            break
-                
-                # Remove invalid
-                for ticker in invalid_tickers:
-                    del self.financials_data[ticker]
-                
-                if invalid_tickers:
-                    logger.warning(f"Filtered {len(invalid_tickers)} tickers with invalid data")
-                    logger.info(f"Examples: {list(invalid_tickers)[:10]}")
-                
-                logger.info(f"Clean universe: {len(self.financials_data)} assets")
+                    for indicator in indicators_to_track:
+                        val = latest.get(indicator)
+                        if val is None:
+                            self.data_quality_report["missing"][indicator].append(ticker)
+                        else:
+                            try:
+                                numeric_val = float(val)
+                                if numeric_val == 0:
+                                    self.data_quality_report["zero"][indicator].append(ticker)
+                            except (TypeError, ValueError):
+                                # Non-numeric indicator (e.g., strings) are noted as missing
+                                self.data_quality_report["missing"][indicator].append(ticker)
+
+                logger.info(f"Loaded financials for {total_financial} tickers.")
             except Exception as e:
                 logger.error(f"Error loading financials: {e}")
         else:
@@ -66,33 +102,77 @@ class DataProvider:
             try:
                 with open(self.price_path, 'r') as f:
                     raw_prices = json.load(f)
-                    
+
                 count = 0
-                for ticker, records in raw_prices.items():
-                    if not records: continue
+                for ticker, payload in raw_prices.items():
+                    records = []
+                    meta = {}
+
+                    if isinstance(payload, dict):
+                        records = payload.get("prices") or payload.get("data") or payload.get("records") or []
+                        meta = payload.get("meta") or {}
+                    elif isinstance(payload, list):
+                        records = payload
+                    else:
+                        continue
+
+                    if not records:
+                        self.data_quality_report["tickers_without_prices_history"].append(ticker)
+                        continue
+
                     df = pd.DataFrame(records)
-                    
-                    # Normalize columns
-                    df.columns = [c.lower() for c in df.columns]
-                    
+                    if df.empty:
+                        self.data_quality_report["tickers_without_prices_history"].append(ticker)
+                        continue
+
+                    df.columns = [str(c).lower() for c in df.columns]
+
+                    # Normalize datetime column
+                    date_column = None
                     if 'date' in df.columns:
-                        df['date'] = pd.to_datetime(df['date'])
-                        df.set_index('date', inplace=True)
+                        date_column = 'date'
+                    elif 'datetime' in df.columns:
+                        date_column = 'datetime'
+                    elif 'timestamp' in df.columns:
+                        date_column = 'timestamp'
+
+                    if date_column:
+                        df[date_column] = pd.to_datetime(df[date_column])
+                        df.set_index(date_column, inplace=True)
                         df.sort_index(inplace=True)
-                        
-                        # Store
-                        clean_ticker = ticker.replace('.SA', '') # Normalize ticker names to match financials
-                        self.prices_data[clean_ticker] = df
-                        count += 1
-                        
-                # Update assets list based on available prices (simulation needs prices)
-                self.assets_list = list(self.prices_data.keys())
-                logger.info(f"Loaded prices for {count} assets. Active Universe: {len(self.assets_list)}")
-                
+                    else:
+                        logger.warning(f"{ticker}: price records missing date field.")
+                        self.data_quality_report["tickers_without_prices_history"].append(ticker)
+                        continue
+
+                    clean_ticker = ticker.replace('.SA', '').upper()
+                    self.prices_data[clean_ticker] = df
+                    self.price_meta[clean_ticker] = meta
+                    count += 1
+
+                self.data_quality_report["total_price_tickers"] = count
+                self.assets_list = sorted(self.prices_data.keys())
+                logger.info(f"Loaded prices for {count} tickers. Active universe: {len(self.assets_list)}")
             except Exception as e:
                 logger.error(f"Error loading prices: {e}")
         else:
             logger.error(f"Price history file not found: {self.price_path}")
+
+        # Match coverage between financials and prices
+        if self.financials_data:
+            financial_tickers = {ticker.upper() for ticker in self.financials_data.keys()}
+        else:
+            financial_tickers = set()
+
+        price_tickers = set(self.assets_list)
+        missing_prices = sorted(financial_tickers - price_tickers)
+        for ticker in missing_prices:
+            self.data_quality_report["tickers_without_prices"].append(ticker)
+
+        if missing_prices:
+            logger.warning(f"{len(missing_prices)} tickers sem histórico de preços carregado (ex.: {missing_prices[:5]})")
+        if self.data_quality_report["tickers_without_financials"]:
+            logger.warning(f"{len(self.data_quality_report['tickers_without_financials'])} tickers sem registros financeiros no arquivo processado.")
 
     def get_price_data(self, ticker):
         """Returns full daily price DataFrame."""
@@ -146,6 +226,10 @@ class DataProvider:
         idx = df.index.asof(date)
         if pd.isna(idx): return None
         return df.loc[idx]
+    
+    def get_data_quality_report(self):
+        """Returns summary collected during load_data."""
+        return self.data_quality_report
         
     def fetch_benchmarks(self):
         """Fetches IBOV, SELIC, and IPCA history."""

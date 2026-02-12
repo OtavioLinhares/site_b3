@@ -5,6 +5,8 @@ import pandas as pd
 import numpy as np
 import time
 import argparse
+import json
+from datetime import datetime
 
 # Ensure we can import from local modules
 sys.path.append(os.getcwd())
@@ -15,19 +17,26 @@ from etl.validator import Validator
 from etl.exporter import Exporter
 
 class DataPipeline:
-    def __init__(self, limit=None):
+    def __init__(self, limit=None, force_historical_sync=False, historical_ttl_hours=24, historical_start_year=2018, historical_end_year=None):
         self.limit = limit
         self.logger = PipelineLogger()
         self.validator = Validator(self.logger)
         self.exporter = Exporter()
         self.f_client = FundamentusClient()
+        self.force_historical_sync = force_historical_sync
+        self.historical_ttl_hours = historical_ttl_hours
+        self.historical_start_year = historical_start_year
+        self.historical_end_year = historical_end_year
+        self.processed_dir = os.path.join("data", "processed")
+        self.historical_financials_path = os.path.join(self.processed_dir, "cvm_financials_history.csv")
+        self.historical_prices_path = os.path.join(self.processed_dir, "price_history.json")
         
         self.b3_tickers = []
         self.processed_data = []
         self.excluded_data = []
         
         # Hardcoded exclusions for obsolete or problematic tickers
-        self.EXCLUDED_TICKERS = ['TRPN3']
+        self.EXCLUDED_TICKERS = ['TRPN3', 'GEPA3', 'GEPA4']
         
         # Historical Data Modules
         from etl.cvm_client import CVMClient
@@ -38,23 +47,65 @@ class DataPipeline:
         self.cvm_parser = CVMParser()
         self.price_client = PriceHistoryClient()
 
+    def _historical_data_is_fresh(self):
+        if self.force_historical_sync:
+            return False
+        required_files = [
+            self.historical_financials_path,
+            self.historical_prices_path,
+        ]
+        now = time.time()
+        max_age = self.historical_ttl_hours * 3600 if self.historical_ttl_hours else None
+        for path in required_files:
+            if not os.path.exists(path):
+                return False
+            if max_age is not None and (now - os.path.getmtime(path)) > max_age:
+                return False
+        return True
+
+    def _load_existing_prices(self):
+        if not os.path.exists(self.historical_prices_path):
+            return {}
+        try:
+            with open(self.historical_prices_path, "r") as f:
+                data = json.load(f)
+                if not isinstance(data, dict):
+                    return {}
+                normalized = {}
+                for ticker, value in data.items():
+                    if isinstance(value, list):
+                        normalized[ticker] = {"prices": value, "meta": {}}
+                    elif isinstance(value, dict):
+                        prices = value.get("prices")
+                        if prices is None and isinstance(value.get("data"), list):
+                            prices = value.get("data")
+                        normalized[ticker] = {
+                            "prices": prices or [],
+                            "meta": value.get("meta", {})
+                        }
+                    else:
+                        normalized[ticker] = {"prices": [], "meta": {}}
+                return normalized
+        except Exception as exc:
+            self.logger.warning(f"Failed to load cached prices: {exc}")
+            return {}
+
     def run_historical_sync(self):
         """
         Runs the full Historical Data ETL (CVM + Prices).
         Downloads DFP/ITR, parses them, fetches stock prices, and exports a history dataset.
         """
         self.logger.info("--- Starting Historical Data Sync ---")
-        
-        # Check if files already exist to skip redundant processing
-        # hist_fin_path = "data/processed/cvm_financials_history.csv"
-        # hist_price_path = "data/processed/price_history.json"
-        
-        # if os.path.exists(hist_fin_path) and os.path.exists(hist_price_path):
-        #     self.logger.info("Historical data already exists. Skipping sync.")
-        #     return
 
-        # 1. Download CVM Data (2011-Present)
-        years = range(2011, 2026)
+        os.makedirs(self.processed_dir, exist_ok=True)
+
+        # 1. Download CVM Data (configurable window)
+        current_year = datetime.utcnow().year
+        start_year = self.historical_start_year or 2011
+        end_year = self.historical_end_year or current_year
+        if start_year > end_year:
+            start_year, end_year = end_year, start_year
+        years = range(start_year, end_year + 1)
         
         self.logger.info(f"Downloading CVM DFP/ITR for {years}...")
         for year in years:
@@ -82,30 +133,53 @@ class DataPipeline:
         # Use Fundamentus data to get list of active tickers
         current_df = self.f_client.fetch_all_current()
         tickers = current_df['ticker'].unique().tolist() if not current_df.empty else []
+        if self.limit:
+            tickers = tickers[:self.limit]
         
         # Yahoo Finance requires .SA suffix for Brazilian stocks
         tickers_sa = [f"{t}.SA" for t in tickers if not t.endswith('.SA')]
         
-        self.logger.info(f"Fetching Price History for {len(tickers_sa)} tickers (.SA suffix added)...")
-        
-        price_map = self.price_client.fetch_batch(tickers_sa) # Returns {ticker: df}
+        existing_prices = self._load_existing_prices()
+        to_fetch = [ticker for ticker in tickers_sa if ticker not in existing_prices]
+        if to_fetch:
+            self.logger.info(f"Fetching price history for {len(to_fetch)} tickers (.SA suffix added)...")
+            fresh_prices = self.price_client.fetch_batch(to_fetch)
+            for ticker, payload in fresh_prices.items():
+                df = payload.get('data') if isinstance(payload, dict) else None
+                meta = payload.get('meta') if isinstance(payload, dict) else {}
+                if df is None or df.empty:
+                    continue
+                df_reset = df.reset_index()
+                if 'Date' in df_reset.columns:
+                    df_reset['Date'] = df_reset['Date'].dt.strftime('%Y-%m-%d')
+                existing_prices[ticker] = {
+                    "prices": df_reset.to_dict(orient='records'),
+                    "meta": {
+                        "symbol": meta.get("symbol"),
+                        "shortName": meta.get("shortName"),
+                        "longName": meta.get("longName"),
+                        "exchangeName": meta.get("exchangeName"),
+                    }
+                }
+        else:
+            self.logger.info("Price history already cached for all tickers.")
         
         # 4. Export
-        os.makedirs("data/processed", exist_ok=True)
         if not history_df.empty:
-            history_df.to_csv("data/processed/cvm_financials_history.csv", index=False)
+            history_df.to_csv(self.historical_financials_path, index=False)
         
-        import json
-        serialized_prices = {}
-        for t, df in price_map.items():
-            if df is None: continue
-            df_reset = df.reset_index()
-            if 'Date' in df_reset.columns:
-                 df_reset['Date'] = df_reset['Date'].dt.strftime('%Y-%m-%d')
-            serialized_prices[t] = df_reset.to_dict(orient='records')
-            
-        with open("data/processed/price_history.json", "w") as f:
-            json.dump(serialized_prices, f)
+        sanitized_prices = {}
+        for ticker, payload in existing_prices.items():
+            if isinstance(payload, dict):
+                sanitized_prices[ticker] = {
+                    "prices": payload.get("prices", []),
+                    "meta": payload.get("meta", {})
+                }
+            else:
+                sanitized_prices[ticker] = {"prices": payload or [], "meta": {}}
+        
+        with open(self.historical_prices_path, "w") as f:
+            json.dump(sanitized_prices, f)
             
         self.logger.info("Historical Sync Completed.")
 
@@ -117,10 +191,92 @@ class DataPipeline:
             from etl.data_processor import DataProcessor
             self.logger.info("Starting Data Processing (Metrics Calculation)...")
             dp = DataProcessor()
-            dp.run()
+            payload = dp.run()
             self.logger.info("Data Processing complete.")
+            return payload
         except Exception as e:
             self.logger.error(f"Data Processing failed: {e}")
+            return {}
+
+    def _load_reference_classification(self):
+        path = os.path.join(self.processed_dir, "reference_classification.json")
+        if not os.path.exists(path):
+            return {}
+        try:
+            with open(path, "r", encoding="utf-8") as fh:
+                return json.load(fh) or {}
+        except Exception as exc:
+            self.logger.warning(f"Failed to load reference_classification.json: {exc}")
+            return {}
+
+    def _enrich_with_processed_metrics(self, assets, processed_payload):
+        if not processed_payload:
+            self.logger.warning("Processed metrics payload empty; keeping Fundamentus values.")
+            return assets
+
+        latest_map = {}
+        for ticker, records in processed_payload.items():
+            if isinstance(records, list) and records:
+                latest_map[ticker.upper()] = records[-1]
+
+        classification_map = self._load_reference_classification()
+        enriched = []
+        missing = []
+
+        for asset in assets:
+            ticker = (asset.get("ticker") or "").upper()
+            latest = latest_map.get(ticker)
+            if not latest:
+                missing.append(ticker)
+                continue
+
+            merged = dict(asset)
+            for field in ("p_l", "p_vp", "net_margin", "roe", "roic", "dy"):
+                if field in latest and latest[field] is not None:
+                    merged[field] = latest[field]
+
+            latest_margin = latest.get("net_margin") or 0
+            latest_pl = latest.get("p_l")
+            merged["positive_margins"] = latest_margin > 0
+            merged["valid_pl"] = latest_pl is not None and latest_pl > 0
+
+            if not merged.get("company_name"):
+                merged["company_name"] = latest.get("company_name")
+
+            class_info = classification_map.get(ticker)
+            if class_info:
+                merged.setdefault("sector", class_info.get("sector"))
+                merged.setdefault("subsector", class_info.get("subsector"))
+                merged.setdefault("segment", class_info.get("segment"))
+                merged.setdefault("trading_segment", class_info.get("trading_segment"))
+
+            sector_value = (merged.get("sector") or "").upper()
+            subsector_value = (merged.get("subsector") or "").upper()
+            if (
+                merged.get("net_margin") == 0
+                and merged.get("p_l")
+                and (
+                    any(keyword in sector_value for keyword in ["SEGURO", "PREVID"])
+                    or any(keyword in subsector_value for keyword in ["SEGURO", "PREVID"])
+                )
+            ):
+                pl_value = merged.get("p_l")
+                earnings_yield = (1 / pl_value) if pl_value else 0
+                merged["net_margin"] = earnings_yield
+                if not merged.get("avg_margin_5y"):
+                    merged["avg_margin_5y"] = earnings_yield
+
+            merged["positive_margins"] = merged.get("net_margin", 0) is not None and merged.get("net_margin", 0) > 0
+
+            enriched.append(merged)
+
+        if missing:
+            sample = ", ".join(missing[:5])
+            self.logger.warning(
+                f"{len(missing)} tickers sem métricas processadas foram removidos do b3_stocks.json (ex.: {sample})"
+            )
+
+        return enriched or assets
     def fetch_yfinance_market_cap(self, ticker_sa):
         """
         Fetches Market Cap from YFinance for validation.
@@ -144,10 +300,11 @@ class DataPipeline:
             self.logger.info("Fetching Fundamentus data...")
             df_raw = self.f_client.fetch_all_current()
             
-            # RUN HISTORICAL SYNC (Optionally, or always?)
-            # Since user asked for it now, let's run it.
-            # In production, we might want to check a flag or file age.
-            self.run_historical_sync()
+            # RUN HISTORICAL SYNC (skip if recently updated unless forced)
+            if self._historical_data_is_fresh():
+                self.logger.info("Historical data is fresh; skipping CVM/price sync.")
+            else:
+                self.run_historical_sync()
             
             if df_raw.empty:
                 raise Exception("Fundamentus returned empty data.")
@@ -183,6 +340,7 @@ class DataPipeline:
                 ticker = row['ticker']
                 if ticker in self.EXCLUDED_TICKERS:
                     self.logger.info(f"Skipping excluded ticker: {ticker}")
+                    self.excluded_data.append({"ticker": ticker, "reason": "BLACKLISTED"})
                     continue
 
                 ticker_sa = f"{ticker}.SA"
@@ -300,29 +458,16 @@ class DataPipeline:
                     self.excluded_data.append({"ticker": ticker, "reason": "PROCESSING_ERROR"})
 
             # 3. Generate Collections & Rankings
+            self.logger.info(f"Total Valid Assets (Fundamentus): {len(valid_assets)}")
+
+            processed_payload = self.run_data_processing()
+            enriched_assets = self._enrich_with_processed_metrics(valid_assets, processed_payload)
+            self.logger.info(f"Assets após merge com métricas processadas: {len(enriched_assets)}")
             
-            # 3.1 Main List (B3 Stocks)
-            self.logger.info(f"Total Valid Assets: {len(valid_assets)}")
-            
-            # 3.2 Rankings
-            # Ranking 1: Valor + Qualidade
-            # Filters: Margem 5y >= 12% (0.12), Lucro Positivo 5y (Proxy: PL > 0 & Valid history... we don't have 5y history here yet)
-            # For Phase 0 MVP, we use available snapshots.
-            # "Margem líquida média 5 anos" -> We only have 'c5y' (revenue growth) and current 'mrgliq'.
-            # Fundamentus doesn't give 5y margin avg easily in snapshot.
-            # We skip strict 5y margin avg for now and use current or look for data.
-            # Prompt says "Média 5 anos: média aritmética...". I might not have this data in snapshot.
-            # Assuming 'mrgliq' is current.
-            # NOTE: To do this strictly, I need historical data.
-            # Fundamentus `get_papel` might give history? No.
-            # I might need to implement a history fetcher later or use cached data.
-            # For Phase 0, I will use Current Margin as proxy if 5y unavailable, but note it.
-            
-            # Implement Ranking Logic Placeholder
-            rankings = self.generate_rankings(valid_assets)
+            rankings = self.generate_rankings(enriched_assets)
             
             # 4. Export
-            self.exporter.export_json(valid_assets, "b3_stocks.json")
+            self.exporter.export_json(enriched_assets, "b3_stocks.json")
             self.exporter.export_json(rankings, "rankings.json")
             self.exporter.export_excluded_list(self.excluded_data)
             
@@ -349,9 +494,6 @@ class DataPipeline:
             except Exception as e:
                 self.logger.error(f"Selic Analysis Failed: {e}")
                 # Don't fail the whole pipeline for this auxiliary task
-            
-            # 6. Run Historical Data Processor
-            self.run_data_processing()
             
             self.logger.info(f"Pipeline Finished in {time.time() - start_time:.2f}s")
             
